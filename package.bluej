@@ -1,8 +1,14 @@
 #BlueJ package file
 objectbench.height=76
+<<<<<<< Updated upstream
 objectbench.width=1418
 package.editor.height=733
 package.editor.width=1310
+=======
+objectbench.width=1260
+package.editor.height=577
+package.editor.width=1152
+>>>>>>> Stashed changes
 package.editor.x=0
 package.editor.y=24
 package.numDependencies=0
@@ -366,7 +372,11 @@ target35.y=160
 target36.editor.height=700
 target36.editor.width=900
 target36.editor.x=117
+<<<<<<< Updated upstream
 target36.editor.y=83
+=======
+target36.editor.y=40
+>>>>>>> Stashed changes
 target36.height=50
 target36.name=Starter
 target36.naviview.expanded=true
