@@ -2,9 +2,13 @@
 objectbench.height=76
 objectbench.width=1260
 package.editor.height=577
+<<<<<<< HEAD
 package.editor.width=1162
+=======
+package.editor.width=1152
+>>>>>>> origin/master
 package.editor.x=0
-package.editor.y=24
+package.editor.y=23
 package.numDependencies=0
 package.numTargets=61
 package.showExtends=true
@@ -366,8 +370,13 @@ target35.x=830
 target35.y=550
 target36.editor.height=700
 target36.editor.width=900
+<<<<<<< HEAD
 target36.editor.x=40
 target36.editor.y=43
+=======
+target36.editor.x=117
+target36.editor.y=40
+>>>>>>> origin/master
 target36.height=50
 target36.name=AlexanderTheGreat
 target36.showInterface=false

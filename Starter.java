@@ -12,7 +12,11 @@ public class Starter
     //Anish!
     //anishp2
     //THis is Nilay test
+<<<<<<< HEAD
     //This is pooja
+=======
+    //this is shravan test
+>>>>>>> origin/master
     /**
      * Constructor for objects of class Starter
      */
