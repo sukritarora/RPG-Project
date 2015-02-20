@@ -1,16 +1,10 @@
 #BlueJ package file
 objectbench.height=76
-<<<<<<< HEAD
-objectbench.width=1420
-package.editor.height=734
-package.editor.width=1312
-=======
-objectbench.width=1260
-package.editor.height=577
-package.editor.width=1152
->>>>>>> FETCH_HEAD
-package.editor.x=0
-package.editor.y=23
+objectbench.width=942
+package.editor.height=830
+package.editor.width=834
+package.editor.x=2238
+package.editor.y=-202
 package.numDependencies=0
 package.numTargets=61
 package.showExtends=true
@@ -18,8 +12,8 @@ package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
-target1.editor.x=481
-target1.editor.y=63
+target1.editor.x=1829
+target1.editor.y=-55
 target1.height=50
 target1.name=Soldiers
 target1.naviview.expanded=false
