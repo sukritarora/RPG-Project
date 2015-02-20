@@ -1,8 +1,14 @@
 #BlueJ package file
 objectbench.height=76
+<<<<<<< HEAD
 objectbench.width=1420
 package.editor.height=734
 package.editor.width=1312
+=======
+objectbench.width=1260
+package.editor.height=577
+package.editor.width=1152
+>>>>>>> FETCH_HEAD
 package.editor.x=0
 package.editor.y=23
 package.numDependencies=0
@@ -71,10 +77,10 @@ target13.typeParameters=
 target13.width=80
 target13.x=580
 target13.y=380
-target14.editor.height=700
-target14.editor.width=900
-target14.editor.x=481
-target14.editor.y=63
+target14.editor.height=716
+target14.editor.width=756
+target14.editor.x=524
+target14.editor.y=23
 target14.height=50
 target14.name=Weapons
 target14.naviview.expanded=false
@@ -100,9 +106,10 @@ target15.y=380
 target16.editor.height=700
 target16.editor.width=900
 target16.editor.x=40
-target16.editor.y=43
+target16.editor.y=39
 target16.height=50
 target16.name=GAdolphus
+target16.naviview.expanded=false
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
@@ -366,7 +373,7 @@ target35.y=160
 target36.editor.height=700
 target36.editor.width=900
 target36.editor.x=117
-target36.editor.y=83
+target36.editor.y=39
 target36.height=50
 target36.name=Starter
 target36.naviview.expanded=true
