@@ -16,6 +16,7 @@ public class Spain extends WestEuropeRegion
     public Spain()
     {
         // initialise instance variables
+        super("Spain");
         x = 0;
     }
 

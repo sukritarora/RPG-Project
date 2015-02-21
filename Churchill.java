@@ -16,6 +16,7 @@ public class Churchill extends Leaders
     public Churchill()
     {
         // initialise instance variables
+        super("Winston Churchill");
         x = 0;
     }
 

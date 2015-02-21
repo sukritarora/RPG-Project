@@ -16,6 +16,7 @@ public class Italy extends WestEuropeRegion
     public Italy()
     {
         // initialise instance variables
+        super("Italy");
         x = 0;
     }
 

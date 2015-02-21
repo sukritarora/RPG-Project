@@ -16,6 +16,7 @@ public class Germany extends CentralEuropeRegion
     public Germany()
     {
         // initialise instance variables
+        super("Germany");
         x = 0;
     }
 

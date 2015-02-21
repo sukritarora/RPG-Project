@@ -16,6 +16,7 @@ public class Napoleon extends Leaders
     public Napoleon()
     {
         // initialise instance variables
+        super("Napoleon Bonaparte");
         x = 0;
     }
 
