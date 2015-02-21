@@ -16,6 +16,7 @@ public class Ukraine extends CarpathianRegion
     public Ukraine()
     {
         // initialise instance variables
+        super("Ukraine");
         x = 0;
     }
 

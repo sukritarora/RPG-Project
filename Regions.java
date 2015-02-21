@@ -13,7 +13,7 @@ public abstract class Regions
     /**
      * Constructor for objects of class Countries
      */
-    public Regions()
+    public Regions(String regionName)
     {
         // initialise instance variables
         x = 0;

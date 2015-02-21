@@ -13,9 +13,10 @@ public abstract class UKRegion extends Regions
     /**
      * Constructor for objects of class UKRegion
      */
-    public UKRegion()
+    public UKRegion(String countryName)
     {
         // initialise instance variables
+        super("United Kingdom");
         x = 0;
     }
 

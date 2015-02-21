@@ -13,9 +13,10 @@ public abstract class ScandinavianRegion extends Regions
     /**
      * Constructor for objects of class ScandinavianRegion
      */
-    public ScandinavianRegion()
+    public ScandinavianRegion(String countryName)
     {
         // initialise instance variables
+        super("Scandinavia");
         x = 0;
     }
 

@@ -16,6 +16,7 @@ public class Switzerland extends WestEuropeRegion
     public Switzerland()
     {
         // initialise instance variables
+        super("Switzerland");
         x = 0;
     }
 

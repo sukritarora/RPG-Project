@@ -15,7 +15,8 @@ public class Greece extends BalkanRegion
      */
     public Greece()
     {
-        // initialise instance variables
+        // initialise instance variables 
+        super("Greece");
         x = 0;
     }
 

@@ -13,9 +13,10 @@ public abstract class BalkanRegion extends Regions
     /**
      * Constructor for objects of class BalkanRegion
      */
-    public BalkanRegion()
+    public BalkanRegion(String countryName)
     {
         // initialise instance variables
+        super("Balkan");
         x = 0;
     }
 

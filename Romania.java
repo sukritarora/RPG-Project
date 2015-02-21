@@ -16,6 +16,7 @@ public class Romania extends CarpathianRegion
     public Romania()
     {
         // initialise instance variables
+        super("Romania");
         x = 0;
     }
 
