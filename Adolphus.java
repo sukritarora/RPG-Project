@@ -1,21 +1,22 @@
 
 /**
- * Write a description of class GAdolphus here.
+ * Write a description of class Adolphus here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GAdolphus extends Leaders
+public class Adolphus extends Leaders
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class GAdolphus
+     * Constructor for objects of class Adolphus
      */
-    public GAdolphus()
+    public Adolphus()
     {
         // initialise instance variables
+        super("Gustavus Adolphus");
         x = 0;
     }
 

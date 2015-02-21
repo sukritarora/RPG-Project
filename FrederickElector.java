@@ -1,21 +1,22 @@
 
 /**
- * Write a description of class FredrickElector here.
+ * Write a description of class FrederickElector here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FredrickElector extends Leaders
+public class FrederickElector extends Leaders
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class FredrickElector
+     * Constructor for objects of class FrederickElector
      */
-    public FredrickElector()
+    public FrederickElector()
     {
         // initialise instance variables
+        super("Frederick William I");
         x = 0;
     }
 
