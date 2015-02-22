@@ -8,14 +8,15 @@ public abstract class Weapons
 {
     // instance variables - replace the example below with your own
     private int damage;
-    
+    private int accuracy;
 
     /**
      * Constructor for objects of class Weapons
      */
-    public Weapons(int d)
+    public Weapons(int d, int a)
     {
         // initialise instance variables
         damage = d;
+        accuracy = a;
     }
 }
