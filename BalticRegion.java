@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public abstract class BalticRegion extends Regions
+public class BalticRegion extends Regions
 {
     // instance variables - replace the example below with your own
     private int x;
