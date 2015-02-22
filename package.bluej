@@ -33,20 +33,34 @@ dependency9.from=GameLogic
 dependency9.to=Arnold
 dependency9.type=UsesDependency
 objectbench.height=76
+<<<<<<< Updated upstream
 objectbench.width=1980
 package.editor.height=830
 package.editor.width=1872
 package.editor.x=1200
 package.editor.y=-202
 package.numDependencies=11
+=======
+objectbench.width=1417
+package.editor.height=732
+package.editor.width=1309
+package.editor.x=0
+package.editor.y=25
+package.numDependencies=0
+>>>>>>> Stashed changes
 package.numTargets=55
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
+<<<<<<< Updated upstream
 target1.editor.x=1718
 target1.editor.y=-129
+=======
+target1.editor.x=481
+target1.editor.y=63
+>>>>>>> Stashed changes
 target1.height=50
 target1.name=Soldiers
 target1.naviview.expanded=false
@@ -67,14 +81,23 @@ target10.showInterface=false
 target10.type=AbstractTarget
 target10.typeParameters=
 target10.width=140
+<<<<<<< Updated upstream
 target10.x=1640
 target10.y=380
+=======
+target10.x=1420
+target10.y=390
+>>>>>>> Stashed changes
 target11.editor.height=700
 target11.editor.width=900
 target11.editor.x=40
 target11.editor.y=43
 target11.height=50
 target11.name=Hitler
+<<<<<<< Updated upstream
+=======
+target11.naviview.expanded=true
+>>>>>>> Stashed changes
 target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
@@ -83,16 +106,25 @@ target11.x=1170
 target11.y=160
 target12.editor.height=700
 target12.editor.width=900
+<<<<<<< Updated upstream
 target12.editor.x=1614
 target12.editor.y=-115
 target12.height=50
 target12.name=Cavalry
 target12.naviview.expanded=false
+=======
+target12.editor.x=483
+target12.editor.y=61
+target12.height=50
+target12.name=Cavalry
+target12.naviview.expanded=true
+>>>>>>> Stashed changes
 target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
 target12.width=80
 target12.x=120
+<<<<<<< Updated upstream
 target12.y=380
 target13.editor.height=700
 target13.editor.width=900
@@ -101,19 +133,38 @@ target13.editor.y=-96
 target13.height=50
 target13.name=Gun
 target13.naviview.expanded=false
+=======
+target12.y=180
+target13.editor.height=700
+target13.editor.width=900
+target13.editor.x=481
+target13.editor.y=63
+target13.height=50
+target13.name=Gun
+target13.naviview.expanded=true
+>>>>>>> Stashed changes
 target13.showInterface=false
 target13.type=ClassTarget
 target13.typeParameters=
 target13.width=80
+<<<<<<< Updated upstream
 target13.x=380
 target13.y=380
+=======
+target13.x=20
+target13.y=360
+>>>>>>> Stashed changes
 target14.editor.height=700
 target14.editor.width=900
 target14.editor.x=40
 target14.editor.y=43
 target14.height=50
 target14.name=Stalin
+<<<<<<< Updated upstream
 target14.naviview.expanded=false
+=======
+target14.naviview.expanded=true
+>>>>>>> Stashed changes
 target14.showInterface=false
 target14.type=ClassTarget
 target14.typeParameters=
@@ -131,20 +182,34 @@ target15.showInterface=false
 target15.type=AbstractTarget
 target15.typeParameters=
 target15.width=160
+<<<<<<< Updated upstream
 target15.x=950
 target15.y=380
+=======
+target15.x=730
+target15.y=390
+>>>>>>> Stashed changes
 target16.editor.height=700
 target16.editor.width=900
 target16.editor.x=40
 target16.editor.y=43
 target16.height=50
 target16.name=Hungary
+<<<<<<< Updated upstream
+=======
+target16.naviview.expanded=true
+>>>>>>> Stashed changes
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
 target16.width=80
+<<<<<<< Updated upstream
 target16.x=1690
 target16.y=620
+=======
+target16.x=1470
+target16.y=630
+>>>>>>> Stashed changes
 target17.editor.height=700
 target17.editor.width=900
 target17.editor.x=40
@@ -156,24 +221,42 @@ target17.showInterface=false
 target17.type=AbstractTarget
 target17.typeParameters=
 target17.width=120
+<<<<<<< Updated upstream
 target17.x=1350
 target17.y=380
+=======
+target17.x=1130
+target17.y=390
+>>>>>>> Stashed changes
 target18.editor.height=700
 target18.editor.width=900
 target18.editor.x=40
 target18.editor.y=43
 target18.height=50
 target18.name=Ukraine
+<<<<<<< Updated upstream
+=======
+target18.naviview.expanded=true
+>>>>>>> Stashed changes
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
 target18.width=80
+<<<<<<< Updated upstream
 target18.x=1510
 target18.y=620
 target19.editor.height=974
 target19.editor.width=1920
 target19.editor.x=1280
 target19.editor.y=-202
+=======
+target18.x=1290
+target18.y=630
+target19.editor.height=700
+target19.editor.width=900
+target19.editor.x=40
+target19.editor.y=43
+>>>>>>> Stashed changes
 target19.height=50
 target19.name=Regions
 target19.naviview.expanded=false
@@ -181,14 +264,20 @@ target19.showInterface=false
 target19.type=AbstractTarget
 target19.typeParameters=
 target19.width=80
+<<<<<<< Updated upstream
 target19.x=1190
 target19.y=260
+=======
+target19.x=970
+target19.y=270
+>>>>>>> Stashed changes
 target2.editor.height=700
 target2.editor.width=900
 target2.editor.x=40
 target2.editor.y=43
 target2.height=50
 target2.name=England
+target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
@@ -201,30 +290,52 @@ target20.editor.x=40
 target20.editor.y=43
 target20.height=50
 target20.name=Belarus
+<<<<<<< Updated upstream
+=======
+target20.naviview.expanded=true
+>>>>>>> Stashed changes
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
 target20.width=80
+<<<<<<< Updated upstream
 target20.x=1260
 target20.y=550
+=======
+target20.x=1040
+target20.y=560
+>>>>>>> Stashed changes
 target21.editor.height=700
 target21.editor.width=900
 target21.editor.x=40
 target21.editor.y=43
 target21.height=50
 target21.name=Albania
+<<<<<<< Updated upstream
+=======
+target21.naviview.expanded=true
+>>>>>>> Stashed changes
 target21.showInterface=false
 target21.type=ClassTarget
 target21.typeParameters=
 target21.width=80
+<<<<<<< Updated upstream
 target21.x=1200
 target21.y=620
+=======
+target21.x=980
+target21.y=630
+>>>>>>> Stashed changes
 target22.editor.height=700
 target22.editor.width=900
 target22.editor.x=40
 target22.editor.y=43
 target22.height=50
 target22.name=Arnold
+<<<<<<< Updated upstream
+=======
+target22.naviview.expanded=true
+>>>>>>> Stashed changes
 target22.showInterface=false
 target22.type=ClassTarget
 target22.typeParameters=
@@ -242,32 +353,54 @@ target23.showInterface=false
 target23.type=AbstractTarget
 target23.typeParameters=
 target23.width=150
+<<<<<<< Updated upstream
 target23.x=1480
 target23.y=380
+=======
+target23.x=1260
+target23.y=390
+>>>>>>> Stashed changes
 target24.editor.height=700
 target24.editor.width=900
 target24.editor.x=40
 target24.editor.y=43
 target24.height=50
 target24.name=Italy
+<<<<<<< Updated upstream
+=======
+target24.naviview.expanded=true
+>>>>>>> Stashed changes
 target24.showInterface=false
 target24.type=ClassTarget
 target24.typeParameters=
 target24.width=80
+<<<<<<< Updated upstream
 target24.x=920
 target24.y=550
+=======
+target24.x=700
+target24.y=560
+>>>>>>> Stashed changes
 target25.editor.height=700
 target25.editor.width=900
 target25.editor.x=1280
 target25.editor.y=-182
 target25.height=50
 target25.name=Bismarck
+<<<<<<< Updated upstream
 target25.naviview.expanded=false
+=======
+target25.naviview.expanded=true
+>>>>>>> Stashed changes
 target25.showInterface=false
 target25.type=ClassTarget
 target25.typeParameters=
 target25.width=80
+<<<<<<< Updated upstream
 target25.x=990
+=======
+target25.x=1080
+>>>>>>> Stashed changes
 target25.y=160
 target26.editor.height=700
 target26.editor.width=900
@@ -275,12 +408,21 @@ target26.editor.x=40
 target26.editor.y=43
 target26.height=50
 target26.name=Germany
+<<<<<<< Updated upstream
+=======
+target26.naviview.expanded=true
+>>>>>>> Stashed changes
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
 target26.width=80
+<<<<<<< Updated upstream
 target26.x=890
 target26.y=470
+=======
+target26.x=670
+target26.y=480
+>>>>>>> Stashed changes
 target27.height=50
 target27.name=RandomEvent
 target27.showInterface=false
@@ -291,21 +433,37 @@ target27.x=160
 target27.y=10
 target28.editor.height=700
 target28.editor.width=900
+<<<<<<< Updated upstream
 target28.editor.x=1530
 target28.editor.y=-73
 target28.height=50
 target28.name=Cannon
 target28.naviview.expanded=false
+=======
+target28.editor.x=481
+target28.editor.y=63
+target28.height=50
+target28.name=Cannon
+>>>>>>> Stashed changes
 target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
 target28.width=80
+<<<<<<< Updated upstream
 target28.x=480
 target28.y=380
 target29.editor.height=700
 target29.editor.width=900
 target29.editor.x=2246
 target29.editor.y=-120
+=======
+target28.x=120
+target28.y=360
+target29.editor.height=700
+target29.editor.width=900
+target29.editor.x=40
+target29.editor.y=43
+>>>>>>> Stashed changes
 target29.height=50
 target29.name=Churchill
 target29.naviview.expanded=false
@@ -321,6 +479,7 @@ target3.editor.x=40
 target3.editor.y=43
 target3.height=50
 target3.name=Portugal
+target3.naviview.expanded=true
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
@@ -329,8 +488,13 @@ target3.x=650
 target3.y=550
 target30.editor.height=700
 target30.editor.width=900
+<<<<<<< Updated upstream
 target30.editor.x=1746
 target30.editor.y=-202
+=======
+target30.editor.x=117
+target30.editor.y=83
+>>>>>>> Stashed changes
 target30.height=50
 target30.name=Starter
 target30.naviview.expanded=true
@@ -351,8 +515,13 @@ target31.showInterface=false
 target31.type=ClassTarget
 target31.typeParameters=
 target31.width=80
+<<<<<<< Updated upstream
 target31.x=1420
 target31.y=480
+=======
+target31.x=1200
+target31.y=490
+>>>>>>> Stashed changes
 target32.editor.height=700
 target32.editor.width=900
 target32.editor.x=40
@@ -364,12 +533,21 @@ target32.showInterface=false
 target32.type=AbstractTarget
 target32.typeParameters=
 target32.width=90
+<<<<<<< Updated upstream
 target32.x=700
 target32.y=380
 target33.editor.height=700
 target33.editor.width=1275
 target33.editor.x=1280
 target33.editor.y=-102
+=======
+target32.x=480
+target32.y=390
+target33.editor.height=700
+target33.editor.width=900
+target33.editor.x=481
+target33.editor.y=63
+>>>>>>> Stashed changes
 target33.height=50
 target33.name=Leaders
 target33.naviview.expanded=false
@@ -385,24 +563,42 @@ target34.editor.x=40
 target34.editor.y=43
 target34.height=50
 target34.name=Netherlands
+<<<<<<< Updated upstream
+=======
+target34.naviview.expanded=true
+>>>>>>> Stashed changes
 target34.showInterface=false
 target34.type=ClassTarget
 target34.typeParameters=
 target34.width=100
+<<<<<<< Updated upstream
 target34.x=1070
 target34.y=470
+=======
+target34.x=850
+target34.y=480
+>>>>>>> Stashed changes
 target35.editor.height=700
 target35.editor.width=900
 target35.editor.x=40
 target35.editor.y=43
 target35.height=50
 target35.name=Sweden
+<<<<<<< Updated upstream
+=======
+target35.naviview.expanded=true
+>>>>>>> Stashed changes
 target35.showInterface=false
 target35.type=ClassTarget
 target35.typeParameters=
 target35.width=80
+<<<<<<< Updated upstream
 target35.x=1580
 target35.y=550
+=======
+target35.x=1360
+target35.y=560
+>>>>>>> Stashed changes
 target36.editor.height=700
 target36.editor.width=900
 target36.editor.x=40
@@ -414,15 +610,24 @@ target36.showInterface=false
 target36.type=AbstractTarget
 target36.typeParameters=
 target36.width=140
+<<<<<<< Updated upstream
 target36.x=800
 target36.y=380
+=======
+target36.x=580
+target36.y=390
+>>>>>>> Stashed changes
 target37.editor.height=700
 target37.editor.width=900
 target37.editor.x=40
 target37.editor.y=43
 target37.height=50
 target37.name=AlexanderTheGreat
+<<<<<<< Updated upstream
 target37.naviview.expanded=false
+=======
+target37.naviview.expanded=true
+>>>>>>> Stashed changes
 target37.showInterface=false
 target37.type=ClassTarget
 target37.typeParameters=
@@ -440,26 +645,41 @@ target38.showInterface=false
 target38.type=AbstractTarget
 target38.typeParameters=
 target38.width=100
+<<<<<<< Updated upstream
 target38.x=1240
 target38.y=380
+=======
+target38.x=1020
+target38.y=390
+>>>>>>> Stashed changes
 target39.editor.height=700
 target39.editor.width=900
 target39.editor.x=40
 target39.editor.y=43
 target39.height=50
 target39.name=Ireland
+<<<<<<< Updated upstream
+=======
+target39.naviview.expanded=true
+>>>>>>> Stashed changes
 target39.showInterface=false
 target39.type=ClassTarget
 target39.typeParameters=
 target39.width=80
+<<<<<<< Updated upstream
 target39.x=750
 target39.y=470
+=======
+target39.x=530
+target39.y=480
+>>>>>>> Stashed changes
 target4.editor.height=700
 target4.editor.width=900
 target4.editor.x=40
 target4.editor.y=43
 target4.height=50
 target4.name=Greece
+target4.naviview.expanded=true
 target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
@@ -472,35 +692,61 @@ target40.editor.x=40
 target40.editor.y=43
 target40.height=50
 target40.name=Poland
+<<<<<<< Updated upstream
+=======
+target40.naviview.expanded=true
+>>>>>>> Stashed changes
 target40.showInterface=false
 target40.type=ClassTarget
 target40.typeParameters=
 target40.width=80
+<<<<<<< Updated upstream
 target40.x=1170
 target40.y=550
+=======
+target40.x=950
+target40.y=560
+>>>>>>> Stashed changes
 target41.editor.height=700
 target41.editor.width=900
 target41.editor.x=40
 target41.editor.y=43
 target41.height=50
 target41.name=France
+<<<<<<< Updated upstream
+=======
+target41.naviview.expanded=true
+>>>>>>> Stashed changes
 target41.showInterface=false
 target41.type=ClassTarget
 target41.typeParameters=
 target41.width=80
+<<<<<<< Updated upstream
 target41.x=740
 target41.y=550
+=======
+target41.x=520
+target41.y=560
+>>>>>>> Stashed changes
 target42.editor.height=700
 target42.editor.width=900
 target42.editor.x=1280
 target42.editor.y=-182
 target42.height=50
 target42.name=Adolphus
+<<<<<<< Updated upstream
+=======
+target42.naviview.expanded=true
+>>>>>>> Stashed changes
 target42.showInterface=false
 target42.type=ClassTarget
 target42.typeParameters=
 target42.width=80
+<<<<<<< Updated upstream
 target42.x=1080
+=======
+target42.x=990
+>>>>>>> Stashed changes
 target42.y=160
 target43.editor.height=700
 target43.editor.width=900
@@ -508,6 +754,7 @@ target43.editor.x=40
 target43.editor.y=43
 target43.height=50
 target43.name=Croatia
+target43.naviview.expanded=true
 target43.showInterface=false
 target43.type=ClassTarget
 target43.typeParameters=
@@ -520,6 +767,7 @@ target44.editor.x=40
 target44.editor.y=43
 target44.height=50
 target44.name=Romania
+target44.naviview.expanded=true
 target44.showInterface=false
 target44.type=ClassTarget
 target44.typeParameters=
@@ -558,6 +806,7 @@ target47.editor.x=40
 target47.editor.y=43
 target47.height=50
 target47.name=Switzerland
+target47.naviview.expanded=true
 target47.showInterface=false
 target47.type=ClassTarget
 target47.typeParameters=
@@ -570,6 +819,7 @@ target48.editor.x=40
 target48.editor.y=43
 target48.height=50
 target48.name=Napoleon
+target48.naviview.expanded=true
 target48.showInterface=false
 target48.type=ClassTarget
 target48.typeParameters=
@@ -582,6 +832,7 @@ target49.editor.x=40
 target49.editor.y=43
 target49.height=50
 target49.name=Spain
+target49.naviview.expanded=true
 target49.showInterface=false
 target49.type=ClassTarget
 target49.typeParameters=
@@ -594,6 +845,7 @@ target5.editor.x=40
 target5.editor.y=43
 target5.height=50
 target5.name=EastPrussia
+target5.naviview.expanded=true
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
@@ -632,6 +884,7 @@ target52.editor.x=40
 target52.editor.y=43
 target52.height=50
 target52.name=Norway
+target52.naviview.expanded=true
 target52.showInterface=false
 target52.type=ClassTarget
 target52.typeParameters=
@@ -644,6 +897,7 @@ target53.editor.x=40
 target53.editor.y=43
 target53.height=50
 target53.name=Denmark
+target53.naviview.expanded=true
 target53.showInterface=false
 target53.type=ClassTarget
 target53.typeParameters=
@@ -681,6 +935,7 @@ target6.editor.x=40
 target6.editor.y=43
 target6.height=50
 target6.name=Austria
+target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
@@ -693,6 +948,7 @@ target7.editor.x=40
 target7.editor.y=43
 target7.height=50
 target7.name=Yugoslavia
+target7.naviview.expanded=true
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
@@ -701,20 +957,34 @@ target7.x=1100
 target7.y=620
 target8.editor.height=700
 target8.editor.width=900
+<<<<<<< Updated upstream
 target8.editor.x=1977
 target8.editor.y=-146
+=======
+target8.editor.x=481
+target8.editor.y=63
+>>>>>>> Stashed changes
 target8.height=50
 target8.name=Sword
 target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
 target8.width=80
+<<<<<<< Updated upstream
 target8.x=580
 target8.y=380
 target9.editor.height=970
 target9.editor.width=858
 target9.editor.x=1277
 target9.editor.y=-202
+=======
+target8.x=220
+target8.y=360
+target9.editor.height=700
+target9.editor.width=900
+target9.editor.x=481
+target9.editor.y=63
+>>>>>>> Stashed changes
 target9.height=50
 target9.name=Weapons
 target9.naviview.expanded=false
@@ -722,5 +992,10 @@ target9.showInterface=false
 target9.type=AbstractTarget
 target9.typeParameters=
 target9.width=80
+<<<<<<< Updated upstream
 target9.x=480
 target9.y=280
+=======
+target9.x=120
+target9.y=260
+>>>>>>> Stashed changes
