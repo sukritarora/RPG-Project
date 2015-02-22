@@ -12,6 +12,6 @@ public class Cannon extends Weapons
      */
     public Cannon()
     {
-       super (80, 30);
+       super (80, 30, "Cannon");
     }
 }

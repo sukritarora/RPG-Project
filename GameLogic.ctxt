@@ -1,4 +1,6 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Leaders\ chooseLeader()
-numComments=1
+comment1.params=l
+comment1.target=void\ displayStats(Leaders)
+numComments=2

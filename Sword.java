@@ -12,7 +12,7 @@ public class Sword extends Weapons
      */
     public Sword()
     {
-        super (30, 80);
+        super (30, 80,"Sword");
     }
 
 }

@@ -8,7 +8,7 @@
 import javax.swing.*;
 public class GameLogic
 {
-    public static Leaders chooseLeader ()
+    public static Leaders chooseLeader()
     {
         String[] leaders = {"Winston Churchill","Napoleon Bonaparte","Adolf Hitler","Alexander the Great","Otto von Bismarck","Joseph Stalin","Gustavus Adolphus","Arnold Schwarzenegger"};
         String response = (String) JOptionPane.showInputDialog(null, "Which European Leader would you like to be.", "Leader", JOptionPane.PLAIN_MESSAGE,null, leaders, leaders[0]);
@@ -57,5 +57,14 @@ public class GameLogic
             }
         }
         return l; 
+    }
+    
+    public static void displayStats(Leaders l)
+    {
+        System.out.println("Welcome to the game! This will be the window that will keep you updated on all your information");
+        System.out.println("You are: " + l.name + "\nYou rule over the " + l.getRegion().regionName + " region which has " + l.getRegion().getCountryNum()+ " countries");
+        System.out.println("You're type of soldier is: " + l.getSoldiers().typeOfSoldier + "\nYou're weapon is: " + l.getWeapons().typeOfWeapon);
+        System.out.println("\nWeapons have " + l.getWeapons().getDamage() + " damage and " + l.getWeapons().getAccuracy() + " accuracy"); 
+        System.out.println("\nCurrent health: " + l.getSoldiers().getHealth() + "\nCurrent strength: " + l.getSoldiers().getStrength() + "\nCurrent defense: " + l.getSoldiers().getDefense());
     }
 }

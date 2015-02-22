@@ -8,19 +8,35 @@
 public abstract class Soldiers
 {
     // instance variables - replace the example below with your own
-    public int health;
-    public int strength;
-    public int defense; 
-    
+    private int health;
+    private int strength;
+    private int defense; 
+    final String typeOfSoldier;
 
     /**
      * Constructor for objects of class Soldiers
      */
-    public Soldiers(int d, int s)
+    public Soldiers(int d, int s, String type)
     {
         // initialise instance variables
         defense = d;
         strength = s;
         health = 100;
+        typeOfSoldier = type;
+    }
+    
+    public int getHealth()
+    {
+        return health;
+    }
+    
+     public int getStrength()
+    {
+        return strength;
+    }
+    
+     public int getDefense()
+    {
+        return defense;
     }
 }

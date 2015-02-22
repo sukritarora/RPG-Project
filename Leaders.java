@@ -7,7 +7,7 @@
  */
 public abstract class Leaders
 {
-    public String name;
+    final String name;
     private Regions r = null;
     private Soldiers s = null;
     private Weapons w = null;

@@ -12,6 +12,6 @@ public class Gun extends Weapons
      */
     public Gun()
     {
-        super (50, 50);
+        super (50, 50, "Gun");
     }
 }

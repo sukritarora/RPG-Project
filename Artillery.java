@@ -16,6 +16,6 @@ public class Artillery extends Soldiers
     public Artillery()
     {
         // initialise instance variables
-        super (75, 75);
+        super (75, 75, "Artillery");
     }
 }

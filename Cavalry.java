@@ -13,6 +13,6 @@ public class Cavalry extends Soldiers
      */
     public Cavalry()
     {
-        super (47, 47);
+        super (47, 47, "Cavalry");
     }
 }

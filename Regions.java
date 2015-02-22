@@ -9,7 +9,7 @@ public abstract class Regions
 {
     //private i
     final String regionName;
-    int countryNumber;
+    private int countryNumber;
     /**
      * Constructor for objects of class Countries
      */
@@ -17,5 +17,10 @@ public abstract class Regions
     {
         this.regionName = regionName;
         countryNumber = num;
+    }
+    
+    public int getCountryNum()
+    {
+        return countryNumber;
     }
 }

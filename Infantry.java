@@ -15,6 +15,6 @@ public class Infantry extends Soldiers
      */
     public Infantry()
     {
-        super (10, 30);
+        super (10, 30, "Infantry");
     }
 }

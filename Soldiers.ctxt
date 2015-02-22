@@ -1,5 +1,11 @@
 #BlueJ class context
-comment0.params=d\ s
-comment0.target=Soldiers(int,\ int)
+comment0.params=d\ s\ type
+comment0.target=Soldiers(int,\ int,\ java.lang.String)
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Soldiers\n
-numComments=1
+comment1.params=
+comment1.target=int\ getHealth()
+comment2.params=
+comment2.target=int\ getStrength()
+comment3.params=
+comment3.target=int\ getDefense()
+numComments=4
