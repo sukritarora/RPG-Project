@@ -16,6 +16,7 @@ public class AlexanderTheGreat extends Leaders
     public AlexanderTheGreat()
     {
         // initialise instance variables
+        super("Alexander the Great");
         x = 0;
     }
 

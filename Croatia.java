@@ -16,6 +16,7 @@ public class Croatia extends BalkanRegion
     public Croatia()
     {
         // initialise instance variables
+        super("Croatia");
         x = 0;
     }
 

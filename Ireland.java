@@ -16,6 +16,7 @@ public class Ireland extends UKRegion
     public Ireland()
     {
         // initialise instance variables
+        super("Ireland");
         x = 0;
     }
 
