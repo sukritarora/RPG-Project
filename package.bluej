@@ -1,19 +1,44 @@
 #BlueJ package file
+dependency1.from=GameLogic
+dependency1.to=Churchill
+dependency1.type=UsesDependency
+dependency10.from=Churchill
+dependency10.to=UKRegion
+dependency10.type=UsesDependency
+dependency11.from=Leaders
+dependency11.to=Regions
+dependency11.type=UsesDependency
+dependency2.from=GameLogic
+dependency2.to=Napoleon
+dependency2.type=UsesDependency
+dependency3.from=GameLogic
+dependency3.to=Leaders
+dependency3.type=UsesDependency
+dependency4.from=GameLogic
+dependency4.to=Hitler
+dependency4.type=UsesDependency
+dependency5.from=GameLogic
+dependency5.to=AlexanderTheGreat
+dependency5.type=UsesDependency
+dependency6.from=GameLogic
+dependency6.to=Bismarck
+dependency6.type=UsesDependency
+dependency7.from=GameLogic
+dependency7.to=Stalin
+dependency7.type=UsesDependency
+dependency8.from=GameLogic
+dependency8.to=Adolphus
+dependency8.type=UsesDependency
+dependency9.from=GameLogic
+dependency9.to=Arnold
+dependency9.type=UsesDependency
 objectbench.height=76
-<<<<<<< Updated upstream
-objectbench.width=942
+objectbench.width=1980
 package.editor.height=830
-package.editor.width=834
-package.editor.x=2234
+package.editor.width=1872
+package.editor.x=1200
 package.editor.y=-202
-=======
-objectbench.width=1417
-package.editor.height=732
-package.editor.width=1309
-package.editor.x=0
-package.editor.y=854
->>>>>>> Stashed changes
-package.numDependencies=0
+package.numDependencies=11
 package.numTargets=55
 package.showExtends=true
 package.showUses=true
@@ -30,192 +55,134 @@ target1.type=AbstractTarget
 target1.typeParameters=
 target1.width=80
 target1.x=120
-<<<<<<< HEAD
 target1.y=280
-target10.editor.height=716
-target10.editor.width=756
-target10.editor.x=2046
-target10.editor.y=-106
-=======
-target1.y=80
 target10.editor.height=700
 target10.editor.width=900
-target10.editor.x=481
-target10.editor.y=63
->>>>>>> origin/master
+target10.editor.x=40
+target10.editor.y=43
 target10.height=50
-target10.name=Weapons
+target10.name=CarpathianRegion
 target10.naviview.expanded=false
 target10.showInterface=false
 target10.type=AbstractTarget
 target10.typeParameters=
-target10.width=80
-<<<<<<< HEAD
-target10.x=480
-target10.y=280
-=======
-target10.x=120
-target10.y=260
->>>>>>> origin/master
+target10.width=140
+target10.x=1640
+target10.y=380
 target11.editor.height=700
 target11.editor.width=900
 target11.editor.x=40
 target11.editor.y=43
 target11.height=50
-target11.name=CarpathianRegion
-target11.naviview.expanded=false
+target11.name=Hitler
 target11.showInterface=false
-target11.type=AbstractTarget
+target11.type=ClassTarget
 target11.typeParameters=
-target11.width=140
-<<<<<<< HEAD
-target11.x=1640
-target11.y=380
-=======
-target11.x=1420
-target11.y=390
->>>>>>> origin/master
+target11.width=80
+target11.x=1170
+target11.y=160
 target12.editor.height=700
 target12.editor.width=900
-target12.editor.x=40
-target12.editor.y=39
+target12.editor.x=1614
+target12.editor.y=-115
 target12.height=50
-target12.name=GAdolphus
-<<<<<<< HEAD
+target12.name=Cavalry
 target12.naviview.expanded=false
-=======
->>>>>>> origin/master
 target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
-target12.width=90
-target12.x=990
-target12.y=160
+target12.width=80
+target12.x=120
+target12.y=380
 target13.editor.height=700
 target13.editor.width=900
-target13.editor.x=40
-target13.editor.y=43
+target13.editor.x=1654
+target13.editor.y=-96
 target13.height=50
-target13.name=Hitler
+target13.name=Gun
+target13.naviview.expanded=false
 target13.showInterface=false
 target13.type=ClassTarget
 target13.typeParameters=
 target13.width=80
-target13.x=1220
-target13.y=160
+target13.x=380
+target13.y=380
 target14.editor.height=700
 target14.editor.width=900
-<<<<<<< HEAD
-target14.editor.x=1614
-target14.editor.y=-115
+target14.editor.x=40
+target14.editor.y=43
 target14.height=50
-target14.name=Cavalry
+target14.name=Stalin
 target14.naviview.expanded=false
-=======
-target14.editor.x=481
-target14.editor.y=63
-target14.height=50
-target14.name=Cavalry
->>>>>>> origin/master
 target14.showInterface=false
 target14.type=ClassTarget
 target14.typeParameters=
 target14.width=80
-target14.x=120
-<<<<<<< HEAD
-target14.y=380
+target14.x=570
+target14.y=160
 target15.editor.height=700
 target15.editor.width=900
-target15.editor.x=380
-target15.editor.y=63
+target15.editor.x=40
+target15.editor.y=43
 target15.height=50
-target15.name=Gun
+target15.name=CentralEuropeRegion
 target15.naviview.expanded=false
-=======
-target14.y=180
-target15.editor.height=700
-target15.editor.width=900
-target15.editor.x=481
-target15.editor.y=63
-target15.height=50
-target15.name=Gun
->>>>>>> origin/master
 target15.showInterface=false
-target15.type=ClassTarget
+target15.type=AbstractTarget
 target15.typeParameters=
-target15.width=80
-<<<<<<< HEAD
-target15.x=380
+target15.width=160
+target15.x=950
 target15.y=380
-=======
-target15.x=20
-target15.y=360
->>>>>>> origin/master
 target16.editor.height=700
 target16.editor.width=900
 target16.editor.x=40
 target16.editor.y=43
 target16.height=50
-target16.name=Stalin
+target16.name=Hungary
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
 target16.width=80
-target16.x=570
-target16.y=160
+target16.x=1690
+target16.y=620
 target17.editor.height=700
 target17.editor.width=900
 target17.editor.x=40
 target17.editor.y=43
 target17.height=50
-target17.name=CentralEuropeRegion
+target17.name=RussianRegion
 target17.naviview.expanded=false
 target17.showInterface=false
 target17.type=AbstractTarget
 target17.typeParameters=
-target17.width=160
-<<<<<<< HEAD
-target17.x=950
+target17.width=120
+target17.x=1350
 target17.y=380
-=======
-target17.x=730
-target17.y=390
->>>>>>> origin/master
 target18.editor.height=700
 target18.editor.width=900
 target18.editor.x=40
 target18.editor.y=43
 target18.height=50
-target18.name=Hungary
+target18.name=Ukraine
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
 target18.width=80
-<<<<<<< HEAD
-target18.x=1690
+target18.x=1510
 target18.y=620
-=======
-target18.x=1470
-target18.y=630
->>>>>>> origin/master
-target19.editor.height=700
-target19.editor.width=900
-target19.editor.x=40
-target19.editor.y=43
+target19.editor.height=974
+target19.editor.width=1920
+target19.editor.x=1280
+target19.editor.y=-202
 target19.height=50
-target19.name=RussianRegion
+target19.name=Regions
 target19.naviview.expanded=false
 target19.showInterface=false
 target19.type=AbstractTarget
 target19.typeParameters=
-target19.width=120
-<<<<<<< HEAD
-target19.x=1350
-target19.y=380
-=======
-target19.x=1130
-target19.y=390
->>>>>>> origin/master
+target19.width=80
+target19.x=1190
+target19.y=260
 target2.editor.height=700
 target2.editor.width=900
 target2.editor.x=40
@@ -226,171 +193,128 @@ target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
-<<<<<<< HEAD
 target2.x=660
 target2.y=470
-=======
-target2.x=440
-target2.y=480
->>>>>>> origin/master
 target20.editor.height=700
 target20.editor.width=900
 target20.editor.x=40
 target20.editor.y=43
 target20.height=50
-target20.name=Ukraine
+target20.name=Belarus
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
 target20.width=80
-<<<<<<< HEAD
-target20.x=1510
-target20.y=620
-=======
-target20.x=1290
-target20.y=630
->>>>>>> origin/master
+target20.x=1260
+target20.y=550
 target21.editor.height=700
 target21.editor.width=900
 target21.editor.x=40
 target21.editor.y=43
 target21.height=50
-target21.name=Regions
-target21.naviview.expanded=false
+target21.name=Albania
 target21.showInterface=false
-target21.type=AbstractTarget
+target21.type=ClassTarget
 target21.typeParameters=
 target21.width=80
-<<<<<<< HEAD
-target21.x=1190
-target21.y=260
-=======
-target21.x=970
-target21.y=270
->>>>>>> origin/master
+target21.x=1200
+target21.y=620
 target22.editor.height=700
 target22.editor.width=900
 target22.editor.x=40
 target22.editor.y=43
 target22.height=50
-target22.name=Belarus
+target22.name=Arnold
 target22.showInterface=false
 target22.type=ClassTarget
 target22.typeParameters=
 target22.width=80
-<<<<<<< HEAD
-target22.x=1260
-target22.y=550
-=======
-target22.x=1040
-target22.y=560
->>>>>>> origin/master
+target22.x=810
+target22.y=160
 target23.editor.height=700
 target23.editor.width=900
 target23.editor.x=40
 target23.editor.y=43
 target23.height=50
-target23.name=Albania
+target23.name=ScandinavianRegion
+target23.naviview.expanded=false
 target23.showInterface=false
-target23.type=ClassTarget
+target23.type=AbstractTarget
 target23.typeParameters=
-target23.width=80
-<<<<<<< HEAD
-target23.x=1200
-target23.y=620
-=======
-target23.x=980
-target23.y=630
->>>>>>> origin/master
+target23.width=150
+target23.x=1480
+target23.y=380
 target24.editor.height=700
 target24.editor.width=900
 target24.editor.x=40
 target24.editor.y=43
 target24.height=50
-target24.name=Arnold
+target24.name=Italy
 target24.showInterface=false
 target24.type=ClassTarget
 target24.typeParameters=
 target24.width=80
-target24.x=810
-target24.y=160
+target24.x=920
+target24.y=550
 target25.editor.height=700
 target25.editor.width=900
-target25.editor.x=40
-target25.editor.y=43
+target25.editor.x=1280
+target25.editor.y=-182
 target25.height=50
-target25.name=ScandinavianRegion
+target25.name=Bismarck
 target25.naviview.expanded=false
 target25.showInterface=false
-target25.type=AbstractTarget
+target25.type=ClassTarget
 target25.typeParameters=
-target25.width=150
-<<<<<<< HEAD
-target25.x=1480
-target25.y=380
-=======
-target25.x=1260
-target25.y=390
->>>>>>> origin/master
+target25.width=80
+target25.x=990
+target25.y=160
 target26.editor.height=700
 target26.editor.width=900
 target26.editor.x=40
 target26.editor.y=43
 target26.height=50
-target26.name=Italy
+target26.name=Germany
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
 target26.width=80
-<<<<<<< HEAD
-target26.x=920
-target26.y=550
-=======
-target26.x=700
-target26.y=560
->>>>>>> origin/master
-target27.editor.height=700
-target27.editor.width=900
-target27.editor.x=40
-target27.editor.y=43
+target26.x=890
+target26.y=470
 target27.height=50
-target27.name=Germany
+target27.name=RandomEvent
 target27.showInterface=false
 target27.type=ClassTarget
 target27.typeParameters=
-target27.width=80
-<<<<<<< HEAD
-target27.x=890
-target27.y=470
-=======
-target27.x=670
-target27.y=480
->>>>>>> origin/master
+target27.width=110
+target27.x=160
+target27.y=10
+target28.editor.height=700
+target28.editor.width=900
+target28.editor.x=1530
+target28.editor.y=-73
 target28.height=50
-target28.name=RandomEvent
+target28.name=Cannon
+target28.naviview.expanded=false
 target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
-target28.width=110
-target28.x=160
-target28.y=10
+target28.width=80
+target28.x=480
+target28.y=380
 target29.editor.height=700
 target29.editor.width=900
-target29.editor.x=481
-target29.editor.y=63
+target29.editor.x=2246
+target29.editor.y=-120
 target29.height=50
-target29.name=Cannon
+target29.name=Churchill
+target29.naviview.expanded=false
 target29.showInterface=false
 target29.type=ClassTarget
 target29.typeParameters=
 target29.width=80
-<<<<<<< HEAD
 target29.x=480
-target29.y=380
-=======
-target29.x=120
-target29.y=360
->>>>>>> origin/master
+target29.y=160
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=40
@@ -401,174 +325,135 @@ target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
 target3.width=80
-<<<<<<< HEAD
 target3.x=650
 target3.y=550
-=======
-target3.x=430
-target3.y=560
->>>>>>> origin/master
 target30.editor.height=700
 target30.editor.width=900
-target30.editor.x=40
-target30.editor.y=43
+target30.editor.x=1746
+target30.editor.y=-202
 target30.height=50
-target30.name=Churchill
-target30.naviview.expanded=false
+target30.name=Starter
+target30.naviview.expanded=true
 target30.showInterface=false
 target30.type=ClassTarget
 target30.typeParameters=
 target30.width=80
-target30.x=480
-target30.y=160
+target30.x=70
+target30.y=10
 target31.editor.height=700
 target31.editor.width=900
-target31.editor.x=117
-<<<<<<< HEAD
-target31.editor.y=39
-=======
-target31.editor.y=83
->>>>>>> origin/master
+target31.editor.x=40
+target31.editor.y=43
 target31.height=50
-target31.name=Starter
-target31.naviview.expanded=true
+target31.name=Moscow
+target31.naviview.expanded=false
 target31.showInterface=false
 target31.type=ClassTarget
 target31.typeParameters=
 target31.width=80
-target31.x=70
-target31.y=10
+target31.x=1420
+target31.y=480
 target32.editor.height=700
 target32.editor.width=900
 target32.editor.x=40
 target32.editor.y=43
 target32.height=50
-target32.name=Moscow
+target32.name=UKRegion
 target32.naviview.expanded=false
 target32.showInterface=false
-target32.type=ClassTarget
+target32.type=AbstractTarget
 target32.typeParameters=
-target32.width=80
-<<<<<<< HEAD
-target32.x=1420
-target32.y=480
-=======
-target32.x=1200
-target32.y=490
->>>>>>> origin/master
+target32.width=90
+target32.x=700
+target32.y=380
 target33.editor.height=700
-target33.editor.width=900
-target33.editor.x=40
-target33.editor.y=43
+target33.editor.width=1275
+target33.editor.x=1280
+target33.editor.y=-102
 target33.height=50
-target33.name=UKRegion
+target33.name=Leaders
 target33.naviview.expanded=false
 target33.showInterface=false
 target33.type=AbstractTarget
 target33.typeParameters=
-target33.width=90
-<<<<<<< HEAD
-target33.x=700
-target33.y=380
-=======
-target33.x=480
-target33.y=390
->>>>>>> origin/master
+target33.width=80
+target33.x=810
+target33.y=30
 target34.editor.height=700
 target34.editor.width=900
-target34.editor.x=481
-target34.editor.y=63
+target34.editor.x=40
+target34.editor.y=43
 target34.height=50
-target34.name=Leaders
-target34.naviview.expanded=false
+target34.name=Netherlands
 target34.showInterface=false
-target34.type=AbstractTarget
+target34.type=ClassTarget
 target34.typeParameters=
-target34.width=80
-target34.x=810
-target34.y=30
+target34.width=100
+target34.x=1070
+target34.y=470
 target35.editor.height=700
 target35.editor.width=900
 target35.editor.x=40
 target35.editor.y=43
 target35.height=50
-target35.name=Netherlands
+target35.name=Sweden
 target35.showInterface=false
 target35.type=ClassTarget
 target35.typeParameters=
-target35.width=100
-<<<<<<< HEAD
-target35.x=1070
-target35.y=470
-=======
-target35.x=850
-target35.y=480
->>>>>>> origin/master
+target35.width=80
+target35.x=1580
+target35.y=550
 target36.editor.height=700
 target36.editor.width=900
 target36.editor.x=40
 target36.editor.y=43
 target36.height=50
-target36.name=Sweden
+target36.name=WestEuropeRegion
+target36.naviview.expanded=false
 target36.showInterface=false
-target36.type=ClassTarget
+target36.type=AbstractTarget
 target36.typeParameters=
-target36.width=80
-<<<<<<< HEAD
-target36.x=1580
-target36.y=550
-=======
-target36.x=1360
-target36.y=560
->>>>>>> origin/master
+target36.width=140
+target36.x=800
+target36.y=380
 target37.editor.height=700
 target37.editor.width=900
 target37.editor.x=40
 target37.editor.y=43
 target37.height=50
-target37.name=WestEuropeRegion
+target37.name=AlexanderTheGreat
 target37.naviview.expanded=false
 target37.showInterface=false
-target37.type=AbstractTarget
+target37.type=ClassTarget
 target37.typeParameters=
 target37.width=140
-<<<<<<< HEAD
-target37.x=800
-target37.y=380
-=======
-target37.x=580
-target37.y=390
->>>>>>> origin/master
+target37.x=660
+target37.y=160
 target38.editor.height=700
 target38.editor.width=900
 target38.editor.x=40
 target38.editor.y=43
 target38.height=50
-target38.name=AlexanderTheGreat
+target38.name=BalticRegion
+target38.naviview.expanded=false
 target38.showInterface=false
-target38.type=ClassTarget
+target38.type=AbstractTarget
 target38.typeParameters=
-target38.width=140
-target38.x=660
-target38.y=160
+target38.width=100
+target38.x=1240
+target38.y=380
 target39.editor.height=700
 target39.editor.width=900
 target39.editor.x=40
 target39.editor.y=43
 target39.height=50
-target39.name=BalticRegion
-target39.naviview.expanded=false
+target39.name=Ireland
 target39.showInterface=false
-target39.type=AbstractTarget
+target39.type=ClassTarget
 target39.typeParameters=
-target39.width=100
-<<<<<<< HEAD
-target39.x=1240
-target39.y=380
-=======
-target39.x=1020
-target39.y=390
->>>>>>> origin/master
+target39.width=80
+target39.x=750
+target39.y=470
 target4.editor.height=700
 target4.editor.width=900
 target4.editor.x=40
@@ -579,64 +464,44 @@ target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
 target4.width=80
-<<<<<<< HEAD
 target4.x=1290
 target4.y=620
-=======
-target4.x=1070
-target4.y=630
->>>>>>> origin/master
 target40.editor.height=700
 target40.editor.width=900
 target40.editor.x=40
 target40.editor.y=43
 target40.height=50
-target40.name=Ireland
+target40.name=Poland
 target40.showInterface=false
 target40.type=ClassTarget
 target40.typeParameters=
 target40.width=80
-<<<<<<< HEAD
-target40.x=750
-target40.y=470
-=======
-target40.x=530
-target40.y=480
->>>>>>> origin/master
+target40.x=1170
+target40.y=550
 target41.editor.height=700
 target41.editor.width=900
 target41.editor.x=40
 target41.editor.y=43
 target41.height=50
-target41.name=Poland
+target41.name=France
 target41.showInterface=false
 target41.type=ClassTarget
 target41.typeParameters=
 target41.width=80
-<<<<<<< HEAD
-target41.x=1170
+target41.x=740
 target41.y=550
-=======
-target41.x=950
-target41.y=560
->>>>>>> origin/master
 target42.editor.height=700
 target42.editor.width=900
-target42.editor.x=40
-target42.editor.y=43
+target42.editor.x=1280
+target42.editor.y=-182
 target42.height=50
-target42.name=France
+target42.name=Adolphus
 target42.showInterface=false
 target42.type=ClassTarget
 target42.typeParameters=
 target42.width=80
-<<<<<<< HEAD
-target42.x=740
-target42.y=550
-=======
-target42.x=520
-target42.y=560
->>>>>>> origin/master
+target42.x=1080
+target42.y=160
 target43.editor.height=700
 target43.editor.width=900
 target43.editor.x=40
@@ -647,13 +512,8 @@ target43.showInterface=false
 target43.type=ClassTarget
 target43.typeParameters=
 target43.width=80
-<<<<<<< HEAD
 target43.x=1010
 target43.y=620
-=======
-target43.x=790
-target43.y=630
->>>>>>> origin/master
 target44.editor.height=700
 target44.editor.width=900
 target44.editor.x=40
@@ -664,13 +524,8 @@ target44.showInterface=false
 target44.type=ClassTarget
 target44.typeParameters=
 target44.width=80
-<<<<<<< HEAD
 target44.x=1600
 target44.y=620
-=======
-target44.x=1380
-target44.y=630
->>>>>>> origin/master
 target45.editor.height=700
 target45.editor.width=900
 target45.editor.x=40
@@ -682,21 +537,12 @@ target45.showInterface=false
 target45.type=AbstractTarget
 target45.typeParameters=
 target45.width=110
-<<<<<<< HEAD
 target45.x=1120
 target45.y=380
 target46.editor.height=971
 target46.editor.width=955
 target46.editor.x=1279
 target46.editor.y=-202
-=======
-target45.x=900
-target45.y=390
-target46.editor.height=700
-target46.editor.width=900
-target46.editor.x=481
-target46.editor.y=63
->>>>>>> origin/master
 target46.height=50
 target46.name=Artillery
 target46.naviview.expanded=false
@@ -705,11 +551,7 @@ target46.type=ClassTarget
 target46.typeParameters=
 target46.width=80
 target46.x=220
-<<<<<<< HEAD
 target46.y=380
-=======
-target46.y=180
->>>>>>> origin/master
 target47.editor.height=700
 target47.editor.width=900
 target47.editor.x=40
@@ -720,13 +562,8 @@ target47.showInterface=false
 target47.type=ClassTarget
 target47.typeParameters=
 target47.width=100
-<<<<<<< HEAD
 target47.x=1010
 target47.y=550
-=======
-target47.x=790
-target47.y=560
->>>>>>> origin/master
 target48.editor.height=700
 target48.editor.width=900
 target48.editor.x=40
@@ -749,13 +586,8 @@ target49.showInterface=false
 target49.type=ClassTarget
 target49.typeParameters=
 target49.width=80
-<<<<<<< HEAD
 target49.x=830
 target49.y=550
-=======
-target49.x=610
-target49.y=560
->>>>>>> origin/master
 target5.editor.height=700
 target5.editor.width=900
 target5.editor.x=40
@@ -766,13 +598,8 @@ target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=100
-<<<<<<< HEAD
 target5.x=1350
 target5.y=550
-=======
-target5.x=1130
-target5.y=560
->>>>>>> origin/master
 target50.editor.height=700
 target50.editor.width=900
 target50.editor.x=40
@@ -784,16 +611,11 @@ target50.showInterface=false
 target50.type=ClassTarget
 target50.typeParameters=
 target50.width=90
-<<<<<<< HEAD
 target50.x=1320
 target50.y=480
-=======
-target50.x=1100
-target50.y=490
->>>>>>> origin/master
 target51.editor.height=700
 target51.editor.width=900
-target51.editor.x=1665
+target51.editor.x=1280
 target51.editor.y=-83
 target51.height=50
 target51.name=Infantry
@@ -803,11 +625,7 @@ target51.type=ClassTarget
 target51.typeParameters=
 target51.width=80
 target51.x=20
-<<<<<<< HEAD
 target51.y=380
-=======
-target51.y=180
->>>>>>> origin/master
 target52.editor.height=700
 target52.editor.width=900
 target52.editor.x=40
@@ -818,13 +636,8 @@ target52.showInterface=false
 target52.type=ClassTarget
 target52.typeParameters=
 target52.width=80
-<<<<<<< HEAD
 target52.x=1490
 target52.y=550
-=======
-target52.x=1270
-target52.y=560
->>>>>>> origin/master
 target53.editor.height=700
 target53.editor.width=900
 target53.editor.x=40
@@ -835,13 +648,8 @@ target53.showInterface=false
 target53.type=ClassTarget
 target53.typeParameters=
 target53.width=80
-<<<<<<< HEAD
 target53.x=980
 target53.y=470
-=======
-target53.x=760
-target53.y=480
->>>>>>> origin/master
 target54.editor.height=700
 target54.editor.width=900
 target54.editor.x=40
@@ -853,26 +661,20 @@ target54.showInterface=false
 target54.type=ClassTarget
 target54.typeParameters=
 target54.width=110
-<<<<<<< HEAD
 target54.x=1510
 target54.y=480
-=======
-target54.x=1290
-target54.y=490
->>>>>>> origin/master
+target55.editor.height=974
+target55.editor.width=1362
+target55.editor.x=1657
+target55.editor.y=-202
 target55.height=50
 target55.name=GameLogic
 target55.showInterface=false
 target55.type=ClassTarget
 target55.typeParameters=
 target55.width=90
-<<<<<<< HEAD
 target55.x=70
 target55.y=170
-=======
-target55.x=280
-target55.y=10
->>>>>>> origin/master
 target6.editor.height=700
 target6.editor.width=900
 target6.editor.x=40
@@ -883,13 +685,8 @@ target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
 target6.width=80
-<<<<<<< HEAD
 target6.x=1180
 target6.y=470
-=======
-target6.x=960
-target6.y=480
->>>>>>> origin/master
 target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=40
@@ -900,39 +697,30 @@ target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
 target7.width=90
-<<<<<<< HEAD
 target7.x=1100
 target7.y=620
-=======
-target7.x=880
-target7.y=630
->>>>>>> origin/master
 target8.editor.height=700
 target8.editor.width=900
-target8.editor.x=40
-target8.editor.y=43
+target8.editor.x=1977
+target8.editor.y=-146
 target8.height=50
-target8.name=FredrickElector
+target8.name=Sword
 target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
-target8.width=120
-target8.x=1090
-target8.y=160
-target9.editor.height=700
-target9.editor.width=900
-target9.editor.x=481
-target9.editor.y=63
+target8.width=80
+target8.x=580
+target8.y=380
+target9.editor.height=970
+target9.editor.width=858
+target9.editor.x=1277
+target9.editor.y=-202
 target9.height=50
-target9.name=Sword
+target9.name=Weapons
+target9.naviview.expanded=false
 target9.showInterface=false
-target9.type=ClassTarget
+target9.type=AbstractTarget
 target9.typeParameters=
 target9.width=80
-<<<<<<< HEAD
-target9.x=580
-target9.y=380
-=======
-target9.x=220
-target9.y=360
->>>>>>> origin/master
+target9.x=480
+target9.y=280

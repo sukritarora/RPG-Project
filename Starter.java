@@ -11,14 +11,7 @@ import javax.swing.JOptionPane;
 public class Starter extends JOptionPane
 {
     // instance variables - replace the example below with your own
-    //Anish!
-    //anishp2
-    //THis is Nilay test
-
-    //This is pooja
-
-    //this is shravan test
-
+    
     /**
      * Constructor for objects of class Starter
      */

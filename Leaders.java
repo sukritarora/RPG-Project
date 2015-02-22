@@ -7,14 +7,15 @@
  */
 public abstract class Leaders
 {
-    private int x;
     public String name;
+    private Regions r = null;
     /**
      * Constructor for objects of class Soldiers
      */
-    public Leaders(String n)
+    public Leaders(String n, Regions r )
     {
         // initialise instance variables
         name = n;
+        this.r = r;
     }
 }
