@@ -16,7 +16,7 @@ public class Bismarck extends Leaders
     public Bismarck()
     {
         // initialise instance variables
-        super("Otto von Bismarck");
+        super("Otto von Bismarck",new CarpathianRegion());
         x = 0;
     }
 

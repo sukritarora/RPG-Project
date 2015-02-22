@@ -16,7 +16,7 @@ public class Arnold extends Leaders
     public Arnold()
     {
         // initialise instance variables
-        super("Arnold Schwarzenegger");
+        super("Arnold Schwarzenegger",new CarpathianRegion());
         x = 0;
     }
 

@@ -16,7 +16,7 @@ public class Stalin extends Leaders
     public Stalin()
     {
         // initialise instance variables
-        super("Joseph Stalin");
+        super("Joseph Stalin",new RussianRegion());
         x = 0;
     }
 }
