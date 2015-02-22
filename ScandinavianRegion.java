@@ -13,7 +13,7 @@ public class ScandinavianRegion extends Regions
     /**
      * Constructor for objects of class ScandinavianRegion
      */
-    public ScandinavianRegion(String countryName)
+    public ScandinavianRegion()
     {
         // initialise instance variables
         super("Scandinavia");

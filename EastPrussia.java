@@ -16,7 +16,7 @@ public class EastPrussia extends BalticRegion
     public EastPrussia()
     {
         // initialise instance variables
-        super("East Prussia");
+        super();
         x = 0;
     }
 

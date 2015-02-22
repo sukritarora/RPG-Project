@@ -13,7 +13,7 @@ public class UKRegion extends Regions
     /**
      * Constructor for objects of class UKRegion
      */
-    public UKRegion(String countryName)
+    public UKRegion()
     {
         // initialise instance variables
         super("United Kingdom");

@@ -16,7 +16,7 @@ public class Denmark extends CentralEuropeRegion
     public Denmark()
     {
         // initialise instance variables
-        super("Denmark");
+        super();
         x = 0;
     }
 

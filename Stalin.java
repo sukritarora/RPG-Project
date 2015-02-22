@@ -8,7 +8,7 @@
 public class Stalin extends Leaders
 {
     // instance variables - replace the example below with your own
-    private int x;
+   
 
     /**
      * Constructor for objects of class Stalin
@@ -16,7 +16,9 @@ public class Stalin extends Leaders
     public Stalin()
     {
         // initialise instance variables
-        super("Joseph Stalin", null);
-        x = 0;
+
+        super("Joseph Stalin",new RussianRegion());
+
+       
     }
 }

@@ -16,7 +16,7 @@ public class Austria extends CentralEuropeRegion
     public Austria()
     {
         // initialise instance variables
-        super("Austria");
+        super();
         x = 0;
     }
 

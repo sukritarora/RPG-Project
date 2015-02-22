@@ -13,7 +13,7 @@ public class RussianRegion extends Regions
     /**
      * Constructor for objects of class USSRRegion
      */
-    public RussianRegion(String countryName)
+    public RussianRegion()
     {
         // initialise instance variables
         super("Ural");

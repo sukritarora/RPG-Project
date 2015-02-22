@@ -13,7 +13,7 @@ public class WestEuropeRegion extends Regions
     /**
      * Constructor for objects of class WestEuropeRegion
      */
-    public WestEuropeRegion(String countryName)
+    public WestEuropeRegion()
     {
         // initialise instance variables
         super("Western Europe");

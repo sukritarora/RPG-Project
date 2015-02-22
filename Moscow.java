@@ -16,7 +16,7 @@ public class Moscow extends RussianRegion
     public Moscow()
     {
         // initialise instance variables
-        super("Moscow");
+        super();
         x = 0;
     }
 

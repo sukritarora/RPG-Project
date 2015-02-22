@@ -16,7 +16,7 @@ public class Belarus extends BalticRegion
     public Belarus()
     {
         // initialise instance variables
-        super("Belarus");
+        super();
         x = 0;
     }
 

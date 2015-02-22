@@ -16,7 +16,7 @@ public class St_Petersburg extends RussianRegion
     public St_Petersburg()
     {
         // initialise instance variables
-        super("St. Petersburg");
+        super();
         x = 0;
     }
 

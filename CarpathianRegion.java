@@ -13,7 +13,7 @@ public class CarpathianRegion extends Regions
     /**
      * Constructor for objects of class CarpathianRegion
      */
-    public CarpathianRegion(String countryName)
+    public CarpathianRegion()
     {
         // initialise instance variables
         super("Carpathian");

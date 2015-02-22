@@ -16,7 +16,7 @@ public class Norway extends ScandinavianRegion
     public Norway()
     {
         // initialise instance variables
-        super("Norway");
+        super();
         x = 0;
     }
 

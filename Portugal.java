@@ -9,6 +9,7 @@ public class Portugal extends WestEuropeRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+     
 
     /**
      * Constructor for objects of class Portugal
@@ -16,7 +17,7 @@ public class Portugal extends WestEuropeRegion
     public Portugal()
     {
         // initialise instance variables
-        super("Portugal");
+        super();
         x = 0;
     }
 

@@ -13,7 +13,7 @@ public class BalticRegion extends Regions
     /**
      * Constructor for objects of class BalticRegion
      */
-    public BalticRegion(String countryName)
+    public BalticRegion()
     {
         // initialise instance variables
         super("Baltic");

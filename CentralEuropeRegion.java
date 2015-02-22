@@ -13,7 +13,7 @@ public class CentralEuropeRegion extends Regions
     /**
      * Constructor for objects of class CentralEuropeRegion
      */
-    public CentralEuropeRegion(String countryName)
+    public CentralEuropeRegion()
     {
         // initialise instance variables
         super("Central Europe");

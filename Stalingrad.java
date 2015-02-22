@@ -16,7 +16,7 @@ public class Stalingrad extends RussianRegion
     public Stalingrad()
     {
         // initialise instance variables
-        super("Stalingrad");
+        super();
         x = 0;
     }
 

@@ -13,6 +13,6 @@ public class Churchill extends Leaders
     public Churchill()
     {
         // initialise instance variables
-        super("Winston Churchill", null);
+        super("Winston Churchill", new UKRegion());
     }
 }

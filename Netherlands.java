@@ -16,7 +16,7 @@ public class Netherlands extends CentralEuropeRegion
     public Netherlands()
     {
         // initialise instance variables
-        super("Netherlands");
+        super();
         x = 0;
     }
 
