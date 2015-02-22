@@ -11,7 +11,7 @@ public class GameLogic
     public static Leaders chooseLeader()
     {
         String[] leaders = {"Winston Churchill","Napoleon Bonaparte","Adolf Hitler","Alexander the Great","Otto von Bismarck","Joseph Stalin","Gustavus Adolphus","Arnold Schwarzenegger"};
-        String response = (String) JOptionPane.showInputDialog(null, "Which European Leader would you like to be.", "Leader", JOptionPane.PLAIN_MESSAGE,null, leaders, leaders[0]);
+        String response = (String) JOptionPane.showInputDialog(null, "Which European Leader would you like to be?", "Leader", JOptionPane.PLAIN_MESSAGE,null, leaders, leaders[0]);
         Leaders l = null;
         switch (response)
         {
@@ -57,6 +57,52 @@ public class GameLogic
             }
         }
         return l; 
+    }
+    
+    public static Soldiers chooseSoldier()
+    {
+        String[] soldiers = {"Infantry","Cavalry","Artillery"};
+        String response = (String) JOptionPane.showInputDialog(null, "Which type of Soldier would you like to control?", "Soldier", JOptionPane.PLAIN_MESSAGE,null,soldiers,soldiers[0]);
+        Soldiers s = null;
+        switch (response)
+        {
+            case "Infantry":    {
+                s = new Infantry();
+                break;
+            }
+            case "Cavalry": {
+                s = new Cavalry();
+                break;
+            }
+            case "Artillery":   {
+                s = new Artillery();
+                break;
+            }
+        }
+        return s;
+    }
+    
+    public static Weapons chooseWeapon()
+    {
+        String[] weapons = {"Gun","Sword","Cannon"};
+        String response = (String) JOptionPane.showInputDialog(null,"Which type of weapon do you want?","Weapon",JOptionPane.PLAIN_MESSAGE,null,weapons,weapons[0]);
+        Weapons w = null;
+        switch (response)
+        {
+            case "Gun": {
+                w = new Gun();
+                break;
+            }
+            case "Sword":   {
+                w = new Sword();
+                break;
+            }
+            case "Canon":   {
+                w = new Cannon();
+                break;
+            }
+        }
+        return w;
     }
     
     public static void displayStats(Leaders l)

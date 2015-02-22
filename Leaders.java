@@ -19,8 +19,18 @@ public abstract class Leaders
         // initialise instance variables
         name = n;
         this.r = r;
-        s = new Cavalry();
-        w = new Sword();
+//         s = new Cavalry();
+//         w = new Sword();
+    }
+    
+    public void assignSoldier(Soldiers s)
+    {
+        this.s = s;
+    }
+    
+    public void assignWeapon(Weapons w)
+    {
+        this.w = w;
     }
     
     public Regions getRegion()

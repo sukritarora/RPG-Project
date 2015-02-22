@@ -1,6 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Leaders\ chooseLeader()
-comment1.params=l
-comment1.target=void\ displayStats(Leaders)
-numComments=2
+comment1.params=
+comment1.target=Soldiers\ chooseSoldier()
+comment2.params=
+comment2.target=Weapons\ chooseWeapon()
+comment3.params=l
+comment3.target=void\ displayStats(Leaders)
+numComments=4

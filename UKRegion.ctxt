@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.params=
-comment0.target=UKRegion()
+comment0.params=countryName
+comment0.target=UKRegion(java.lang.String)
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ UKRegion\n
 numComments=1
