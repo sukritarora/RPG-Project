@@ -16,7 +16,7 @@ public class CarpathianRegion extends Regions
     public CarpathianRegion()
     {
         // initialise instance variables
-        super("Carpathian");
+        super("Carpathian", 3);
         x = 0;
     }
 

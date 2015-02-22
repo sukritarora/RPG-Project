@@ -9,6 +9,7 @@ public class Yugoslavia extends BalkanRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Yugoslavia";
 
     /**
      * Constructor for objects of class Yugoslavia

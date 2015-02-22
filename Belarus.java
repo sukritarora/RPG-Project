@@ -9,6 +9,7 @@ public class Belarus extends BalticRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Belarus";
 
     /**
      * Constructor for objects of class Belarus

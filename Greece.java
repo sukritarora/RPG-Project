@@ -9,6 +9,7 @@ public class Greece extends BalkanRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Greece";
 
     /**
      * Constructor for objects of class Greece

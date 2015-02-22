@@ -9,6 +9,7 @@ public class Hungary extends CarpathianRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Hungary";
 
     /**
      * Constructor for objects of class Hungary

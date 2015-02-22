@@ -16,7 +16,7 @@ public class BalkanRegion extends Regions
     public BalkanRegion()
     {
         // initialise instance variables
-        super("Balkan");
+        super("Balkan", 4);
         x = 0;
     }
 

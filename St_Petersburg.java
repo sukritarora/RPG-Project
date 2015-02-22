@@ -9,6 +9,7 @@ public class St_Petersburg extends RussianRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "St. Petersburg";
 
     /**
      * Constructor for objects of class St_Petersburg

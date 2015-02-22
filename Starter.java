@@ -12,6 +12,6 @@ public class Starter
 {
     public static void main(String[] args)
     {
-        GameLogic.chooseLeader();
+        Leaders l = GameLogic.chooseLeader();
     }
 }

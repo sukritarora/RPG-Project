@@ -9,6 +9,7 @@ public class Austria extends CentralEuropeRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Austria";
 
     /**
      * Constructor for objects of class Austria

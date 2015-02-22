@@ -16,7 +16,7 @@ public class RussianRegion extends Regions
     public RussianRegion()
     {
         // initialise instance variables
-        super("Ural");
+        super("Ural", 3);
         x = 0;
     }
 

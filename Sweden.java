@@ -9,6 +9,7 @@ public class Sweden extends ScandinavianRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Sweden";
 
     /**
      * Constructor for objects of class Sweden

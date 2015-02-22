@@ -22,4 +22,24 @@ public abstract class Leaders
         s = new Cavalry();
         w = new Sword();
     }
+    
+    public Regions getRegion()
+    {
+        return r;
+    }
+    
+    public Soldiers getSoldiers()
+    {
+        return s;
+    }
+    
+    public Weapons getWeapons()
+    {
+        return w;
+    }
+    
+    public String getName()
+    {
+        return name;
+    }
 }

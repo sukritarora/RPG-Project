@@ -9,6 +9,7 @@ public class England extends UKRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "England";
 
     /**
      * Constructor for objects of class England

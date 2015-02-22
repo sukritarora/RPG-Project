@@ -9,6 +9,7 @@ public class Stalingrad extends RussianRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Stalingrad";
 
     /**
      * Constructor for objects of class Stalingrad

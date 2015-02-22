@@ -9,6 +9,7 @@ public class Switzerland extends WestEuropeRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "England";
 
     /**
      * Constructor for objects of class Switzerland

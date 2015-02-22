@@ -9,6 +9,7 @@ public class Moscow extends RussianRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Moscow";
 
     /**
      * Constructor for objects of class Moscow

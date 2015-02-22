@@ -16,7 +16,7 @@ public class CentralEuropeRegion extends Regions
     public CentralEuropeRegion()
     {
         // initialise instance variables
-        super("Central Europe");
+        super("Central Europe", 4);
         x = 0;
     }
 

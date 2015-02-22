@@ -9,6 +9,7 @@ public class Spain extends WestEuropeRegion
 {
     // instance variables - replace the example below with your own
     private int x;
+    final String countryName = "Spain";
 
     /**
      * Constructor for objects of class Spain

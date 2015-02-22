@@ -16,7 +16,7 @@ public class BalticRegion extends Regions
     public BalticRegion()
     {
         // initialise instance variables
-        super("Baltic");
+        super("Baltic", 3);
         x = 0;
     }
 
