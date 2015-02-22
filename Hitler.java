@@ -16,7 +16,7 @@ public class Hitler extends Leaders
     public Hitler()
     {
         // initialise instance variables
-        super("Adolf Hitler");
+        super("Adolf Hitler", null);
         x = 0;
     }
 

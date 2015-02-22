@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.params=n
-comment0.target=Leaders(java.lang.String)
+comment0.params=n\ r
+comment0.target=Leaders(java.lang.String,\ Regions)
 comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Soldiers\n
 numComments=1

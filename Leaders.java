@@ -9,13 +9,17 @@ public abstract class Leaders
 {
     public String name;
     private Regions r = null;
+    private Soldiers s = null;
+    private Weapons w = null;
     /**
      * Constructor for objects of class Soldiers
      */
-    public Leaders(String n, Regions r )
+    public Leaders(String n, Regions r)
     {
         // initialise instance variables
         name = n;
         this.r = r;
+        s = new Cavalry();
+        w = new Sword();
     }
 }

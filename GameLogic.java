@@ -18,35 +18,42 @@ public class GameLogic
             case "Winston Churchill": 
             {
                 l = new Churchill();
-                
+                break;
             }
             case "Napoleon Bonaparte":
             {
                 l = new Napoleon();
+                break;
             }
             case "Adolf Hitler":
             {
                 l = new Hitler();
+                break;
             }
             case "Alexander the Great":
             {
                 l = new AlexanderTheGreat();
+                break;
             }
             case "Otto von Bismarck":
             {
                 l = new Bismarck();
+                break;
             }
             case "Joseph Stalin":
             {
                 l = new Stalin ();
+                break;
             }
             case "Gustavus Adolphus":
             {
                 l = new Adolphus();
+                break;
             }
             case "Arnold Schwarzenegger":
             {
                 l = new Arnold();
+                break;
             }
         }
         return l; 
