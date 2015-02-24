@@ -59,15 +59,24 @@ dependency26.type=UsesDependency
 dependency27.from=GameLogic
 dependency27.to=Cannon
 dependency27.type=UsesDependency
+<<<<<<< HEAD
 dependency28.from=Leaders
 dependency28.to=Soldiers
 dependency28.type=UsesDependency
 dependency29.from=Leaders
 dependency29.to=Weapons
+=======
+dependency28.from=Starter
+dependency28.to=Leaders
+dependency28.type=UsesDependency
+dependency29.from=Starter
+dependency29.to=Soldiers
+>>>>>>> origin/master
 dependency29.type=UsesDependency
 dependency3.from=Stalin
 dependency3.to=RussianRegion
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency30.from=GameLogic
 dependency30.to=Regions
 dependency30.type=UsesDependency
@@ -83,9 +92,44 @@ dependency33.type=UsesDependency
 dependency34.from=Starter
 dependency34.to=GameLogic
 dependency34.type=UsesDependency
+=======
+dependency30.from=Starter
+dependency30.to=Weapons
+dependency30.type=UsesDependency
+dependency31.from=Starter
+dependency31.to=GameLogic
+dependency31.type=UsesDependency
+dependency32.from=GameLogic
+dependency32.to=UKRegion
+dependency32.type=UsesDependency
+dependency33.from=GameLogic
+dependency33.to=WestEuropeRegion
+dependency33.type=UsesDependency
+dependency34.from=GameLogic
+dependency34.to=CentralEuropeRegion
+dependency34.type=UsesDependency
+dependency35.from=GameLogic
+dependency35.to=BalkanRegion
+dependency35.type=UsesDependency
+dependency36.from=GameLogic
+dependency36.to=CarpathianRegion
+dependency36.type=UsesDependency
+dependency37.from=GameLogic
+dependency37.to=BalticRegion
+dependency37.type=UsesDependency
+dependency38.from=GameLogic
+dependency38.to=RussianRegion
+dependency38.type=UsesDependency
+dependency39.from=GameLogic
+dependency39.to=ScandinavianRegion
+dependency39.type=UsesDependency
+>>>>>>> origin/master
 dependency4.from=AlexanderTheGreat
 dependency4.to=Hitler
 dependency4.type=UsesDependency
+dependency40.from=GameLogic
+dependency40.to=Regions
+dependency40.type=UsesDependency
 dependency5.from=GameLogic
 dependency5.to=AlexanderTheGreat
 dependency5.type=UsesDependency
@@ -102,20 +146,34 @@ dependency9.from=GameLogic
 dependency9.to=Arnold
 dependency9.type=UsesDependency
 objectbench.height=76
+<<<<<<< HEAD
 objectbench.width=1420
 package.editor.height=734
 package.editor.width=1312
 package.editor.x=0
 package.editor.y=23
 package.numDependencies=34
+=======
+objectbench.width=1263
+package.editor.height=638
+package.editor.width=1155
+package.editor.x=-3
+package.editor.y=23
+package.numDependencies=40
+>>>>>>> origin/master
 package.numTargets=54
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
+<<<<<<< HEAD
 target1.editor.x=40
 target1.editor.y=43
+=======
+target1.editor.x=1280
+target1.editor.y=-129
+>>>>>>> origin/master
 target1.height=50
 target1.name=Belarus
 target1.naviview.expanded=true
@@ -127,8 +185,13 @@ target1.x=1030
 target1.y=640
 target10.editor.height=700
 target10.editor.width=900
+<<<<<<< HEAD
 target10.editor.x=1280
 target10.editor.y=-83
+=======
+target10.editor.x=380
+target10.editor.y=63
+>>>>>>> origin/master
 target10.height=50
 target10.name=Infantry
 target10.naviview.expanded=false
@@ -230,12 +293,21 @@ target18.showInterface=false
 target18.type=AbstractTarget
 target18.typeParameters=
 target18.width=80
+<<<<<<< HEAD
 target18.x=110
 target18.y=140
 target19.editor.height=700
 target19.editor.width=900
 target19.editor.x=40
 target19.editor.y=43
+=======
+target18.x=1280
+target18.y=710
+target19.editor.height=966
+target19.editor.width=1920
+target19.editor.x=1280
+target19.editor.y=-202
+>>>>>>> origin/master
 target19.height=50
 target19.name=Stalin
 target19.naviview.expanded=true
@@ -467,8 +539,13 @@ target34.x=900
 target34.y=160
 target35.editor.height=700
 target35.editor.width=900
+<<<<<<< HEAD
 target35.editor.x=540
 target35.editor.y=23
+=======
+target35.editor.x=1280
+target35.editor.y=-64
+>>>>>>> origin/master
 target35.height=50
 target35.name=Starter
 target35.naviview.expanded=true
@@ -509,7 +586,11 @@ target38.editor.width=900
 target38.editor.x=2034
 target38.editor.y=-64
 target38.height=50
+<<<<<<< HEAD
 target38.name=WestEuropeRegion
+=======
+target38.name=Ireland
+>>>>>>> origin/master
 target38.naviview.expanded=false
 target38.showInterface=false
 target38.type=ClassTarget
@@ -735,6 +816,7 @@ target53.naviview.expanded=false
 target53.showInterface=false
 target53.type=ClassTarget
 target53.typeParameters=
+<<<<<<< HEAD
 target53.width=80
 target53.x=1260
 target53.y=640
@@ -742,6 +824,15 @@ target54.editor.height=700
 target54.editor.width=900
 target54.editor.x=40
 target54.editor.y=43
+=======
+target53.width=110
+target53.x=1280
+target53.y=570
+target54.editor.height=966
+target54.editor.width=1016
+target54.editor.x=2181
+target54.editor.y=-202
+>>>>>>> origin/master
 target54.height=50
 target54.name=Germany
 target54.naviview.expanded=true
@@ -779,8 +870,13 @@ target7.x=690
 target7.y=640
 target8.editor.height=700
 target8.editor.width=900
+<<<<<<< HEAD
 target8.editor.x=481
 target8.editor.y=63
+=======
+target8.editor.x=1280
+target8.editor.y=-146
+>>>>>>> origin/master
 target8.height=50
 target8.name=Gun
 target8.naviview.expanded=false
