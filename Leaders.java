@@ -1,10 +1,10 @@
-import java.util.ArrayList;
 /**
  * Write a description of class Soldiers here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
+import java.util.ArrayList;
 public abstract class Leaders
 {
     final String name;
@@ -20,11 +20,9 @@ public abstract class Leaders
         // initialise instance variables
         name = n;
         regionArray.add(r);
-        //         s = new Cavalry();
-        //         w = new Sword();
+//         s = new Cavalry();
+//         w = new Sword();
     }
-
-    
 
     public ArrayList<Regions> getRegionArray()
     {
@@ -35,7 +33,6 @@ public abstract class Leaders
     {
         return s;
     }
-
 
     public String getName()
     {

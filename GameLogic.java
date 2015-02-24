@@ -62,7 +62,7 @@ public class GameLogic
         }
         return l; 
     }
-
+    
     public static void placeSoldiers(Leaders l)
     {
         int soldierNum = l.getSoldiers().getNumberOfSoldiers();
@@ -83,16 +83,17 @@ public class GameLogic
             System.out.print(i.regionName + ", ");
             System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries");
         }
-
+        
     }
-
+        
     public static void firstChallenge (Leaders l)
     {
-
+        
     }
-
+    
     public static void BattleSequence (Regions r, Soldiers s)
     {
+        
 
     }
 }

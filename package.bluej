@@ -2,211 +2,39 @@
 dependency1.from=GameLogic
 dependency1.to=Churchill
 dependency1.type=UsesDependency
-<<<<<<< Updated upstream
-dependency10.from=Leaders
-dependency10.to=Regions
-dependency10.type=UsesDependency
-dependency11.from=Hitler
-dependency11.to=CentralEuropeRegion
-dependency11.type=UsesDependency
-dependency12.from=Arnold
-dependency12.to=CarpathianRegion
-dependency12.type=UsesDependency
-dependency13.from=Bismarck
-dependency13.to=CarpathianRegion
-dependency13.type=UsesDependency
-dependency14.from=AlexanderTheGreat
-dependency14.to=BalkanRegion
-dependency14.type=UsesDependency
-dependency15.from=Adolphus
-dependency15.to=ScandinavianRegion
-dependency15.type=UsesDependency
-dependency16.from=Napoleon
-dependency16.to=WestEuropeRegion
-dependency16.type=UsesDependency
-dependency17.from=GameLogic
-dependency17.to=Leaders
-dependency17.type=UsesDependency
-dependency18.from=GameLogic
-dependency18.to=Napoleon
-dependency18.type=UsesDependency
-dependency19.from=GameLogic
-dependency19.to=Hitler
-=======
 dependency10.from=GameLogic
 dependency10.to=Leaders
 dependency10.type=UsesDependency
 dependency11.from=GameLogic
-dependency11.to=Churchill
+dependency11.to=Napoleon
 dependency11.type=UsesDependency
 dependency12.from=GameLogic
-dependency12.to=Napoleon
+dependency12.to=Hitler
 dependency12.type=UsesDependency
 dependency13.from=GameLogic
-dependency13.to=Hitler
+dependency13.to=Soldiers
 dependency13.type=UsesDependency
-dependency14.from=GameLogic
-dependency14.to=AlexanderTheGreat
+dependency14.from=Starter
+dependency14.to=Leaders
 dependency14.type=UsesDependency
-dependency15.from=GameLogic
-dependency15.to=Bismarck
+dependency15.from=Starter
+dependency15.to=Soldiers
 dependency15.type=UsesDependency
-dependency16.from=GameLogic
-dependency16.to=Stalin
+dependency16.from=Starter
+dependency16.to=GameLogic
 dependency16.type=UsesDependency
-dependency17.from=GameLogic
-dependency17.to=Adolphus
+dependency17.from=Leaders
+dependency17.to=Soldiers
 dependency17.type=UsesDependency
-dependency18.from=GameLogic
-dependency18.to=Arnold
-dependency18.type=UsesDependency
-dependency19.from=GameLogic
-dependency19.to=Infantry
->>>>>>> Stashed changes
-dependency19.type=UsesDependency
 dependency2.from=Churchill
 dependency2.to=UKRegion
 dependency2.type=UsesDependency
-dependency20.from=GameLogic
-<<<<<<< Updated upstream
-dependency20.to=Soldiers
-dependency20.type=UsesDependency
-dependency21.from=GameLogic
-dependency21.to=Infantry
-dependency21.type=UsesDependency
-dependency22.from=GameLogic
-dependency22.to=Cavalry
-dependency22.type=UsesDependency
-dependency23.from=GameLogic
-dependency23.to=Artillery
-dependency23.type=UsesDependency
-dependency24.from=GameLogic
-dependency24.to=Weapons
-dependency24.type=UsesDependency
-dependency25.from=GameLogic
-dependency25.to=Gun
-dependency25.type=UsesDependency
-dependency26.from=GameLogic
-dependency26.to=Sword
-dependency26.type=UsesDependency
-dependency27.from=GameLogic
-dependency27.to=Cannon
-dependency27.type=UsesDependency
-<<<<<<< HEAD
-dependency28.from=Leaders
-dependency28.to=Soldiers
-dependency28.type=UsesDependency
-dependency29.from=Leaders
-dependency29.to=Weapons
-=======
-dependency28.from=Starter
-dependency28.to=Leaders
-dependency28.type=UsesDependency
-dependency29.from=Starter
-dependency29.to=Soldiers
->>>>>>> origin/master
-=======
-dependency20.to=Cavalry
-dependency20.type=UsesDependency
-dependency21.from=GameLogic
-dependency21.to=Artillery
-dependency21.type=UsesDependency
-dependency22.from=GameLogic
-dependency22.to=Soldiers
-dependency22.type=UsesDependency
-dependency23.from=Starter
-dependency23.to=Leaders
-dependency23.type=UsesDependency
-dependency24.from=Starter
-dependency24.to=Soldiers
-dependency24.type=UsesDependency
-dependency25.from=Starter
-dependency25.to=GameLogic
-dependency25.type=UsesDependency
-dependency26.from=Leaders
-dependency26.to=Soldiers
-dependency26.type=UsesDependency
-dependency27.from=Leaders
-dependency27.to=Weapons
-dependency27.type=UsesDependency
-dependency28.from=Starter
-dependency28.to=Weapons
-dependency28.type=UsesDependency
-dependency29.from=GameLogic
-dependency29.to=Weapons
->>>>>>> Stashed changes
-dependency29.type=UsesDependency
 dependency3.from=Stalin
 dependency3.to=RussianRegion
 dependency3.type=UsesDependency
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-dependency30.from=GameLogic
-dependency30.to=Regions
-dependency30.type=UsesDependency
-dependency31.from=Starter
-dependency31.to=Leaders
-dependency31.type=UsesDependency
-dependency32.from=Starter
-dependency32.to=Soldiers
-dependency32.type=UsesDependency
-dependency33.from=Starter
-dependency33.to=Weapons
-dependency33.type=UsesDependency
-dependency34.from=Starter
-dependency34.to=GameLogic
-dependency34.type=UsesDependency
-=======
-dependency30.from=Starter
-dependency30.to=Weapons
-dependency30.type=UsesDependency
-dependency31.from=Starter
-dependency31.to=GameLogic
-dependency31.type=UsesDependency
-dependency32.from=GameLogic
-dependency32.to=UKRegion
-dependency32.type=UsesDependency
-dependency33.from=GameLogic
-dependency33.to=WestEuropeRegion
-dependency33.type=UsesDependency
-dependency34.from=GameLogic
-dependency34.to=CentralEuropeRegion
-dependency34.type=UsesDependency
-dependency35.from=GameLogic
-dependency35.to=BalkanRegion
-dependency35.type=UsesDependency
-dependency36.from=GameLogic
-dependency36.to=CarpathianRegion
-dependency36.type=UsesDependency
-dependency37.from=GameLogic
-dependency37.to=BalticRegion
-dependency37.type=UsesDependency
-dependency38.from=GameLogic
-dependency38.to=RussianRegion
-dependency38.type=UsesDependency
-dependency39.from=GameLogic
-dependency39.to=ScandinavianRegion
-dependency39.type=UsesDependency
->>>>>>> origin/master
-dependency4.from=AlexanderTheGreat
-dependency4.to=Hitler
-=======
-dependency30.from=GameLogic
-dependency30.to=Gun
-dependency30.type=UsesDependency
-dependency31.from=GameLogic
-dependency31.to=Sword
-dependency31.type=UsesDependency
-dependency32.from=GameLogic
-dependency32.to=Cannon
-dependency32.type=UsesDependency
 dependency4.from=AlexanderTheGreat
 dependency4.to=BalkanRegion
->>>>>>> Stashed changes
 dependency4.type=UsesDependency
-dependency40.from=GameLogic
-dependency40.to=Regions
-dependency40.type=UsesDependency
 dependency5.from=GameLogic
 dependency5.to=AlexanderTheGreat
 dependency5.type=UsesDependency
@@ -223,1325 +51,624 @@ dependency9.from=GameLogic
 dependency9.to=Arnold
 dependency9.type=UsesDependency
 objectbench.height=76
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
-objectbench.width=1420
-package.editor.height=734
-package.editor.width=1312
+objectbench.width=1260
+package.editor.height=573
+package.editor.width=1152
 package.editor.x=0
 package.editor.y=23
-<<<<<<< Updated upstream
-package.numDependencies=34
-=======
-objectbench.width=1263
-package.editor.height=638
-package.editor.width=1155
-package.editor.x=-3
-package.editor.y=23
-package.numDependencies=40
->>>>>>> origin/master
-=======
-package.numDependencies=32
->>>>>>> Stashed changes
-package.numTargets=54
+package.numDependencies=17
+package.numTargets=47
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-target1.editor.x=40
-target1.editor.y=43
-=======
-target1.editor.x=1280
-target1.editor.y=-129
->>>>>>> origin/master
-target1.height=50
-target1.name=Belarus
-target1.naviview.expanded=true
-=======
 target1.editor.x=481
 target1.editor.y=63
 target1.height=50
 target1.name=Soldiers
 target1.naviview.expanded=false
->>>>>>> Stashed changes
 target1.showInterface=false
-target1.type=AbstractTarget
+target1.type=ClassTarget
 target1.typeParameters=
 target1.width=80
-<<<<<<< Updated upstream
-target1.x=1030
-target1.y=640
-=======
 target1.x=100
 target1.y=80
->>>>>>> Stashed changes
 target10.editor.height=700
 target10.editor.width=900
-<<<<<<< HEAD
-target10.editor.x=1280
-target10.editor.y=-83
-=======
-target10.editor.x=380
+target10.editor.x=481
 target10.editor.y=63
->>>>>>> origin/master
 target10.height=50
-<<<<<<< Updated upstream
-target10.name=Infantry
-=======
-target10.name=CarpathianRegion
->>>>>>> Stashed changes
-target10.naviview.expanded=false
+target10.name=Austria
+target10.naviview.expanded=true
 target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
-<<<<<<< Updated upstream
 target10.width=80
-target10.x=10
-target10.y=230
-target11.height=50
-target11.name=Cannon
-=======
-target10.width=140
-target10.x=1000
-target10.y=390
+target10.x=510
+target10.y=480
 target11.editor.height=700
 target11.editor.width=900
 target11.editor.x=481
 target11.editor.y=63
 target11.height=50
-target11.name=Hitler
-target11.naviview.expanded=true
->>>>>>> Stashed changes
+target11.name=Leaders
+target11.naviview.expanded=false
 target11.showInterface=false
-target11.type=ClassTarget
+target11.type=AbstractTarget
 target11.typeParameters=
 target11.width=80
-<<<<<<< Updated upstream
-target11.x=340
-target11.y=380
+target11.x=650
+target11.y=50
 target12.editor.height=700
 target12.editor.width=900
 target12.editor.x=40
 target12.editor.y=43
 target12.height=50
-target12.name=Denmark
-=======
-target11.x=1010
-target11.y=180
-target12.editor.height=700
-target12.editor.width=900
-target12.editor.x=483
-target12.editor.y=61
-target12.height=50
-target12.name=Cavalry
->>>>>>> Stashed changes
+target12.name=Netherlands
 target12.naviview.expanded=true
 target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
-target12.width=80
-<<<<<<< Updated upstream
-target12.x=640
-target12.y=560
+target12.width=100
+target12.x=400
+target12.y=480
 target13.editor.height=700
 target13.editor.width=900
-target13.editor.x=540
-target13.editor.y=23
+target13.editor.x=40
+target13.editor.y=43
 target13.height=50
-target13.name=Adolphus
-=======
-target12.x=100
-target12.y=180
-target13.editor.height=700
-target13.editor.width=900
-target13.editor.x=481
-target13.editor.y=63
-target13.height=50
-target13.name=Gun
->>>>>>> Stashed changes
+target13.name=Sweden
 target13.naviview.expanded=true
 target13.showInterface=false
 target13.type=ClassTarget
 target13.typeParameters=
 target13.width=80
-<<<<<<< Updated upstream
-target13.x=1080
-target13.y=160
-target14.height=50
-target14.name=Stalingrad
-target14.showInterface=false
-target14.type=ClassTarget
-target14.typeParameters=
-target14.width=90
-target14.x=1040
-target14.y=570
-=======
-target13.x=1010
-target13.y=110
+target13.x=930
+target13.y=560
 target14.editor.height=700
 target14.editor.width=900
 target14.editor.x=40
 target14.editor.y=43
 target14.height=50
-target14.name=Stalin
+target14.name=Yugoslavia
 target14.naviview.expanded=true
 target14.showInterface=false
 target14.type=ClassTarget
 target14.typeParameters=
-target14.width=80
-target14.x=410
-target14.y=180
->>>>>>> Stashed changes
+target14.width=90
+target14.x=450
+target14.y=630
 target15.editor.height=700
 target15.editor.width=900
-target15.editor.x=40
-target15.editor.y=43
+target15.editor.x=1280
+target15.editor.y=-64
 target15.height=50
-<<<<<<< Updated upstream
-target15.name=St_Petersburg
-=======
-target15.name=CentralEuropeRegion
->>>>>>> Stashed changes
+target15.name=WestEuropeRegion
 target15.naviview.expanded=false
 target15.showInterface=false
 target15.type=ClassTarget
 target15.typeParameters=
-<<<<<<< Updated upstream
-target15.width=110
-target15.x=1230
-target15.y=570
-=======
-target15.width=160
-target15.x=310
+target15.width=140
+target15.x=160
 target15.y=390
->>>>>>> Stashed changes
 target16.editor.height=700
 target16.editor.width=900
-target16.editor.x=40
-target16.editor.y=43
+target16.editor.x=481
+target16.editor.y=63
 target16.height=50
-<<<<<<< Updated upstream
-target16.name=EastPrussia
-=======
-target16.name=Hungary
->>>>>>> Stashed changes
+target16.name=AlexanderTheGreat
 target16.naviview.expanded=true
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
-<<<<<<< Updated upstream
-target16.width=100
-target16.x=1120
-target16.y=640
-=======
-target16.width=80
-target16.x=1120
-target16.y=630
->>>>>>> Stashed changes
+target16.width=140
+target16.x=500
+target16.y=180
 target17.editor.height=700
 target17.editor.width=900
-target17.editor.x=481
-target17.editor.y=63
+target17.editor.x=40
+target17.editor.y=43
 target17.height=50
-<<<<<<< Updated upstream
-target17.name=Hitler
-target17.naviview.expanded=true
-target17.showInterface=false
-target17.type=ClassTarget
-target17.typeParameters=
-target17.width=80
-target17.x=1170
-target17.y=160
-=======
-target17.name=RussianRegion
+target17.name=BalticRegion
 target17.naviview.expanded=false
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
-target17.width=120
-target17.x=710
+target17.width=100
+target17.x=600
 target17.y=390
->>>>>>> Stashed changes
 target18.editor.height=700
 target18.editor.width=900
-target18.editor.x=1718
-target18.editor.y=-129
+target18.editor.x=2034
+target18.editor.y=-64
 target18.height=50
-<<<<<<< Updated upstream
-target18.name=Soldiers
-target18.naviview.expanded=false
-=======
-target18.name=Ukraine
+target18.name=Ireland
 target18.naviview.expanded=true
->>>>>>> Stashed changes
 target18.showInterface=false
-target18.type=AbstractTarget
+target18.type=ClassTarget
 target18.typeParameters=
 target18.width=80
-<<<<<<< Updated upstream
-<<<<<<< HEAD
 target18.x=110
-target18.y=140
-=======
-target18.x=940
-target18.y=630
->>>>>>> Stashed changes
+target18.y=480
 target19.editor.height=700
 target19.editor.width=900
-target19.editor.x=40
-target19.editor.y=43
-=======
-target18.x=1280
-target18.y=710
-target19.editor.height=966
-target19.editor.width=1920
-target19.editor.x=1280
-target19.editor.y=-202
->>>>>>> origin/master
+target19.editor.x=481
+target19.editor.y=63
 target19.height=50
-<<<<<<< Updated upstream
-target19.name=Stalin
+target19.name=Poland
 target19.naviview.expanded=true
-=======
-target19.name=Regions
-target19.naviview.expanded=false
->>>>>>> Stashed changes
 target19.showInterface=false
-target19.type=AbstractTarget
+target19.type=ClassTarget
 target19.typeParameters=
 target19.width=80
-<<<<<<< Updated upstream
-target19.x=570
-target19.y=160
-=======
-target19.x=550
-target19.y=270
->>>>>>> Stashed changes
+target19.x=520
+target19.y=560
 target2.editor.height=700
 target2.editor.width=900
 target2.editor.x=40
 target2.editor.y=43
 target2.height=50
-<<<<<<< Updated upstream
-target2.name=Portugal
-=======
 target2.name=England
->>>>>>> Stashed changes
 target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
-<<<<<<< Updated upstream
-target2.x=410
-target2.y=640
-=======
 target2.x=20
 target2.y=480
->>>>>>> Stashed changes
 target20.editor.height=700
 target20.editor.width=900
-target20.editor.x=40
-target20.editor.y=43
+target20.editor.x=380
+target20.editor.y=63
 target20.height=50
-<<<<<<< Updated upstream
-target20.name=Romania
-=======
-target20.name=Belarus
->>>>>>> Stashed changes
-target20.naviview.expanded=true
+target20.name=CarpathianRegion
+target20.naviview.expanded=false
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
-target20.width=80
-<<<<<<< Updated upstream
-target20.x=1440
-=======
-target20.x=610
->>>>>>> Stashed changes
-target20.y=560
+target20.width=140
+target20.x=1000
+target20.y=390
 target21.editor.height=700
 target21.editor.width=900
-target21.editor.x=483
-target21.editor.y=61
+target21.editor.x=275
+target21.editor.y=196
 target21.height=50
-<<<<<<< Updated upstream
-target21.name=Cavalry
-target21.naviview.expanded=false
-=======
-target21.name=Albania
+target21.name=France
 target21.naviview.expanded=true
->>>>>>> Stashed changes
 target21.showInterface=false
 target21.type=ClassTarget
 target21.typeParameters=
 target21.width=80
-<<<<<<< Updated upstream
-target21.x=110
-target21.y=230
-=======
-target21.x=550
-target21.y=630
->>>>>>> Stashed changes
+target21.x=100
+target21.y=560
 target22.editor.height=700
 target22.editor.width=900
-target22.editor.x=40
-target22.editor.y=43
+target22.editor.x=481
+target22.editor.y=63
 target22.height=50
-<<<<<<< Updated upstream
-target22.name=CentralEuropeRegion
-target22.naviview.expanded=false
-target22.showInterface=false
-target22.type=ClassTarget
-target22.typeParameters=
-target22.width=160
-target22.x=720
-target22.y=470
-=======
-target22.name=Arnold
+target22.name=Hitler
 target22.naviview.expanded=true
 target22.showInterface=false
 target22.type=ClassTarget
 target22.typeParameters=
 target22.width=80
-target22.x=650
+target22.x=1010
 target22.y=180
->>>>>>> Stashed changes
 target23.editor.height=700
 target23.editor.width=900
 target23.editor.x=40
 target23.editor.y=43
 target23.height=50
-<<<<<<< Updated upstream
-target23.name=Croatia
+target23.name=Adolphus
 target23.naviview.expanded=true
 target23.showInterface=false
 target23.type=ClassTarget
 target23.typeParameters=
 target23.width=80
-target23.x=780
-target23.y=710
-target24.editor.height=971
-target24.editor.width=955
-target24.editor.x=1279
-target24.editor.y=-202
-target24.height=50
-target24.name=Artillery
-target24.naviview.expanded=false
-=======
-target23.name=ScandinavianRegion
-target23.naviview.expanded=false
-target23.showInterface=false
-target23.type=ClassTarget
-target23.typeParameters=
-target23.width=150
-target23.x=840
-target23.y=390
+target23.x=830
+target23.y=180
 target24.editor.height=700
 target24.editor.width=900
 target24.editor.x=40
 target24.editor.y=43
 target24.height=50
-target24.name=Italy
+target24.name=Croatia
 target24.naviview.expanded=true
->>>>>>> Stashed changes
 target24.showInterface=false
 target24.type=ClassTarget
 target24.typeParameters=
 target24.width=80
-<<<<<<< Updated upstream
-target24.x=200
-target24.y=230
-target25.editor.height=700
-target25.editor.width=900
-target25.editor.x=131
-target25.editor.y=44
-target25.height=50
-target25.name=Leaders
-target25.naviview.expanded=false
-=======
-target24.x=280
-target24.y=560
+target24.x=360
+target24.y=630
 target25.editor.height=700
 target25.editor.width=900
 target25.editor.x=40
 target25.editor.y=43
 target25.height=50
-target25.name=Bismarck
+target25.name=Romania
 target25.naviview.expanded=true
->>>>>>> Stashed changes
 target25.showInterface=false
-target25.type=AbstractTarget
+target25.type=ClassTarget
 target25.typeParameters=
 target25.width=80
-<<<<<<< Updated upstream
-target25.x=810
-target25.y=10
-=======
-target25.x=920
-target25.y=180
->>>>>>> Stashed changes
+target25.x=1030
+target25.y=630
 target26.editor.height=700
 target26.editor.width=900
 target26.editor.x=40
 target26.editor.y=43
 target26.height=50
-<<<<<<< Updated upstream
-target26.name=Sweden
-=======
-target26.name=Germany
->>>>>>> Stashed changes
+target26.name=Stalin
 target26.naviview.expanded=true
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
-<<<<<<< Updated upstream
-target26.width=100
-target26.x=1350
-target26.y=640
-target27.editor.height=700
-target27.editor.width=900
-target27.editor.x=117
-target27.editor.y=83
-=======
 target26.width=80
-target26.x=220
-target26.y=480
+target26.x=410
+target26.y=180
 target27.editor.height=700
 target27.editor.width=900
-target27.editor.x=481
-target27.editor.y=63
->>>>>>> Stashed changes
+target27.editor.x=40
+target27.editor.y=43
 target27.height=50
-target27.name=Cannon
+target27.name=CentralEuropeRegion
 target27.naviview.expanded=false
 target27.showInterface=false
 target27.type=ClassTarget
 target27.typeParameters=
-target27.width=80
-<<<<<<< Updated upstream
-target27.x=1140
-target27.y=570
-target28.editor.height=700
-target28.editor.width=900
-target28.editor.x=1977
-target28.editor.y=-146
-target28.height=50
-target28.name=Sword
-target28.naviview.expanded=true
-=======
-target27.x=1110
-target27.y=110
+target27.width=160
+target27.x=310
+target27.y=390
 target28.editor.height=700
 target28.editor.width=900
 target28.editor.x=40
 target28.editor.y=43
 target28.height=50
-target28.name=Churchill
-target28.naviview.expanded=false
->>>>>>> Stashed changes
+target28.name=Hungary
+target28.naviview.expanded=true
 target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
 target28.width=80
-<<<<<<< Updated upstream
-target28.x=440
-target28.y=380
-=======
-target28.x=320
-target28.y=180
->>>>>>> Stashed changes
+target28.x=1120
+target28.y=630
 target29.editor.height=700
 target29.editor.width=900
-target29.editor.x=117
-target29.editor.y=83
+target29.editor.x=481
+target29.editor.y=63
 target29.height=50
-<<<<<<< Updated upstream
-target29.name=Yugoslavia
-=======
-target29.name=Starter
->>>>>>> Stashed changes
-target29.naviview.expanded=true
+target29.name=RussianRegion
+target29.naviview.expanded=false
 target29.showInterface=false
 target29.type=ClassTarget
 target29.typeParameters=
-<<<<<<< Updated upstream
-target29.width=90
-target29.x=870
-target29.y=710
-=======
-target29.width=80
-target29.x=70
-target29.y=10
->>>>>>> Stashed changes
+target29.width=120
+target29.x=710
+target29.y=390
 target3.editor.height=700
 target3.editor.width=900
-target3.editor.x=540
-target3.editor.y=23
+target3.editor.x=40
+target3.editor.y=43
 target3.height=50
-<<<<<<< Updated upstream
 target3.name=Churchill
 target3.naviview.expanded=false
-=======
-target3.name=Portugal
-target3.naviview.expanded=true
->>>>>>> Stashed changes
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
 target3.width=80
-<<<<<<< Updated upstream
-target3.x=480
-target3.y=160
-=======
-target3.x=10
-target3.y=560
->>>>>>> Stashed changes
+target3.x=320
+target3.y=180
 target30.editor.height=700
 target30.editor.width=900
-target30.editor.x=40
-target30.editor.y=43
+target30.editor.x=1718
+target30.editor.y=-129
 target30.height=50
-<<<<<<< Updated upstream
-target30.name=Spain
+target30.name=Ukraine
 target30.naviview.expanded=true
 target30.showInterface=false
 target30.type=ClassTarget
 target30.typeParameters=
-target30.width=90
-target30.x=590
-target30.y=640
-=======
-target30.name=Moscow
-target30.naviview.expanded=false
-target30.showInterface=false
-target30.type=ClassTarget
-target30.typeParameters=
 target30.width=80
-target30.x=730
-target30.y=480
->>>>>>> Stashed changes
+target30.x=1280
+target30.y=710
 target31.editor.height=700
 target31.editor.width=900
 target31.editor.x=40
-target31.editor.y=43
+target31.editor.y=44
 target31.height=50
-<<<<<<< Updated upstream
-target31.name=AlexanderTheGreat
-=======
-target31.name=UKRegion
->>>>>>> Stashed changes
+target31.name=BalkanRegion
 target31.naviview.expanded=false
 target31.showInterface=false
 target31.type=ClassTarget
 target31.typeParameters=
-<<<<<<< Updated upstream
-target31.width=140
-target31.x=660
-target31.y=160
-=======
-target31.width=90
-target31.x=60
+target31.width=110
+target31.x=480
 target31.y=390
->>>>>>> Stashed changes
-target32.editor.height=700
-target32.editor.width=900
-target32.editor.x=481
-target32.editor.y=63
+target32.editor.height=966
+target32.editor.width=1920
+target32.editor.x=1280
+target32.editor.y=-202
 target32.height=50
-<<<<<<< Updated upstream
-target32.name=Ireland
-=======
-target32.name=Leaders
+target32.name=Regions
 target32.naviview.expanded=false
->>>>>>> Stashed changes
 target32.showInterface=false
 target32.type=AbstractTarget
 target32.typeParameters=
 target32.width=80
-<<<<<<< Updated upstream
-target32.x=520
-target32.y=560
-=======
-target32.x=650
-target32.y=50
->>>>>>> Stashed changes
+target32.x=550
+target32.y=270
 target33.editor.height=700
 target33.editor.width=900
 target33.editor.x=40
 target33.editor.y=43
 target33.height=50
-<<<<<<< Updated upstream
-target33.name=England
-target33.naviview.expanded=false
-target33.showInterface=false
-target33.type=ClassTarget
-target33.typeParameters=
-target33.width=80
-target33.x=430
-target33.y=560
-=======
-target33.name=Netherlands
+target33.name=Belarus
 target33.naviview.expanded=true
 target33.showInterface=false
 target33.type=ClassTarget
 target33.typeParameters=
-target33.width=100
-target33.x=400
-target33.y=480
->>>>>>> Stashed changes
+target33.width=80
+target33.x=610
+target33.y=560
 target34.editor.height=700
 target34.editor.width=900
 target34.editor.x=40
 target34.editor.y=43
 target34.height=50
-<<<<<<< Updated upstream
-target34.name=Napoleon
-=======
-target34.name=Sweden
->>>>>>> Stashed changes
+target34.name=Switzerland
 target34.naviview.expanded=true
 target34.showInterface=false
 target34.type=ClassTarget
 target34.typeParameters=
-target34.width=80
-<<<<<<< Updated upstream
-target34.x=900
-target34.y=160
-=======
-target34.x=930
+target34.width=100
+target34.x=370
 target34.y=560
->>>>>>> Stashed changes
 target35.editor.height=700
 target35.editor.width=900
-<<<<<<< HEAD
-target35.editor.x=540
-target35.editor.y=23
-=======
-target35.editor.x=1280
-target35.editor.y=-64
->>>>>>> origin/master
+target35.editor.x=483
+target35.editor.y=61
 target35.height=50
-<<<<<<< Updated upstream
-target35.name=Starter
+target35.name=Albania
 target35.naviview.expanded=true
 target35.showInterface=false
 target35.type=ClassTarget
 target35.typeParameters=
 target35.width=80
-target35.x=70
-target35.y=10
-=======
-target35.name=WestEuropeRegion
-target35.naviview.expanded=false
-target35.showInterface=false
-target35.type=ClassTarget
-target35.typeParameters=
-target35.width=140
-target35.x=160
-target35.y=390
->>>>>>> Stashed changes
+target35.x=550
+target35.y=630
 target36.editor.height=700
 target36.editor.width=900
-target36.editor.x=481
-target36.editor.y=63
+target36.editor.x=40
+target36.editor.y=43
 target36.height=50
-<<<<<<< Updated upstream
-target36.name=Switzerland
-target36.naviview.expanded=false
-target36.showInterface=false
-target36.type=ClassTarget
-target36.typeParameters=
-target36.width=100
-target36.x=780
-target36.y=640
-=======
-target36.name=AlexanderTheGreat
+target36.name=Arnold
 target36.naviview.expanded=true
 target36.showInterface=false
 target36.type=ClassTarget
 target36.typeParameters=
-target36.width=140
-target36.x=500
+target36.width=80
+target36.x=650
 target36.y=180
->>>>>>> Stashed changes
 target37.editor.height=700
 target37.editor.width=900
 target37.editor.x=40
 target37.editor.y=43
 target37.height=50
-<<<<<<< Updated upstream
-target37.name=Albania
+target37.name=Napoleon
 target37.naviview.expanded=true
 target37.showInterface=false
 target37.type=ClassTarget
 target37.typeParameters=
 target37.width=80
-target37.x=970
-target37.y=710
-=======
-target37.name=BalticRegion
-target37.naviview.expanded=false
-target37.showInterface=false
-target37.type=ClassTarget
-target37.typeParameters=
-target37.width=100
-target37.x=600
-target37.y=390
->>>>>>> Stashed changes
+target37.x=740
+target37.y=180
 target38.editor.height=700
 target38.editor.width=900
-target38.editor.x=2034
-target38.editor.y=-64
+target38.editor.x=40
+target38.editor.y=43
 target38.height=50
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-target38.name=WestEuropeRegion
-=======
-target38.name=Ireland
->>>>>>> origin/master
-target38.naviview.expanded=false
-target38.showInterface=false
-target38.type=ClassTarget
-target38.typeParameters=
-target38.width=140
-target38.x=570
-target38.y=470
-=======
-target38.name=Ireland
+target38.name=Spain
 target38.naviview.expanded=true
 target38.showInterface=false
 target38.type=ClassTarget
 target38.typeParameters=
 target38.width=80
-target38.x=110
-target38.y=480
->>>>>>> Stashed changes
+target38.x=190
+target38.y=560
 target39.editor.height=700
 target39.editor.width=900
-target39.editor.x=481
-target39.editor.y=63
+target39.editor.x=40
+target39.editor.y=43
 target39.height=50
-<<<<<<< Updated upstream
-target39.name=Netherlands
+target39.name=Stalingrad
 target39.naviview.expanded=false
 target39.showInterface=false
 target39.type=ClassTarget
 target39.typeParameters=
-target39.width=100
-target39.x=730
-=======
-target39.name=Poland
-target39.naviview.expanded=true
-target39.showInterface=false
-target39.type=ClassTarget
-target39.typeParameters=
-target39.width=80
-target39.x=520
->>>>>>> Stashed changes
-target39.y=560
+target39.width=90
+target39.x=630
+target39.y=480
 target4.editor.height=700
 target4.editor.width=900
-target4.editor.x=40
-target4.editor.y=43
+target4.editor.x=117
+target4.editor.y=83
 target4.height=50
-target4.name=Greece
+target4.name=Starter
 target4.naviview.expanded=true
 target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
 target4.width=80
-target4.x=1060
-target4.y=710
+target4.x=70
+target4.y=10
 target40.editor.height=700
 target40.editor.width=900
-target40.editor.x=275
-target40.editor.y=196
+target40.editor.x=40
+target40.editor.y=43
 target40.height=50
-<<<<<<< Updated upstream
-target40.name=Arnold
-=======
-target40.name=France
->>>>>>> Stashed changes
+target40.name=Norway
 target40.naviview.expanded=true
 target40.showInterface=false
 target40.type=ClassTarget
 target40.typeParameters=
 target40.width=80
-<<<<<<< Updated upstream
-target40.x=810
-target40.y=160
-target41.editor.height=700
-target41.editor.width=1275
-target41.editor.x=165
-target41.editor.y=23
-target41.height=50
-target41.name=UKRegion
-target41.naviview.expanded=false
-target41.showInterface=false
-target41.type=ClassTarget
-target41.typeParameters=
-target41.width=90
-target41.x=470
-target41.y=470
-=======
-target40.x=100
+target40.x=840
 target40.y=560
 target41.editor.height=700
 target41.editor.width=900
 target41.editor.x=40
 target41.editor.y=43
 target41.height=50
-target41.name=Adolphus
-target41.naviview.expanded=true
+target41.name=ScandinavianRegion
+target41.naviview.expanded=false
 target41.showInterface=false
 target41.type=ClassTarget
 target41.typeParameters=
-target41.width=80
-target41.x=830
-target41.y=180
->>>>>>> Stashed changes
+target41.width=150
+target41.x=840
+target41.y=390
 target42.editor.height=700
 target42.editor.width=900
 target42.editor.x=40
 target42.editor.y=43
 target42.height=50
-<<<<<<< Updated upstream
-target42.name=Bismarck
-target42.naviview.expanded=false
-=======
-target42.name=Croatia
+target42.name=Denmark
 target42.naviview.expanded=true
->>>>>>> Stashed changes
 target42.showInterface=false
 target42.type=ClassTarget
 target42.typeParameters=
 target42.width=80
-<<<<<<< Updated upstream
-target42.x=990
-target42.y=160
-=======
-target42.x=360
-target42.y=630
->>>>>>> Stashed changes
+target42.x=310
+target42.y=480
 target43.editor.height=700
 target43.editor.width=900
 target43.editor.x=40
 target43.editor.y=43
 target43.height=50
-<<<<<<< Updated upstream
-target43.name=Austria
-=======
-target43.name=Romania
->>>>>>> Stashed changes
+target43.name=Italy
 target43.naviview.expanded=true
 target43.showInterface=false
 target43.type=ClassTarget
 target43.typeParameters=
 target43.width=80
-<<<<<<< Updated upstream
-target43.x=840
+target43.x=280
 target43.y=560
-target44.editor.height=873
-target44.editor.width=1440
-target44.editor.x=0
-target44.editor.y=23
-target44.height=50
-target44.name=Regions
-=======
-target43.x=1030
-target43.y=630
 target44.editor.height=700
 target44.editor.width=900
 target44.editor.x=40
-target44.editor.y=44
+target44.editor.y=43
 target44.height=50
-target44.name=BalkanRegion
->>>>>>> Stashed changes
+target44.name=St_Petersburg
 target44.naviview.expanded=false
 target44.showInterface=false
 target44.type=ClassTarget
 target44.typeParameters=
-<<<<<<< Updated upstream
-target44.width=80
-target44.x=960
-target44.y=350
-target45.editor.height=777
-target45.editor.width=1280
-target45.editor.x=0
-target45.editor.y=23
-target45.height=50
-target45.name=GameLogic
-=======
 target44.width=110
-target44.x=480
-target44.y=390
+target44.x=820
+target44.y=480
 target45.editor.height=700
 target45.editor.width=900
-target45.editor.x=481
-target45.editor.y=63
+target45.editor.x=90
+target45.editor.y=37
 target45.height=50
-target45.name=Artillery
->>>>>>> Stashed changes
-target45.naviview.expanded=false
+target45.name=GameLogic
+target45.naviview.expanded=true
 target45.showInterface=false
 target45.type=ClassTarget
 target45.typeParameters=
-<<<<<<< Updated upstream
 target45.width=90
-target45.x=330
-target45.y=60
-=======
-target45.width=80
-target45.x=200
-target45.y=180
->>>>>>> Stashed changes
+target45.x=280
+target45.y=10
 target46.editor.height=700
 target46.editor.width=900
 target46.editor.x=40
 target46.editor.y=43
 target46.height=50
-<<<<<<< Updated upstream
-target46.name=BalticRegion
-target46.naviview.expanded=false
-=======
-target46.name=Switzerland
+target46.name=Bismarck
 target46.naviview.expanded=true
->>>>>>> Stashed changes
 target46.showInterface=false
 target46.type=ClassTarget
 target46.typeParameters=
-target46.width=100
-<<<<<<< Updated upstream
-target46.x=1010
-target46.y=470
-=======
-target46.x=370
-target46.y=560
->>>>>>> Stashed changes
+target46.width=80
+target46.x=920
+target46.y=180
 target47.editor.height=700
 target47.editor.width=900
 target47.editor.x=40
 target47.editor.y=43
 target47.height=50
-<<<<<<< Updated upstream
-target47.name=RussianRegion
-target47.naviview.expanded=false
-target47.showInterface=false
-target47.type=ClassTarget
-target47.typeParameters=
-target47.width=120
-target47.x=1120
-target47.y=470
-=======
-target47.name=Napoleon
+target47.name=Germany
 target47.naviview.expanded=true
 target47.showInterface=false
 target47.type=ClassTarget
 target47.typeParameters=
 target47.width=80
-target47.x=740
-target47.y=180
->>>>>>> Stashed changes
-target48.editor.height=700
-target48.editor.width=900
-target48.editor.x=40
-target48.editor.y=43
-target48.height=50
-<<<<<<< Updated upstream
-target48.name=ScandinavianRegion
-target48.naviview.expanded=false
-target48.showInterface=false
-target48.type=ClassTarget
-target48.typeParameters=
-target48.width=150
-target48.x=1250
-target48.y=470
-=======
-target48.name=Spain
-target48.naviview.expanded=true
-target48.showInterface=false
-target48.type=ClassTarget
-target48.typeParameters=
-target48.width=80
-target48.x=190
-target48.y=560
->>>>>>> Stashed changes
-target49.editor.height=700
-target49.editor.width=900
-target49.editor.x=40
-target49.editor.y=43
-target49.height=50
-<<<<<<< Updated upstream
-target49.name=BalkanRegion
-=======
-target49.name=Stalingrad
->>>>>>> Stashed changes
-target49.naviview.expanded=false
-target49.showInterface=false
-target49.type=ClassTarget
-target49.typeParameters=
-<<<<<<< Updated upstream
-target49.width=110
-target49.x=890
-target49.y=470
-=======
-target49.width=90
-target49.x=630
-target49.y=480
->>>>>>> Stashed changes
+target47.x=220
+target47.y=480
 target5.editor.height=700
 target5.editor.width=900
 target5.editor.x=40
 target5.editor.y=43
 target5.height=50
-<<<<<<< Updated upstream
-target5.name=Ukraine
-=======
-target5.name=EastPrussia
->>>>>>> Stashed changes
-target5.naviview.expanded=true
+target5.name=Moscow
+target5.naviview.expanded=false
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
-<<<<<<< Updated upstream
 target5.width=80
-target5.x=1350
-=======
-target5.width=100
-target5.x=700
->>>>>>> Stashed changes
-target5.y=560
-target50.editor.height=700
-target50.editor.width=900
-target50.editor.x=481
-target50.editor.y=63
-target50.height=50
-<<<<<<< Updated upstream
-target50.name=Hungary
-target50.naviview.expanded=true
-=======
-target50.name=Infantry
-target50.naviview.expanded=false
->>>>>>> Stashed changes
-target50.showInterface=false
-target50.type=ClassTarget
-target50.typeParameters=
-target50.width=80
-<<<<<<< Updated upstream
-target50.x=1530
-target50.y=560
-target51.editor.height=970
-target51.editor.width=858
-target51.editor.x=1277
-target51.editor.y=-202
-target51.height=50
-target51.name=Weapons
-target51.naviview.expanded=false
-=======
-target50.x=0
-target50.y=180
-target51.editor.height=700
-target51.editor.width=900
-target51.editor.x=40
-target51.editor.y=43
-target51.height=50
-target51.name=Norway
-target51.naviview.expanded=true
->>>>>>> Stashed changes
-target51.showInterface=false
-target51.type=ClassTarget
-target51.typeParameters=
-target51.width=80
-<<<<<<< Updated upstream
-target51.x=340
-target51.y=280
-=======
-target51.x=840
-target51.y=560
->>>>>>> Stashed changes
-target52.editor.height=700
-target52.editor.width=900
-target52.editor.x=40
-target52.editor.y=43
-target52.height=50
-<<<<<<< Updated upstream
-target52.name=Poland
-=======
-target52.name=Denmark
->>>>>>> Stashed changes
-target52.naviview.expanded=true
-target52.showInterface=false
-target52.type=ClassTarget
-target52.typeParameters=
-target52.width=80
-<<<<<<< Updated upstream
-target52.x=940
-target52.y=640
-=======
-target52.x=310
-target52.y=480
->>>>>>> Stashed changes
-target53.editor.height=700
-target53.editor.width=900
-target53.editor.x=40
-target53.editor.y=43
-target53.height=50
-<<<<<<< Updated upstream
-target53.name=Norway
-=======
-target53.name=St_Petersburg
->>>>>>> Stashed changes
-target53.naviview.expanded=false
-target53.showInterface=false
-target53.type=ClassTarget
-target53.typeParameters=
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-target53.width=80
-target53.x=1260
-target53.y=640
-target54.editor.height=700
-target54.editor.width=900
-target54.editor.x=40
-target54.editor.y=43
-=======
-target53.width=110
-target53.x=1280
-target53.y=570
-target54.editor.height=966
-target54.editor.width=1016
-target54.editor.x=2181
-target54.editor.y=-202
->>>>>>> origin/master
-target54.height=50
-target54.name=Germany
-=======
-target53.width=110
-target53.x=820
-target53.y=480
-target54.editor.height=700
-target54.editor.width=900
-target54.editor.x=90
-target54.editor.y=46
-target54.height=50
-target54.name=GameLogic
->>>>>>> Stashed changes
-target54.naviview.expanded=true
-target54.showInterface=false
-target54.type=ClassTarget
-target54.typeParameters=
-<<<<<<< Updated upstream
-target54.width=80
-target54.x=930
-target54.y=560
-=======
-target54.width=90
-target54.x=280
-target54.y=10
->>>>>>> Stashed changes
+target5.x=730
+target5.y=480
 target6.editor.height=700
 target6.editor.width=900
-target6.editor.x=481
-target6.editor.y=63
+target6.editor.x=540
+target6.editor.y=23
 target6.height=50
-<<<<<<< Updated upstream
-target6.name=CarpathianRegion
-target6.naviview.expanded=false
-target6.showInterface=false
-target6.type=ClassTarget
-target6.typeParameters=
-target6.width=140
-target6.x=1410
-target6.y=470
-=======
-target6.name=Austria
+target6.name=Portugal
 target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
 target6.width=80
-target6.x=510
-target6.y=480
->>>>>>> Stashed changes
+target6.x=10
+target6.y=560
 target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=40
 target7.editor.y=43
 target7.height=50
-<<<<<<< Updated upstream
-target7.name=Italy
-=======
-target7.name=Yugoslavia
->>>>>>> Stashed changes
-target7.naviview.expanded=true
+target7.name=UKRegion
+target7.naviview.expanded=false
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
-<<<<<<< Updated upstream
-target7.width=80
-target7.x=690
-target7.y=640
-=======
 target7.width=90
-target7.x=450
-target7.y=630
->>>>>>> Stashed changes
+target7.x=60
+target7.y=390
 target8.editor.height=700
 target8.editor.width=900
-<<<<<<< HEAD
-target8.editor.x=481
-target8.editor.y=63
-=======
-target8.editor.x=1280
-target8.editor.y=-146
->>>>>>> origin/master
+target8.editor.x=40
+target8.editor.y=43
 target8.height=50
-<<<<<<< Updated upstream
-target8.name=Gun
-target8.naviview.expanded=false
-=======
-target8.name=Sword
+target8.name=Greece
 target8.naviview.expanded=true
->>>>>>> Stashed changes
 target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
 target8.width=80
-<<<<<<< Updated upstream
-target8.x=240
-target8.y=380
+target8.x=1060
+target8.y=710
 target9.editor.height=700
 target9.editor.width=900
 target9.editor.x=40
 target9.editor.y=43
 target9.height=50
-target9.name=France
+target9.name=EastPrussia
 target9.naviview.expanded=true
-=======
-target8.x=1210
-target8.y=110
-target9.editor.height=700
-target9.editor.width=900
-target9.editor.x=481
-target9.editor.y=63
-target9.height=50
-target9.name=Weapons
-target9.naviview.expanded=false
->>>>>>> Stashed changes
 target9.showInterface=false
-target9.type=AbstractTarget
+target9.type=ClassTarget
 target9.typeParameters=
-target9.width=80
-<<<<<<< Updated upstream
-target9.x=500
-target9.y=640
-=======
-target9.x=1110
-target9.y=10
->>>>>>> Stashed changes
+target9.width=100
+target9.x=700
+target9.y=560
