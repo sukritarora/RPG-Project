@@ -7,4 +7,6 @@ comment2.params=
 comment2.target=Weapons\ chooseWeapon()
 comment3.params=l
 comment3.target=void\ displayStats(Leaders)
-numComments=4
+comment4.params=l
+comment4.target=void\ firstChallenge(Leaders)
+numComments=5

@@ -39,4 +39,9 @@ public abstract class Soldiers
     {
         return defense;
     }
+    
+    public void takeDamage(int d)
+    {
+        health -= d;
+    }
 }

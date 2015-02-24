@@ -8,4 +8,6 @@ comment2.params=
 comment2.target=int\ getStrength()
 comment3.params=
 comment3.target=int\ getDefense()
-numComments=4
+comment4.params=d
+comment4.target=void\ takeDamage(int)
+numComments=5
