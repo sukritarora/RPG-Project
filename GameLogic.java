@@ -63,12 +63,39 @@ public class GameLogic
         return l; 
     }
     
+    public static Regions chooseAttack(Leaders l)
+    {
+        boolean valid = true;
+        String response = "";
+        while (valid)
+        {
+            String[] regions = {"UK Region","West European Region","Central European Region","Balkan Region","Baltic Region","Russian Region","Scandinavian Region","Carpathian Region"};
+            response = (String) JOptionPane.showInputDialog(null, "Which region would you like to attack?", "Attack Choices", JOptionPane.PLAIN_MESSAGE,null, regions, regions[0]);
+            if (!(response.equals(l.getName()))) valid = false;
+        }
+        Regions att = null;
+        switch (response)
+        {
+            case "UK Region" : att = new UKRegion();
+            case "West European Region" : att = new WestEuropeRegion();
+            case "CentralEuropeanRegion" : att = new CentralEuropeRegion();
+            case "Balkan Region" : att = new BalkanRegion();
+            case "Baltic Region" : att = new BalticRegion();
+            case "Russian Region" : att = new RussianRegion();
+            case "Scandinavian Region" : att = new ScandinavianRegion();
+            case "Carpathian Region" : att = new CarpathianRegion();
+        }
+        return att;
+    }
+    
     public static void placeSoldiers(Leaders l)
     {
         int soldierNum = l.getSoldiers().getNumberOfSoldiers();
         Object[] soldierArray =new Object[l.getRegionArray().size()];
         l.getRegionArray().toArray(soldierArray);
         String response = (String) JOptionPane.showInputDialog(null, "You have " + soldierNum + " soldiers. Where would you like to place them?", "Place Soldiers", JOptionPane.PLAIN_MESSAGE,null, soldierArray, soldierArray[0]);
+        String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
+        int soldier = Integer.parseInt(numMoving);
     }
 
     

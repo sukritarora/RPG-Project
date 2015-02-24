@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=num
 comment0.target=Soldiers(int)
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Soldiers\n
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Soldiers\r\n
 comment1.params=
 comment1.target=int\ getNumberOfSoldiers()
 numComments=2
