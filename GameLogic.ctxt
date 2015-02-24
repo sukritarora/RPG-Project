@@ -2,9 +2,11 @@
 comment0.params=
 comment0.target=Leaders\ chooseLeader()
 comment1.params=l
-comment1.target=void\ displayStats(Leaders)
+comment1.target=void\ placeSoldiers(Leaders)
 comment2.params=l
-comment2.target=void\ firstChallenge(Leaders)
-comment3.params=r\ s
-comment3.target=void\ BattleSequence(Regions,\ Soldiers)
-numComments=4
+comment2.target=void\ displayStats(Leaders)
+comment3.params=l
+comment3.target=void\ firstChallenge(Leaders)
+comment4.params=r\ s
+comment4.target=void\ BattleSequence(Regions,\ Soldiers)
+numComments=5

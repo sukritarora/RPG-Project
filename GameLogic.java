@@ -62,8 +62,15 @@ public class GameLogic
         }
         return l; 
     }
-    
-   
+
+    public static void placeSoldiers(Leaders l)
+    {
+        int soldierNum = l.getSoldiers().getNumberOfSoldiers();
+        Object[] soldierArray =new Object[l.getRegionArray().size()];
+        l.getRegionArray().toArray(soldierArray);
+        String response = (String) JOptionPane.showInputDialog(null, "You have " + soldierNum + " soldiers. Where would you like to place them?", "Place Soldiers", JOptionPane.PLAIN_MESSAGE,null, soldierArray, soldierArray[0]);
+    }
+
     
     public static void displayStats(Leaders l)
     {
@@ -76,18 +83,16 @@ public class GameLogic
             System.out.print(i.regionName + ", ");
             System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries");
         }
-        
+
     }
-    
-    
+
     public static void firstChallenge (Leaders l)
     {
-        
+
     }
-    
+
     public static void BattleSequence (Regions r, Soldiers s)
     {
-        
 
     }
 }
