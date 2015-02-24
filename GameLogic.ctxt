@@ -6,9 +6,16 @@ comment1.target=Regions\ chooseAttack(Leaders)
 comment2.params=l
 comment2.target=void\ placeSoldiers(Leaders)
 comment3.params=l
+<<<<<<< Updated upstream
 comment3.target=void\ displayStats(Leaders)
 comment4.params=l
 comment4.target=void\ firstChallenge(Leaders)
 comment5.params=r\ s
 comment5.target=void\ BattleSequence(Regions,\ Soldiers)
 numComments=6
+=======
+comment3.target=void\ firstChallenge(Leaders)
+comment4.params=l\ win
+comment4.target=boolean\ fightSequence(Leaders,\ boolean)
+numComments=5
+>>>>>>> Stashed changes

@@ -38,4 +38,14 @@ public abstract class Leaders
     {
         return name;
     }
+    
+    public void addSoldiers ()
+    {
+        s.numberOfSoldiers +=3;
+    }
+    
+    public void subtractSoldiers ()
+    {
+        s.numberOfSoldiers-=3;
+    }
 }

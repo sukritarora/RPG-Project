@@ -97,7 +97,6 @@ public class GameLogic
         String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
         int soldier = Integer.parseInt(numMoving);
     }
-
     
     public static void displayStats(Leaders l)
     {
@@ -118,9 +117,25 @@ public class GameLogic
         
     }
     
-    public static void BattleSequence (Regions r, Soldiers s)
+    public static boolean fightSequence (Leaders l, boolean win)
     {
+        Random cpu = new Random ();
+        int cpuSoldiers;
+        if (win == true)
+        {
+            cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10);
+        } else 
+        {
+            cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10) + 3;
+        }
         
-
+        double prob = cpu.nextDouble();
+        if (((double)(l.getSoldiers().getNumberOfSoldiers() - cpuSoldiers) / 100 + prob) > .5)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
     }
 }
