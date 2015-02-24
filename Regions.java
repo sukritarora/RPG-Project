@@ -10,6 +10,7 @@ public abstract class Regions
     //private i
     final String regionName;
     private int countryNumber;
+    private int activeSoldiers;
     /**
      * Constructor for objects of class Countries
      */

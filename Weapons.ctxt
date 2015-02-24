@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.params=d\ a\ type
-comment0.target=Weapons(int,\ int,\ java.lang.String)
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Weapons\n
-comment1.params=
-comment1.target=int\ getDamage()
-comment2.params=
-comment2.target=int\ getAccuracy()
-numComments=3

@@ -10,8 +10,8 @@ public abstract class Leaders
     final String name;
     private ArrayList<Regions> regionArray = new ArrayList<Regions>(); 
     //private Regions r = null;
-    private Soldiers s = null;
-    private Weapons w = null;
+    private Soldiers s = new Soldiers(20);
+    
     /**
      * Constructor for objects of class Soldiers
      */
@@ -24,15 +24,7 @@ public abstract class Leaders
         //         w = new Sword();
     }
 
-    public void assignSoldier(Soldiers s)
-    {
-        this.s = s;
-    }
-
-    public void assignWeapon(Weapons w)
-    {
-        this.w = w;
-    }
+    
 
     public ArrayList<Regions> getRegionArray()
     {
@@ -44,10 +36,6 @@ public abstract class Leaders
         return s;
     }
 
-    public Weapons getWeapons()
-    {
-        return w;
-    }
 
     public String getName()
     {
