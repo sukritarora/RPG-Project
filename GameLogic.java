@@ -6,6 +6,7 @@
  * @version (a version number or a date)
  */
 import javax.swing.*;
+import java.util.ArrayList;
 public class GameLogic
 {
     public static Leaders chooseLeader()
@@ -66,15 +67,18 @@ public class GameLogic
         Soldiers s = null;
         switch (response)
         {
-            case "Infantry":    {
+            case "Infantry":    
+            {
                 s = new Infantry();
                 break;
             }
-            case "Cavalry": {
+            case "Cavalry": 
+            {
                 s = new Cavalry();
                 break;
             }
-            case "Artillery":   {
+            case "Artillery":   
+            {
                 s = new Artillery();
                 break;
             }
@@ -89,15 +93,18 @@ public class GameLogic
         Weapons w = null;
         switch (response)
         {
-            case "Gun": {
+            case "Gun": 
+            {
                 w = new Gun();
                 break;
             }
-            case "Sword":   {
+            case "Sword":  
+            {
                 w = new Sword();
                 break;
             }
-            case "Canon":   {
+            case "Canon":  
+            {
                 w = new Cannon();
                 break;
             }
@@ -107,10 +114,25 @@ public class GameLogic
     
     public static void displayStats(Leaders l)
     {
-        System.out.println("Welcome to the game! This will be the window that will keep you updated on all your information");
-        System.out.println("You are: " + l.name + "\nYou rule over the " + l.getRegion().regionName + " region which has " + l.getRegion().getCountryNum()+ " countries");
-        System.out.println("You're type of soldier is: " + l.getSoldiers().typeOfSoldier + "\nYou're weapon is: " + l.getWeapons().typeOfWeapon);
+        System.out.println("This will be the window that will keep you updated on all your information");
+        System.out.println("You are: " + l.name);
+        System.out.print("You rule over the ");
+        for (Regions i : l.getRegionArray())
+        {
+            System.out.print(i.regionName + ", ");
+            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries");
+        }
+        
+        System.out.println("\nYou're type of soldier is: " + l.getSoldiers().typeOfSoldier + "\nYou're weapon is: " + l.getWeapons().typeOfWeapon);
         System.out.println("\nWeapons have " + l.getWeapons().getDamage() + " damage and " + l.getWeapons().getAccuracy() + " accuracy"); 
         System.out.println("\nCurrent health: " + l.getSoldiers().getHealth() + "\nCurrent strength: " + l.getSoldiers().getStrength() + "\nCurrent defense: " + l.getSoldiers().getDefense());
+    }
+    
+    public static void fightSequence()
+    {
+    }
+    
+    public static void cpuTurn()
+    {
     }
 }

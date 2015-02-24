@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Soldiers here.
  * 
@@ -8,7 +8,8 @@
 public abstract class Leaders
 {
     final String name;
-    private Regions r = null;
+    private ArrayList<Regions> regionArray = new ArrayList<Regions>(); 
+    //private Regions r = null;
     private Soldiers s = null;
     private Weapons w = null;
     /**
@@ -18,36 +19,36 @@ public abstract class Leaders
     {
         // initialise instance variables
         name = n;
-        this.r = r;
-//         s = new Cavalry();
-//         w = new Sword();
+        regionArray.add(r);
+        //         s = new Cavalry();
+        //         w = new Sword();
     }
-    
+
     public void assignSoldier(Soldiers s)
     {
         this.s = s;
     }
-    
+
     public void assignWeapon(Weapons w)
     {
         this.w = w;
     }
-    
-    public Regions getRegion()
+
+    public ArrayList<Regions> getRegionArray()
     {
-        return r;
+        return regionArray;
     }
-    
+
     public Soldiers getSoldiers()
     {
         return s;
     }
-    
+
     public Weapons getWeapons()
     {
         return w;
     }
-    
+
     public String getName()
     {
         return name;
