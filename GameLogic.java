@@ -231,13 +231,20 @@ public class GameLogic
 
         int attackingSoldiers = attackingLeader.getSoldiers().getNumberOfSoldiers();
         int defendingSoldiers = defendingLeader.getSoldiers().getNumberOfSoldiers();
+        
+        int[] offenseArray = {3};
+        int[] defenseArray = {2};
 
         while ((attackingSoldiers > 1) && (defendingSoldiers > 0))
         {
             if ((attackingSoldiers > 3) && (defendingSoldiers > 2))
             {
-                for (int i = 0; i > 4; i++)
+                for (int i = 0; i < 4; i++)
                 {
+                    for (int j = 0; i < 3; j++)
+                    {
+                        defenseArray[j] = r.nextInt(6) + 1;
+                    }
                 }
             }
         }
