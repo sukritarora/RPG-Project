@@ -11,7 +11,11 @@ import java.util.ArrayList;
 import java.util.Random;
 public class GameLogic
 {
-    String choice = "";
+    public GameLogic()
+    {
+        UKRegion UK = new UKRegion();
+        //When an instance of GameLogic is created, all regions are created to use throughout the game
+    }
     public static Leaders chooseLeader()
     {
         String[] leaders = {"Winston Churchill","Napoleon Bonaparte","Adolf Hitler","Alexander the Great","Otto von Bismarck","Joseph Stalin","Gustavus Adolphus","Arnold Schwarzenegger"};
@@ -71,7 +75,7 @@ public class GameLogic
         {
             String[] regions = {"UK Region","West European Region","Central European Region","Balkan Region","Baltic Region","Russian Region","Scandinavian Region","Carpathian Region"};
             response = (String) JOptionPane.showInputDialog(null, "Which region would you like to attack?", "Attack Choices", JOptionPane.PLAIN_MESSAGE,null, regions, regions[0]);
-            if (!(response.equals(l.getName()))) valid = false;
+            if (!(response.equals(l.getRegionArray().get(0)))) valid = false;
         }
         Regions att = null;
         switch (response)
@@ -94,8 +98,14 @@ public class GameLogic
         Object[] soldierArray =new Object[l.getRegionArray().size()];
         l.getRegionArray().toArray(soldierArray);
         String response = (String) JOptionPane.showInputDialog(null, "You have " + soldierNum + " soldiers. Where would you like to place them?", "Place Soldiers", JOptionPane.PLAIN_MESSAGE,null, soldierArray, soldierArray[0]);
+        int indexOfRegion;
+        for (int i = 0; i < soldierArray.length; i++)
+        {
+            if (response.equals(soldierArray[i])) indexOfRegion = i;
+        }
         String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
-        int soldier = Integer.parseInt(numMoving);
+        int numberOfSoldiersToMove = Integer.parseInt(numMoving);
+        
     }
     
     public static void displayStats(Leaders l)
