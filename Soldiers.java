@@ -18,9 +18,16 @@ public class Soldiers
     {
         numberOfSoldiers = num;
     }
+    
     public int getNumberOfSoldiers()
     {
         return numberOfSoldiers;
     }
+    
+    public void assignSoldiersToRegions(int changingSoldiers)
+    {
+        numberOfSoldiers = numberOfSoldiers - changingSoldiers;
+    }
+    
     
 }

@@ -24,4 +24,14 @@ public abstract class Regions
     {
         return countryNumber;
     }
+    
+    public void assignSoldiers(int numberOfSoldiers)
+    {
+        activeSoldiers = activeSoldiers + numberOfSoldiers;
+    }
+    
+    public int getSoldiers()
+    {
+        return activeSoldiers;
+    }
 }

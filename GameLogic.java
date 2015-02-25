@@ -94,18 +94,28 @@ public class GameLogic
     
     public static void placeSoldiers(Leaders l)
     {
-        int soldierNum = l.getSoldiers().getNumberOfSoldiers();
-        Object[] soldierArray =new Object[l.getRegionArray().size()];
-        l.getRegionArray().toArray(soldierArray);
-        String response = (String) JOptionPane.showInputDialog(null, "You have " + soldierNum + " soldiers. Where would you like to place them?", "Place Soldiers", JOptionPane.PLAIN_MESSAGE,null, soldierArray, soldierArray[0]);
-        int indexOfRegion;
-        for (int i = 0; i < soldierArray.length; i++)
+        boolean cont = true;
+        Object[] yesOrNo = {true,false};
+        while (cont)
         {
-            if (response.equals(soldierArray[i])) indexOfRegion = i;
+            int soldierNum = l.getSoldiers().getNumberOfSoldiers();
+            Object[] soldierArray =new Object[l.getRegionArray().size()];
+            l.getRegionArray().toArray(soldierArray);
+            Object response = JOptionPane.showInputDialog(null, "You have " + soldierNum + " soldiers. Where would you like to place them?","Place Soldiers",JOptionPane.PLAIN_MESSAGE,null,soldierArray,soldierArray[0]);
+            Regions region = null;
+            for (int i = 0; i < soldierArray.length; i++)
+            {
+                if (response == soldierArray[i]) 
+                {
+                    region = (Regions) response;
+                }
+            }
+            String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
+            int numberOfSoldiersToMove = Integer.parseInt(numMoving);
+            l.getSoldiers().assignSoldiersToRegions(numberOfSoldiersToMove);
+            region.assignSoldiers(numberOfSoldiersToMove);
+            cont = (boolean) JOptionPane.showInputDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.PLAIN_MESSAGE,null,yesOrNo,yesOrNo[0]);
         }
-        String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
-        int numberOfSoldiersToMove = Integer.parseInt(numMoving);
-        
     }
     
     public static void displayStats(Leaders l)
@@ -116,8 +126,8 @@ public class GameLogic
         System.out.print("You rule over the ");
         for (Regions i : l.getRegionArray())
         {
-            System.out.print(i.regionName + ", ");
-            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries");
+            System.out.print(i.regionName + ",");
+            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries and " + i.getSoldiers() + "soldiers");
         }
         
     }
