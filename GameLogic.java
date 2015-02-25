@@ -152,6 +152,7 @@ public class GameLogic
         double prob = cpu.nextDouble();
         if (((double)(l.getSoldiers().getNumberOfSoldiers() - cpuSoldiers) / 100 + prob) > .5)
         {
+            System.out.println("Congratulations! You have beat the region of (insert region here)! You have gained three soldiers!");
             return true;
         } else
         {
