@@ -185,7 +185,7 @@ public class GameLogic
         
     }
     
-    public static boolean fightSequence (Leaders l, boolean win)
+    public static boolean fightSequence (Leaders l, boolean win, Regions r)
     {
         Random cpu = new Random ();
         int cpuSoldiers;
@@ -200,7 +200,7 @@ public class GameLogic
         double prob = cpu.nextDouble();
         if (((double)(l.getSoldiers().getNumberOfSoldiers() - cpuSoldiers) / 100 + prob) > .5)
         {
-            System.out.println("Congratulations! You have beat the region of (insert region here)! You have gained three soldiers!");
+            System.out.println("Congratulations! You have beat the region of " + r.regionName + "! You have gained three soldiers!");
             return true;
         } else
         {
