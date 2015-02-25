@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class GameLogic here.
  * 
@@ -85,7 +84,7 @@ public class GameLogic
                 break;
             }
         }
-        l.getSoldiers().setDefaultSoldiers();
+        l.getSoldiers().setNumberOfSoldiers(20);
         return l; 
     }
     
@@ -207,32 +206,10 @@ public class GameLogic
         
     }
     
-<<<<<<< HEAD
-    public static boolean fightSequence (Leaders l, boolean win, Regions r)
-    {
-        Random cpu = new Random ();
-        int cpuSoldiers;
-        if (win == true)
-        {
-            cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10);
-        } else 
-        {
-            cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10) + 3;
-        }
-        
-        double prob = cpu.nextDouble();
-        if (((double)(l.getSoldiers().getNumberOfSoldiers() - cpuSoldiers) / 100 + prob) > .5)
-        {
-            System.out.println("Congratulations! You have beat the region of " + r.regionName + "! You have gained three soldiers!");
-            return true;
-        } else
-        {
-            return false;
-        }
-=======
     public static boolean fightSequence (Leaders attackingLeader, Leaders defendingLeader)
     {
         boolean win = true;
+        Random r = new Random();
 //         Random cpu = new Random ();
 //         int cpuSoldiers;
 //         if (win == true)
@@ -252,7 +229,16 @@ public class GameLogic
 //             return false;
 //         }
 
+        int attackingSoldiers = l.getSoldiers().getNumberOfSoldiers();
+        int defendingSoldiers = l.getSoldiers().getNumberOfSoldiers();
+        while ((attackingSoldiers > 1) && (defendingSoldiers > 0))
+        {
+            if ((attackingSoldiers > 3) && (defendingSoldiers > 2))
+            {
+                
+            }
+        }
+
         return win;
->>>>>>> origin/master
     }
 }

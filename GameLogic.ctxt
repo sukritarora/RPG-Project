@@ -10,13 +10,7 @@ comment3.target=Leaders\ chooseAttack(Leaders)
 comment4.params=l
 comment4.target=void\ placeSoldiers(Leaders)
 comment5.params=l
-<<<<<<< HEAD
-comment5.target=void\ firstChallenge(Leaders)
+comment5.target=void\ displayStats(Leaders)
 comment6.params=l\ win\ r
 comment6.target=boolean\ fightSequence(Leaders,\ boolean,\ Regions)
-=======
-comment5.target=void\ displayStats(Leaders)
-comment6.params=attackingLeader\ defendingLeader
-comment6.target=boolean\ fightSequence(Leaders,\ Leaders)
->>>>>>> origin/master
 numComments=7
