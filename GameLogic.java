@@ -11,11 +11,32 @@ import java.util.ArrayList;
 import java.util.Random;
 public class GameLogic
 {
+    public static Leaders winstonChurchill = new Churchill();
+    public static Leaders napoleonBonaparte = new Napoleon();
+    public static Leaders adolfHitler = new Hitler();
+    public static Leaders alexanderTheGreat = new AlexanderTheGreat();
+    public static Leaders arnold = new Arnold();
+    public static Leaders ottoVonBismarck = new Bismarck();
+    public static Leaders josephStalin = new Stalin();
+    public static Leaders gustavusAdolphus = new Adolphus();
+    
     public GameLogic()
     {
-        UKRegion UK = new UKRegion();
         //When an instance of GameLogic is created, all regions are created to use throughout the game
     }
+    
+    public static void randomiseCPUSoldiers()
+    {
+        winstonChurchill.getSoldiers().assignCPUSoldiers(winstonChurchill);
+        napoleonBonaparte.getSoldiers().assignCPUSoldiers(napoleonBonaparte);
+        adolfHitler.getSoldiers().assignCPUSoldiers(adolfHitler);
+        alexanderTheGreat.getSoldiers().assignCPUSoldiers(alexanderTheGreat);
+        arnold.getSoldiers().assignCPUSoldiers(arnold);
+        ottoVonBismarck.getSoldiers().assignCPUSoldiers(ottoVonBismarck);
+        josephStalin.getSoldiers().assignCPUSoldiers(josephStalin);
+        gustavusAdolphus.getSoldiers().assignCPUSoldiers(gustavusAdolphus);
+    }
+    
     public static Leaders chooseLeader()
     {
         String[] leaders = {"Winston Churchill","Napoleon Bonaparte","Adolf Hitler","Alexander the Great","Otto von Bismarck","Joseph Stalin","Gustavus Adolphus","Arnold Schwarzenegger"};
@@ -25,49 +46,50 @@ public class GameLogic
         {
             case "Winston Churchill": 
             {
-                l = new Churchill();
+                l = winstonChurchill;
                 break;
             }
             case "Napoleon Bonaparte":
             {
-                l = new Napoleon();
+                l = napoleonBonaparte;
                 break;
             }
             case "Adolf Hitler":
             {
-                l = new Hitler();
+                l = adolfHitler;
                 break;
             }
             case "Alexander the Great":
             {
-                l = new AlexanderTheGreat();
+                l = alexanderTheGreat;
                 break;
             }
             case "Otto von Bismarck":
             {
-                l = new Bismarck();
+                l = ottoVonBismarck;
                 break;
             }
             case "Joseph Stalin":
             {
-                l = new Stalin ();
+                l = josephStalin;
                 break;
             }
             case "Gustavus Adolphus":
             {
-                l = new Adolphus();
+                l = gustavusAdolphus;
                 break;
             }
             case "Arnold Schwarzenegger":
             {
-                l = new Arnold();
+                l = arnold;
                 break;
             }
         }
+        l.getSoldiers().setDefaultSoldiers();
         return l; 
     }
     
-    public static Regions chooseAttack(Leaders l)
+    public static Leaders chooseAttack(Leaders l)
     {
 //         boolean valid = true;
 //         String response = "";
@@ -91,60 +113,64 @@ public class GameLogic
 //         }
 //         return att;
         
-        ArrayList <Regions> attackableRegions = new ArrayList<Regions>();
+        ArrayList <Leaders> attackableLeaderRegions = new ArrayList<Leaders>();
         for (Regions r: l.getRegionArray())
         {
             for (int i = 0; i < r.getAdjacentRegions().length; i++)
             {
-                String [] adjacentRegions = r.getAdjacentRegions();
-                switch(adjacentRegions[i])
+                String [] adjacentLeaderRegions = r.getAdjacentRegions();
+                switch(adjacentLeaderRegions[i])
                 {
-                    case "United Kingdom":  {
-                        attackableRegions.add(new UKRegion());
+                    case "United Kingdom":   {
+                        attackableLeaderRegions.add(winstonChurchill);
                         break;
                     }
                     case "Western Europe":  {
-                        attackableRegions.add(new WestEuropeRegion());
+                        attackableLeaderRegions.add(napoleonBonaparte);
                         break;
                     }
-                    case "Central Europe":  {
-                        attackableRegions.add(new CentralEuropeRegion());
+                    case "Central Europe":    {
+                        attackableLeaderRegions.add(adolfHitler);
                         break;
                     }
                     case "Balkans": {
-                        attackableRegions.add(new BalkanRegion());
+                        attackableLeaderRegions.add(alexanderTheGreat);
                         break;
                     }
-                    case "Baltics": {
-                        attackableRegions.add(new BalticRegion());
+                    case "Baltics":   {
+                        attackableLeaderRegions.add(ottoVonBismarck);
                         break;
                     }
                     case "Urals":   {
-                        attackableRegions.add(new RussianRegion());
+                        attackableLeaderRegions.add(josephStalin);
                         break;
                     }
-                    case "Scandinavia": {
-                        attackableRegions.add(new ScandinavianRegion());
+                    case "Scandinavia":   {
+                        attackableLeaderRegions.add(gustavusAdolphus);
                         break;
                     }
-                    case "Carpathians": {
-                        attackableRegions.add(new CarpathianRegion());
+                    case "Carpathians":   {
+                        attackableLeaderRegions.add(arnold);
                         break;
                     }
                 }
             }
         }
-        Regions[] realAttackableRegions = null;
-        attackableRegions.toArray(realAttackableRegions);
-        Regions response = (Regions) JOptionPane.showInputDialog(null, "Which Region would you like to attack", "Attacking Regions", JOptionPane.PLAIN_MESSAGE,null, realAttackableRegions, realAttackableRegions[0]);
+        Leaders[] realAttackableLeaderRegions = new Leaders[attackableLeaderRegions.size()];
+        attackableLeaderRegions.toArray(realAttackableLeaderRegions);
+        for (Leaders leader: realAttackableLeaderRegions)
+        {
+            
+        }
+        Leaders response = (Leaders) JOptionPane.showInputDialog(null, "Which Leader would you like to attack", "Attacking Leaders", JOptionPane.PLAIN_MESSAGE,null, realAttackableLeaderRegions, realAttackableLeaderRegions[0]);
         return response;
     }
     
     public static void placeSoldiers(Leaders l)
     {
-        boolean cont = true;
+        int cont = JOptionPane.YES_OPTION;
         Object[] yesOrNo = {true,false};
-        while (cont)
+        while (cont == JOptionPane.YES_OPTION)
         {
             int soldierNum = l.getSoldiers().getNumberOfSoldiers();
             Object[] soldierArray =new Object[l.getRegionArray().size()];
@@ -162,7 +188,8 @@ public class GameLogic
             int numberOfSoldiersToMove = Integer.parseInt(numMoving);
             l.getSoldiers().assignSoldiersToRegions(numberOfSoldiersToMove);
             region.assignSoldiers(numberOfSoldiersToMove);
-            cont = (boolean) JOptionPane.showInputDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.PLAIN_MESSAGE,null,yesOrNo,yesOrNo[0]);
+            JOptionPane.showMessageDialog(null,"You have just moved " + numberOfSoldiersToMove + " soldiers into" + region,"Soldier Movement",JOptionPane.INFORMATION_MESSAGE);
+            cont = JOptionPane.showOptionDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
         }
     }
     
@@ -175,35 +202,33 @@ public class GameLogic
         for (Regions i : l.getRegionArray())
         {
             System.out.print(i.regionName + ",");
-            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries and " + i.getSoldiers() + "soldiers");
+            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries and " + i.getSoldiers() + " soldiers");
         }
-        
-    }
-        
-    public static void firstChallenge (Leaders l)
-    {
         
     }
     
-    public static boolean fightSequence (Leaders l, boolean win)
+    public static boolean fightSequence (Leaders attackingLeader, Leaders defendingLeader)
     {
-        Random cpu = new Random ();
-        int cpuSoldiers;
-        if (win == true)
-        {
-            cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10);
-        } else 
-        {
-            cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10) + 3;
-        }
-        
-        double prob = cpu.nextDouble();
-        if (((double)(l.getSoldiers().getNumberOfSoldiers() - cpuSoldiers) / 100 + prob) > .5)
-        {
-            return true;
-        } else
-        {
-            return false;
-        }
+        boolean win = true;
+//         Random cpu = new Random ();
+//         int cpuSoldiers;
+//         if (win == true)
+//         {
+//             cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10);
+//         } else 
+//         {
+//             cpuSoldiers = cpu.nextInt(11) + (l.getSoldiers().getNumberOfSoldiers() - 10) + 3;
+//         }
+//         
+//         double prob = cpu.nextDouble();
+//         if (((double)(l.getSoldiers().getNumberOfSoldiers() - cpuSoldiers) / 100 + prob) > .5)
+//         {
+//             return true;
+//         } else
+//         {
+//             return false;
+//         }
+
+        return win;
     }
 }
