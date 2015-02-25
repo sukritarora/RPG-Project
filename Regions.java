@@ -19,10 +19,10 @@ public abstract class Regions
     {
         this.regionName = regionName;
         countryNumber = num;
-        for (int i = 0; i < ar.length; i++)
-        {
-            adjacentRegions[i] = ar[i];
-        }
+//         for (int i = 0; i < ar.length; i++)
+//         {
+//             adjacentRegions[i] = ar[i];
+//         }
     }
     
     public int getCountryNum()
