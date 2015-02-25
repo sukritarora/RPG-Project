@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class GameLogic here.
  * 
@@ -232,6 +231,7 @@ public class GameLogic
 
         int attackingSoldiers = attackingLeader.getSoldiers().getNumberOfSoldiers();
         int defendingSoldiers = defendingLeader.getSoldiers().getNumberOfSoldiers();
+
         while ((attackingSoldiers > 1) && (defendingSoldiers > 0))
         {
             if ((attackingSoldiers > 3) && (defendingSoldiers > 2))

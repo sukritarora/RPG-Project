@@ -19,5 +19,9 @@ public class Starter
         Leaders leaderAttacked = GameLogic.chooseAttack(l);
         GameLogic.fightSequence(l,leaderAttacked);
 //         win = GameLogic.fightSequence (l, win);
+// 
+//         Regions r = GameLogic.chooseAttack(l);
+//         win = GameLogic.fightSequence (l, win, r);
+
     }
 }
