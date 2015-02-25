@@ -5,10 +5,12 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+
+import java.util.Random;
+
 public class Soldiers
 {
     // instance variables - replace the example below with your own
-   
     int numberOfSoldiers;
 
     /**
@@ -29,5 +31,18 @@ public class Soldiers
         numberOfSoldiers = numberOfSoldiers - changingSoldiers;
     }
     
+    public void assignCPUSoldiers (Leaders l)
+    {
+        Random r = new Random();
+        numberOfSoldiers = (r.nextInt(10) + 1) * l.getRegionArray().get(0).getCountryNum();
+        while (numberOfSoldiers < 10)
+        {
+            numberOfSoldiers = (int) (numberOfSoldiers * 1.5);
+        }
+    }
     
+    public void setDefaultSoldiers ()
+    {
+        numberOfSoldiers = 20;
+    }
 }

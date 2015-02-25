@@ -15,9 +15,6 @@ public class Napoleon extends Leaders
     public Napoleon()
     {
         // initialise instance variables
-
         super("Napoleon Bonaparte",new WestEuropeRegion());
-
-    
     }
 }

@@ -5,11 +5,15 @@
  * @version (a version number or a date)
  */
 import java.util.ArrayList;
+import java.util.Random;
+
 public abstract class Leaders
 {
     final String name;
     private ArrayList<Regions> regionArray = new ArrayList<Regions>(); 
     //private Regions r = null;
+    Random r = new Random();
+    
     private Soldiers s = new Soldiers(20);
     
     /**
