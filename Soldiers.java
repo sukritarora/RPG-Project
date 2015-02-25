@@ -11,7 +11,6 @@ import java.util.Random;
 public class Soldiers
 {
     // instance variables - replace the example below with your own
-   
     int numberOfSoldiers;
 
     /**
