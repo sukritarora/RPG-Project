@@ -8,7 +8,6 @@
 public class ScandinavianRegion extends Regions
 {
     // instance variables - replace the example below with your own
-    private int x;
 
     /**
      * Constructor for objects of class ScandinavianRegion
@@ -16,19 +15,6 @@ public class ScandinavianRegion extends Regions
     public ScandinavianRegion()
     {
         // initialise instance variables
-        super("Scandinavia", 2);
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        super("Scandinavia", 2, new String[] {"United Kingdom","Central Europe","Baltics","Urals"});
     }
 }

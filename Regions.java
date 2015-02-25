@@ -11,13 +11,18 @@ public abstract class Regions
     final String regionName;
     private int countryNumber;
     private int activeSoldiers;
+    private String[] adjacentRegions;
     /**
      * Constructor for objects of class Countries
      */
-    public Regions(String regionName, int num)
+    public Regions(String regionName, int num, String[] adjacentRegions)
     {
         this.regionName = regionName;
         countryNumber = num;
+        for (int i = 0; i < adjacentRegions.length; i++)
+        {
+            this.adjacentRegions[i] = adjacentRegions[i];
+        }
     }
     
     public int getCountryNum()
@@ -33,5 +38,10 @@ public abstract class Regions
     public int getSoldiers()
     {
         return activeSoldiers;
+    }
+    
+    public String[] getAdjacentRegions()
+    {
+        return adjacentRegions;
     }
 }

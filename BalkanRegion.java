@@ -16,19 +16,7 @@ public class BalkanRegion extends Regions
     public BalkanRegion()
     {
         // initialise instance variables
-        super("Balkan", 4);
+        super("Balkans", 4, new String[] {"Western Europe","Central Europe","Carpathians"});
         x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
     }
 }

@@ -8,7 +8,7 @@
 public class UKRegion extends Regions
 {
     // instance variables - replace the example below with your own
-    final String[] neighboringRegions = {"Western Europe","Central Europe","Scandinavia"};
+    String[] neighboringRegions = {"Western Europe","Central Europe","Scandinavia"};
 
     /**
      * Constructor for objects of class UKRegion
@@ -16,6 +16,6 @@ public class UKRegion extends Regions
     public UKRegion()
     {
         // initialise instance variables
-        super("United Kingdom",2);        
+        super("United Kingdom",2,new String[] {"Western Europe","Scandinavia"});        
     }   
 }
