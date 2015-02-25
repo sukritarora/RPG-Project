@@ -15,13 +15,13 @@ public abstract class Regions
     /**
      * Constructor for objects of class Countries
      */
-    public Regions(String regionName, int num, String[] adjacentRegions)
+    public Regions(String regionName, int num, String[] ar)
     {
         this.regionName = regionName;
         countryNumber = num;
-        for (int i = 0; i < adjacentRegions.length; i++)
+        for (int i = 0; i < ar.length; i++)
         {
-            this.adjacentRegions[i] = adjacentRegions[i];
+            adjacentRegions[i] = ar[i];
         }
     }
     
