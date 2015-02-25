@@ -69,27 +69,75 @@ public class GameLogic
     
     public static Regions chooseAttack(Leaders l)
     {
-        boolean valid = true;
-        String response = "";
-        while (valid)
+//         boolean valid = true;
+//         String response = "";
+//         while (valid)
+//         {
+//             String[] regions = {"UK Region","West European Region","Central European Region","Balkan Region","Baltic Region","Russian Region","Scandinavian Region","Carpathian Region"};
+//             response = (String) JOptionPane.showInputDialog(null, "Which region would you like to attack?", "Attack Choices", JOptionPane.PLAIN_MESSAGE,null, regions, regions[0]);
+//             if (!(response.equals(l.getRegionArray().get(0)))) valid = false;
+//         }
+//         Regions att = null;
+//         switch (response)
+//         {
+//             case "UK Region" : att = new UKRegion();
+//             case "West European Region" : att = new WestEuropeRegion();
+//             case "CentralEuropeanRegion" : att = new CentralEuropeRegion();
+//             case "Balkan Region" : att = new BalkanRegion();
+//             case "Baltic Region" : att = new BalticRegion();
+//             case "Russian Region" : att = new RussianRegion();
+//             case "Scandinavian Region" : att = new ScandinavianRegion();
+//             case "Carpathian Region" : att = new CarpathianRegion();
+//         }
+//         return att;
+        
+        ArrayList <Regions> attackableRegions = new ArrayList<Regions>();
+        for (Regions r: l.getRegionArray())
         {
-            String[] regions = {"UK Region","West European Region","Central European Region","Balkan Region","Baltic Region","Russian Region","Scandinavian Region","Carpathian Region"};
-            response = (String) JOptionPane.showInputDialog(null, "Which region would you like to attack?", "Attack Choices", JOptionPane.PLAIN_MESSAGE,null, regions, regions[0]);
-            if (!(response.equals(l.getRegionArray().get(0)))) valid = false;
+            for (int i = 0; i < r.getAdjacentRegions().length; i++)
+            {
+                String [] adjacentRegions = r.getAdjacentRegions();
+                switch(adjacentRegions[i])
+                {
+                    case "United Kingdom":  {
+                        attackableRegions.add(new UKRegion());
+                        break;
+                    }
+                    case "Western Europe":  {
+                        attackableRegions.add(new WestEuropeRegion());
+                        break;
+                    }
+                    case "Central Europe":  {
+                        attackableRegions.add(new CentralEuropeRegion());
+                        break;
+                    }
+                    case "Balkans": {
+                        attackableRegions.add(new BalkanRegion());
+                        break;
+                    }
+                    case "Baltics": {
+                        attackableRegions.add(new BalticRegion());
+                        break;
+                    }
+                    case "Urals":   {
+                        attackableRegions.add(new RussianRegion());
+                        break;
+                    }
+                    case "Scandinavia": {
+                        attackableRegions.add(new ScandinavianRegion());
+                        break;
+                    }
+                    case "Carpathians": {
+                        attackableRegions.add(new CarpathianRegion());
+                        break;
+                    }
+                }
+            }
         }
-        Regions att = null;
-        switch (response)
-        {
-            case "UK Region" : att = new UKRegion();
-            case "West European Region" : att = new WestEuropeRegion();
-            case "CentralEuropeanRegion" : att = new CentralEuropeRegion();
-            case "Balkan Region" : att = new BalkanRegion();
-            case "Baltic Region" : att = new BalticRegion();
-            case "Russian Region" : att = new RussianRegion();
-            case "Scandinavian Region" : att = new ScandinavianRegion();
-            case "Carpathian Region" : att = new CarpathianRegion();
-        }
-        return att;
+        Regions[] realAttackableRegions = null;
+        attackableRegions.toArray(realAttackableRegions);
+        Regions response = (Regions) JOptionPane.showInputDialog(null, "Which Region would you like to attack", "Attacking Regions", JOptionPane.PLAIN_MESSAGE,null, realAttackableRegions, realAttackableRegions[0]);
+        return response;
     }
     
     public static void placeSoldiers(Leaders l)
