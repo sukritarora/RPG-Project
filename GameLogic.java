@@ -85,7 +85,7 @@ public class GameLogic
                 break;
             }
         }
-        l.getSoldiers().setDefaultSoldiers();
+        l.getSoldiers().setNumberOfSoldiers(20);
         return l; 
     }
     
@@ -210,6 +210,7 @@ public class GameLogic
     public static boolean fightSequence (Leaders attackingLeader, Leaders defendingLeader)
     {
         boolean win = true;
+        Random r = new Random();
 //         Random cpu = new Random ();
 //         int cpuSoldiers;
 //         if (win == true)
@@ -228,6 +229,18 @@ public class GameLogic
 //         {
 //             return false;
 //         }
+
+        int attackingSoldiers = attackingLeader.getSoldiers().getNumberOfSoldiers();
+        int defendingSoldiers = defendingLeader.getSoldiers().getNumberOfSoldiers();
+        while ((attackingSoldiers > 1) && (defendingSoldiers > 0))
+        {
+            if ((attackingSoldiers > 3) && (defendingSoldiers > 2))
+            {
+                for (int i = 0; i > 4; i++)
+                {
+                }
+            }
+        }
 
         return win;
     }

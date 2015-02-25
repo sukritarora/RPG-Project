@@ -41,8 +41,8 @@ public class Soldiers
         }
     }
     
-    public void setDefaultSoldiers ()
+    public void setNumberOfSoldiers (int num)
     {
-        numberOfSoldiers = 20;
+        numberOfSoldiers = num;
     }
 }
