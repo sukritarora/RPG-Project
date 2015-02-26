@@ -39,6 +39,7 @@ public class Soldiers
         {
             numberOfSoldiers = (int) (numberOfSoldiers * 1.5);
         }
+        l.getRegion().assignSoldiers(numberOfSoldiers);
     }
     
     public void setNumberOfSoldiers (int num)

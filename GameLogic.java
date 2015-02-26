@@ -206,9 +206,8 @@ public class GameLogic
         
     }
     
-    public static boolean fightSequence (Leaders attackingLeader, Leaders defendingLeader)
+    public static void fightSequence (Leaders attackingLeader, Leaders defendingLeader)
     {
-        boolean win = true;
         Random r = new Random();
 //         Random cpu = new Random ();
 //         int cpuSoldiers;
@@ -232,23 +231,244 @@ public class GameLogic
         int attackingSoldiers = attackingLeader.getSoldiers().getNumberOfSoldiers();
         int defendingSoldiers = defendingLeader.getSoldiers().getNumberOfSoldiers();
         
-        int[] offenseArray = {3};
-        int[] defenseArray = {2};
 
         while ((attackingSoldiers > 1) && (defendingSoldiers > 0))
         {
-            if ((attackingSoldiers > 3) && (defendingSoldiers > 2))
+            
+            if ((attackingSoldiers > 3) && (defendingSoldiers > 1))
             {
+                
+                int[] offenseArray = {3};
+                int[] defenseArray = {2};
+                
                 for (int i = 0; i < 4; i++)
                 {
-                    for (int j = 0; i < 3; j++)
-                    {
-                        defenseArray[j] = r.nextInt(6) + 1;
-                    }
+                    offenseArray[i] = r.nextInt(6) + 1;
                 }
+                
+                if (Math.max(offenseArray[0],offenseArray[1]) == offenseArray[1])
+                {
+                    int temp = offenseArray[1];
+                    offenseArray[1] = offenseArray[0];
+                    offenseArray[0] = temp;
+                }
+                
+                if (Math.max(offenseArray[0],offenseArray[2]) == offenseArray[2])
+                {
+                    int temp = offenseArray[2];
+                    offenseArray[2] = offenseArray[0];
+                    offenseArray[0] = temp;
+                }
+                
+                if (Math.max(offenseArray[1],offenseArray[2]) == offenseArray[2])
+                {
+                    int temp = offenseArray[2];
+                    offenseArray[2] = offenseArray[1];
+                    offenseArray[1] = temp;
+                }
+                
+                for (int j = 0; j < 3; j++)
+                {
+                    defenseArray[j] = r.nextInt(6) + 1;
+                }
+                
+                if (Math.max(defenseArray[0],defenseArray[1]) == defenseArray[1])
+                {
+                    int temp = defenseArray[1];
+                    defenseArray[1] = defenseArray[0];
+                    defenseArray[0] = temp;
+                }
+                
+                if ((offenseArray[0] > defenseArray[0]) && (offenseArray[1] > defenseArray[1]))
+                {
+                    defendingSoldiers = defendingSoldiers - 2;
+                }
+                else if ((offenseArray[0] <= defenseArray[0]) && (offenseArray[1] <= defenseArray[1]))
+                {
+                    attackingSoldiers = attackingSoldiers - 3;
+                }
+                else
+                {
+                    attackingSoldiers = attackingSoldiers - 1;
+                    defendingSoldiers = defendingSoldiers - 1;
+                }
+                
+            }
+            else if ((attackingSoldiers > 3) && (defendingSoldiers == 1))
+            {
+                
+                int[] offenseArray = {3};
+                
+                for (int i = 0; i < 4; i++)
+                {
+                    offenseArray[i] = r.nextInt(6) + 1;
+                }
+                
+                if (Math.max(offenseArray[0],offenseArray[1]) == offenseArray[1])
+                {
+                    int temp = offenseArray[1];
+                    offenseArray[1] = offenseArray[0];
+                    offenseArray[0] = temp;
+                }
+                
+                if (Math.max(offenseArray[0],offenseArray[2]) == offenseArray[2])
+                {
+                    int temp = offenseArray[2];
+                    offenseArray[2] = offenseArray[0];
+                    offenseArray[0] = temp;
+                }
+                
+                if (Math.max(offenseArray[1],offenseArray[2]) == offenseArray[2])
+                {
+                    int temp = offenseArray[2];
+                    offenseArray[2] = offenseArray[1];
+                    offenseArray[1] = temp;
+                }
+                
+                int defenseValue = r.nextInt(6) + 1;
+                
+                if (offenseArray[0] > defenseValue)
+                {
+                    defendingSoldiers = defendingSoldiers - 1;
+                }
+                else if (offenseArray[0] <= defenseValue)
+                {
+                    attackingSoldiers = attackingSoldiers - 3;
+                }
+
+            }
+            else if ((attackingSoldiers == 3) && (defendingSoldiers > 1))
+            {
+                
+                int[] offenseArray = {2};
+                int[] defenseArray = {2};
+                
+                for (int i = 0; i < 3; i++)
+                {
+                    offenseArray[i] = r.nextInt(6) + 1;
+                }
+                
+                if (Math.max(offenseArray[0],offenseArray[1]) == offenseArray[1])
+                {
+                    int temp = offenseArray[1];
+                    offenseArray[1] = offenseArray[0];
+                    offenseArray[0] = temp;
+                }
+                
+                for (int j = 0; j < 3; j++)
+                {
+                    defenseArray[j] = r.nextInt(6) + 1;
+                }
+                
+                if (Math.max(defenseArray[0],defenseArray[1]) == defenseArray[1])
+                {
+                    int temp = defenseArray[1];
+                    defenseArray[1] = defenseArray[0];
+                    defenseArray[0] = temp;
+                }
+                
+                if ((offenseArray[0] > defenseArray[0]) && (offenseArray[1] > defenseArray[1]))
+                {
+                    defendingSoldiers = defendingSoldiers - 2;
+                }
+                else if ((offenseArray[0] <= defenseArray[0]) && (offenseArray[1] <= defenseArray[1]))
+                {
+                    attackingSoldiers = attackingSoldiers - 2;
+                }
+                else
+                {
+                    attackingSoldiers = attackingSoldiers - 1;
+                    defendingSoldiers = defendingSoldiers - 1;
+                }
+                
+            }
+            else if ((attackingSoldiers == 3) && (defendingSoldiers == 1))
+            {
+                
+                int[] offenseArray = {2};
+                
+                for (int i = 0; i < 3; i++)
+                {
+                    offenseArray[i] = r.nextInt(6) + 1;
+                }
+                
+                if (Math.max(offenseArray[0],offenseArray[1]) == offenseArray[1])
+                {
+                    int temp = offenseArray[1];
+                    offenseArray[1] = offenseArray[0];
+                    offenseArray[0] = temp;
+                }
+                
+                int defenseValue = r.nextInt(6) + 1;
+                
+                if (offenseArray[0] > defenseValue)
+                {
+                    defendingSoldiers = defendingSoldiers - 1;
+                }
+                else if (offenseArray[0] <= defenseValue)
+                {
+                    attackingSoldiers = attackingSoldiers - 2;
+                }
+                
+            }
+            else if ((attackingSoldiers == 2) && (defendingSoldiers > 1))
+            {
+                
+                int offenseValue = r.nextInt(6) + 1;
+                
+                int[] defenseArray = {2};
+                
+                for (int j = 0; j < 3; j++)
+                {
+                    defenseArray[j] = r.nextInt(6) + 1;
+                }
+                
+                if (Math.max(defenseArray[0],defenseArray[1]) == defenseArray[1])
+                {
+                    int temp = defenseArray[1];
+                    defenseArray[1] = defenseArray[0];
+                    defenseArray[0] = temp;
+                }
+                
+                if (offenseValue > defenseArray[0])
+                {
+                    defendingSoldiers = defendingSoldiers - 2;
+                }
+                else if (offenseValue <= defenseArray[0])
+                {
+                    attackingSoldiers = attackingSoldiers - 1;
+                }
+                
+            }
+            else if ((attackingSoldiers == 2) && (defendingSoldiers == 1))
+            {
+                
+                int offenseValue = r.nextInt(6) + 1;
+                int defenseValue = r.nextInt(6) + 1;
+                
+                if (offenseValue > defenseValue)
+                {
+                    defendingSoldiers = defendingSoldiers - 1;
+                }
+                else if (offenseValue <= defenseValue)
+                {
+                    attackingSoldiers = attackingSoldiers - 1;
+                }
+                
             }
         }
-
-        return win;
+        
+        attackingLeader.getSoldiers().setNumberOfSoldiers(attackingSoldiers);
+        defendingLeader.getSoldiers().setNumberOfSoldiers(defendingSoldiers);
+        
+        if (defendingSoldiers == 0)
+        {
+            JOptionPane.showMessageDialog(null,"You defeated " + defendingLeader.getName(),"Victory",JOptionPane.INFORMATION_MESSAGE);
+            attackingLeader.getRegionArray().add(defendingLeader.getRegion());
+        }
+        else if (attackingSoldiers == 1)
+        {
+            JOptionPane.showMessageDialog(null,"You were defeated by " + defendingLeader.getName(),"Defeat",JOptionPane.INFORMATION_MESSAGE);
+        }
     }
 }

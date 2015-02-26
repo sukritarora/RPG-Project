@@ -12,5 +12,5 @@ comment4.target=void\ placeSoldiers(Leaders)
 comment5.params=l
 comment5.target=void\ displayStats(Leaders)
 comment6.params=attackingLeader\ defendingLeader
-comment6.target=boolean\ fightSequence(Leaders,\ Leaders)
+comment6.target=void\ fightSequence(Leaders,\ Leaders)
 numComments=7

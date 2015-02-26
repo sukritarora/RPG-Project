@@ -12,7 +12,7 @@ public abstract class Leaders
     final String name;
     private ArrayList<Regions> regionArray = new ArrayList<Regions>(); 
     //private Regions r = null;
-    Random r = new Random();
+    private Regions r;
     
     private Soldiers s = new Soldiers(20);
     
@@ -24,6 +24,7 @@ public abstract class Leaders
         // initialise instance variables
         name = n;
         regionArray.add(r);
+        this.r = r;
 //         s = new Cavalry();
 //         w = new Sword();
     }
@@ -31,6 +32,11 @@ public abstract class Leaders
     public ArrayList<Regions> getRegionArray()
     {
         return regionArray;
+    }
+    
+    public Regions getRegion()
+    {
+        return r;
     }
 
     public Soldiers getSoldiers()
