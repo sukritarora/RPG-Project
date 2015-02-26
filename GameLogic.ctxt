@@ -1,16 +1,12 @@
 #BlueJ class context
 comment0.params=
-comment0.target=GameLogic()
-comment1.params=
-comment1.target=void\ randomiseCPUSoldiers()
-comment2.params=
-comment2.target=Leaders\ chooseLeader()
+comment0.target=Leaders\ chooseLeader()
+comment1.params=l
+comment1.target=Leaders\ chooseAttack(Leaders)
+comment2.params=l
+comment2.target=void\ placeSoldiers(Leaders)
 comment3.params=l
-comment3.target=Leaders\ chooseAttack(Leaders)
-comment4.params=l
-comment4.target=void\ placeSoldiers(Leaders)
-comment5.params=l
-comment5.target=void\ displayStats(Leaders)
-comment6.params=attackingLeader\ defendingLeader
-comment6.target=void\ fightSequence(Leaders,\ Leaders)
-numComments=7
+comment3.target=void\ displayStats(Leaders)
+comment4.params=attackingLeader\ defendingLeader
+comment4.target=void\ fightSequence(Leaders,\ Leaders)
+numComments=5

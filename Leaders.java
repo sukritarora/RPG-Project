@@ -13,9 +13,9 @@ public abstract class Leaders
     private ArrayList<Regions> regionArray = new ArrayList<Regions>(); 
     //private Regions r = null;
     private Regions r;
-    
-    private Soldiers s = new Soldiers(20);
-    
+
+    private Soldiers s = new Soldiers(this);
+
     /**
      * Constructor for objects of class Soldiers
      */
@@ -25,15 +25,15 @@ public abstract class Leaders
         name = n;
         regionArray.add(r);
         this.r = r;
-//         s = new Cavalry();
-//         w = new Sword();
+        //         s = new Cavalry();
+        //         w = new Sword();
     }
 
     public ArrayList<Regions> getRegionArray()
     {
         return regionArray;
     }
-    
+
     public Regions getRegion()
     {
         return r;
@@ -48,14 +48,14 @@ public abstract class Leaders
     {
         return name;
     }
-    
-    public void addSoldiers ()
-    {
-        s.numberOfSoldiers +=3;
-    }
-    
-    public void subtractSoldiers ()
-    {
-        s.numberOfSoldiers-=3;
-    }
+
+    //     public void addSoldiers ()
+    //     {
+    //         s.numberOfSoldiers +=3;
+    //     }
+    //     
+    //     public void subtractSoldiers ()
+    //     {
+    //         s.numberOfSoldiers-=3;
+    //     }
 }

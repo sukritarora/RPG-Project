@@ -11,39 +11,40 @@ import java.util.Random;
 public class Soldiers
 {
     // instance variables - replace the example below with your own
-    int numberOfSoldiers;
+    private int permanentNumberOfSoldiers;
+    private int numberOfSoldiersToUse = 20;
 
     /**
      * Constructor for objects of class Soldiers
      */
-    public Soldiers(int num)
-    {
-        numberOfSoldiers = num;
-    }
-    
-    public int getNumberOfSoldiers()
-    {
-        return numberOfSoldiers;
-    }
-    
-    public void assignSoldiersToRegions(int changingSoldiers)
-    {
-        numberOfSoldiers = numberOfSoldiers - changingSoldiers;
-    }
-    
-    public void assignCPUSoldiers (Leaders l)
+    public Soldiers(Leaders l)
     {
         Random r = new Random();
-        numberOfSoldiers = (r.nextInt(10) + 1) * l.getRegionArray().get(0).getCountryNum();
-        while (numberOfSoldiers < 10)
+        permanentNumberOfSoldiers = (r.nextInt(10) + 1) * l.getRegionArray().get(0).getCountryNum();
+        while (permanentNumberOfSoldiers < 10)
         {
-            numberOfSoldiers = (int) (numberOfSoldiers * 1.5);
+            permanentNumberOfSoldiers = (int) (permanentNumberOfSoldiers * 1.5);
         }
-        l.getRegion().assignSoldiers(numberOfSoldiers);
+        //l.getRegion().assignSoldiers(numberOfSoldiers);
     }
-    
-    public void setNumberOfSoldiers (int num)
+
+    public int getPermanentNumberOfSoldiers()
     {
-        numberOfSoldiers = num;
+        return permanentNumberOfSoldiers;
     }
+
+    public int getNumberOfSoldiersToUse()
+    {
+        return numberOfSoldiersToUse;
+    }
+
+    //     public void assignSoldiersToRegions(int changingSoldiers)
+    //     {
+    //         numberOfSoldiers = numberOfSoldiers - changingSoldiers;
+    //     }
+
+    //     public void setNumberOfSoldiers (int num)
+    //     {
+    //         numberOfSoldiers = num;
+    //     }
 }

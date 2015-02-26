@@ -20,32 +20,32 @@ public abstract class Regions
         this.regionName = regionName;
         countryNumber = num;
         adjacentRegions = ar;
-//         for (int i = 0; i < ar.length; i++)
-//         {
-//             adjacentRegions[i] = ar[i];
-//         }
+        //         for (int i = 0; i < ar.length; i++)
+        //         {
+        //             adjacentRegions[i] = ar[i];
+        //         }
     }
-    
+
     public int getCountryNum()
     {
         return countryNumber;
     }
-    
+
     public void assignSoldiers(int numberOfSoldiers)
     {
         activeSoldiers = activeSoldiers + numberOfSoldiers;
     }
-    
-    public void setSoldiers(int num)
-    {
-        activeSoldiers = num;
-    }
-    
+
+    //     public void setSoldiers(int num)
+    //     {
+    //         activeSoldiers = num;
+    //     }
+    //     
     public int getSoldiers()
     {
         return activeSoldiers;
     }
-    
+
     public String[] getAdjacentRegions()
     {
         return adjacentRegions;
