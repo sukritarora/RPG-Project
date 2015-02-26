@@ -36,6 +36,11 @@ public abstract class Regions
         activeSoldiers = activeSoldiers + numberOfSoldiers;
     }
     
+    public void setSoldiers(int num)
+    {
+        activeSoldiers = num;
+    }
+    
     public int getSoldiers()
     {
         return activeSoldiers;

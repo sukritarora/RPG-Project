@@ -228,7 +228,7 @@ public class GameLogic
 //             return false;
 //         }
 
-        int attackingSoldiers = attackingLeader.getSoldiers().getNumberOfSoldiers();
+        int attackingSoldiers = attackingLeader.getRegion().getSoldiers();
         int defendingSoldiers = defendingLeader.getSoldiers().getNumberOfSoldiers();
         
 
@@ -238,10 +238,10 @@ public class GameLogic
             if ((attackingSoldiers > 3) && (defendingSoldiers > 1))
             {
                 
-                int[] offenseArray = {3};
-                int[] defenseArray = {2};
+                int[] offenseArray = new int [3];
+                int[] defenseArray = new int [2];
                 
-                for (int i = 0; i < 4; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     offenseArray[i] = r.nextInt(6) + 1;
                 }
@@ -267,7 +267,7 @@ public class GameLogic
                     offenseArray[1] = temp;
                 }
                 
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 2; j++)
                 {
                     defenseArray[j] = r.nextInt(6) + 1;
                 }
@@ -297,9 +297,9 @@ public class GameLogic
             else if ((attackingSoldiers > 3) && (defendingSoldiers == 1))
             {
                 
-                int[] offenseArray = {3};
+                int[] offenseArray = new int [3];
                 
-                for (int i = 0; i < 4; i++)
+                for (int i = 0; i < 3; i++)
                 {
                     offenseArray[i] = r.nextInt(6) + 1;
                 }
@@ -340,10 +340,10 @@ public class GameLogic
             else if ((attackingSoldiers == 3) && (defendingSoldiers > 1))
             {
                 
-                int[] offenseArray = {2};
-                int[] defenseArray = {2};
+                int[] offenseArray = new int [2];
+                int[] defenseArray = new int [2];
                 
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 2; i++)
                 {
                     offenseArray[i] = r.nextInt(6) + 1;
                 }
@@ -355,7 +355,7 @@ public class GameLogic
                     offenseArray[0] = temp;
                 }
                 
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 2; j++)
                 {
                     defenseArray[j] = r.nextInt(6) + 1;
                 }
@@ -385,9 +385,9 @@ public class GameLogic
             else if ((attackingSoldiers == 3) && (defendingSoldiers == 1))
             {
                 
-                int[] offenseArray = {2};
+                int[] offenseArray = new int [2];
                 
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 2; i++)
                 {
                     offenseArray[i] = r.nextInt(6) + 1;
                 }
@@ -416,9 +416,9 @@ public class GameLogic
                 
                 int offenseValue = r.nextInt(6) + 1;
                 
-                int[] defenseArray = {2};
+                int[] defenseArray = new int [2];
                 
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 2; j++)
                 {
                     defenseArray[j] = r.nextInt(6) + 1;
                 }
@@ -458,8 +458,8 @@ public class GameLogic
             }
         }
         
-        attackingLeader.getSoldiers().setNumberOfSoldiers(attackingSoldiers);
-        defendingLeader.getSoldiers().setNumberOfSoldiers(defendingSoldiers);
+        attackingLeader.getRegion().setSoldiers(attackingSoldiers);
+        defendingLeader.getRegion().setSoldiers(defendingSoldiers);
         
         if (defendingSoldiers == 0)
         {
