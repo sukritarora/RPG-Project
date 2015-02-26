@@ -48,6 +48,10 @@ public class Soldiers
         return permanentNumberOfSoldiers + numberOfSoldiersToUse;
     }
     
+    public void addSoldiers(int num)
+    {
+        numberOfSoldiersToUse = numberOfSoldiersToUse + num;
+    }
 
     //     public void assignSoldiersToRegions(int changingSoldiers)
     //     {

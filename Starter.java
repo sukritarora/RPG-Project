@@ -11,15 +11,20 @@ public class Starter
 {
     public static void main(String[] args)
     {
-        boolean win = true;
+        boolean win = false;
         //GameLogic.randomiseCPUSoldiers();
         GameLogic g = new GameLogic();
         //Leaders l = null;
         Leaders l = GameLogic.chooseLeader(); //constructing an instance of the Leaders class with the identifier l which is being assigned the value of the static chooseLeader accessor method being invoked upon the GameLogic class with no explicit parameters
-        GameLogic.displayStats(l);//invoking the static method displayStats upon the class GameLogic with the explicit parameter of an instance of the Leaders class with the identifier l
-        GameLogic.placeSoldiers(l);
-        Leaders leaderAttacked = GameLogic.chooseAttack(l);
-        GameLogic.fightSequence(l,leaderAttacked);
+        while (!win)
+        {
+    //         GameLogic.displayStats(l);//invoking the static method displayStats upon the class GameLogic with the explicit parameter of an instance of the Leaders class with the identifier l
+            GameLogic.addSoldiers(l);
+            GameLogic.placeSoldiers(l);
+            Leaders leaderAttacked = GameLogic.chooseAttack(l);
+            GameLogic.fightSequence(l,leaderAttacked);
+            if (l.getRegionArray().size() == 8) win = true;
+        }
         //         win = GameLogic.fightSequence (l, win);
         // 
         //         Regions r = GameLogic.chooseAttack(l);

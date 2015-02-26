@@ -10,4 +10,6 @@ comment3.params=num
 comment3.target=void\ setNumberOfSoldiersToUse(int)
 comment4.params=
 comment4.target=int\ getTotalNumberOfSoldiers()
-numComments=5
+comment5.params=num
+comment5.target=void\ addSoldiers(int)
+numComments=6
