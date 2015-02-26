@@ -10,15 +10,26 @@ import java.util.ArrayList;
 import java.util.Random;
 public class GameLogic
 {
-    private static Leaders winstonChurchill = new Churchill();
-    private static Leaders napoleonBonaparte = new Napoleon();
-    private static Leaders adolfHitler = new Hitler();
-    private static Leaders alexanderTheGreat = new AlexanderTheGreat();
-    private static Leaders arnold = new Arnold();
-    private static Leaders ottoVonBismarck = new Bismarck();
-    private static Leaders josephStalin = new Stalin();
-    private static Leaders gustavusAdolphus = new Adolphus();
-    
+    private static Leaders winstonChurchill = null;
+    private static Leaders napoleonBonaparte = null;
+    private static Leaders adolfHitler = null;
+    private static Leaders alexanderTheGreat = null;
+    private static Leaders arnold = null;
+    private static Leaders ottoVonBismarck = null;
+    private static Leaders josephStalin = null;
+    private static Leaders gustavusAdolphus = null;
+
+    public GameLogic()
+    {
+        winstonChurchill = new Churchill();
+        napoleonBonaparte = new Napoleon();
+        Leaders adolfHitler = new Hitler();
+        alexanderTheGreat = new AlexanderTheGreat();
+        arnold = new Arnold();
+        ottoVonBismarck = new Bismarck();
+        josephStalin = new Stalin();
+        gustavusAdolphus = new Adolphus();
+    }
 
     //     public static void randomiseCPUSoldiers()
     //     { 
@@ -170,8 +181,21 @@ public class GameLogic
             //int soldierNum = l.getSoldiers().getNumberOfSoldiers();
             Object[] soldierArray =new Object[l.getRegionArray().size()];
             l.getRegionArray().toArray(soldierArray);
-            Object response = JOptionPane.showInputDialog(null, "You have " + l.getSoldiers().getNumberOfSoldiersToUse() + " soldiers. Where would you like to place them?","Place Soldiers",JOptionPane.PLAIN_MESSAGE,null,soldierArray,soldierArray[0]);
+            //Object response = JOptionPane.showInputDialog(null, "You have " + l.getSoldiers().getNumberOfSoldiersToUse() + " soldiers. Where would you like to place them?","Place Soldiers",JOptionPane.PLAIN_MESSAGE,null,soldierArray,soldierArray[0]);
+            boolean valid = true;
+            Object response = null;
+            int numberOfSoldiersToMove = 0;
+            while (valid)
+            {
+                response = JOptionPane.showInputDialog(null, "You have " + l.getSoldiers().getNumberOfSoldiersToUse() + " soldiers. Where would you like to place them?","Place Soldiers",JOptionPane.PLAIN_MESSAGE,null,soldierArray,soldierArray[0]);
+                numberOfSoldiersToMove = Integer.parseInt(JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response));
+
+                if (numberOfSoldiersToMove > l.getSoldiers().getNumberOfSoldiersToUse()) JOptionPane.showMessageDialog(null,"You don't have that many soldiers.","TRY AGAIN",JOptionPane.INFORMATION_MESSAGE);
+                else valid = false;
+            }
+            
             Regions regionInWhichToPlaceSoldiers = null;
+            
             for (int i = 0; i < soldierArray.length; i++)
             {
                 if (response == soldierArray[i]) 
@@ -179,10 +203,10 @@ public class GameLogic
                     regionInWhichToPlaceSoldiers = (Regions) response;
                 }
             }
-            String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
-            int numberOfSoldiersToMove = Integer.parseInt(numMoving);
+            //String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
+            //int numberOfSoldiersToMove = Integer.parseInt(numMoving);
             //l.getSoldiers().assignSoldiersToRegions(numberOfSoldiersToMove);
-            regionInWhichToPlaceSoldiers.assignSoldiers(numberOfSoldiersToMove);
+            regionInWhichToPlaceSoldiers.assignSoldiers(numberOfSoldiersToMove, l.getSoldiers());
             JOptionPane.showMessageDialog(null,"You have just moved " + numberOfSoldiersToMove + " soldiers into" + regionInWhichToPlaceSoldiers,"Soldier Movement",JOptionPane.INFORMATION_MESSAGE);
             cont = JOptionPane.showOptionDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
         }
@@ -197,8 +221,9 @@ public class GameLogic
         for (Regions i : l.getRegionArray())
         {
             System.out.print(i.regionName + ",");
-            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries and " + i.getSoldiers() + " soldiers");
+            System.out.print(" region(s) which has/have " + i.getCountryNum()+ " countries and " + i.getNumberOfActiveSoldiers() + " active soldiers");
         }
+        System.out.println("\nYou have " + l.getSoldiers().getPermanentNumberOfSoldiers() + " of soliders in your home country and " + l.getSoldiers().getNumberOfSoldiersToUse() + " that you can place in any of your regions");
 
     }
 
@@ -223,11 +248,23 @@ public class GameLogic
         //         {
         //             return false;
         //         }
+        Object[] regionArray =new Object[attackingLeader.getRegionArray().size()];
+        attackingLeader.getRegionArray().toArray(regionArray);
+        Regions response = (Regions) JOptionPane.showInputDialog(null, "You have " + attackingLeader.getRegionArray().size() + " regions. Where would you like to attack from?","Attack From Region",JOptionPane.PLAIN_MESSAGE,null,regionArray,regionArray[0]);
+        int indexOfRegion = 0;
+        int valid = JOptionPane.YES_OPTION;
+        for (int i = 0; i < regionArray.length; i++)
+        {
+            if (response == regionArray[i]) 
+            {
+                indexOfRegion = i;
+            }
+        }
 
-        int attackingSoldiers = attackingLeader.getRegion().getSoldiers();
-        int defendingSoldiers = defendingLeader.getSoldiers().getNumberOfSoldiers();
+        int attackingSoldiers = attackingLeader.getRegionArray().get(indexOfRegion).getNumberOfActiveSoldiers();
+        int defendingSoldiers = defendingLeader.getSoldiers().getTotalNumberOfSoldiers();
 
-        while ((attackingSoldiers > 1) && (defendingSoldiers > 0))
+        while ((attackingSoldiers > 1) && (defendingSoldiers > 0) && valid == JOptionPane.YES_OPTION)
         {
 
             if ((attackingSoldiers > 3) && (defendingSoldiers > 1))
@@ -451,15 +488,20 @@ public class GameLogic
                 }
 
             }
+
+            if (attackingSoldiers <= (attackingLeader.getRegionArray().get(indexOfRegion).getNumberOfActiveSoldiers()/2))
+            {
+                valid = JOptionPane.showOptionDialog(null, "You have " + attackingSoldiers + " left while your opponent has " + defendingSoldiers + " soldiers left. Would you like to keep attacking?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
+            }
         }
 
-        attackingLeader.getRegion().setSoldiers(attackingSoldiers);
-        defendingLeader.getRegion().setSoldiers(defendingSoldiers);
+        attackingLeader.getRegionArray().get(indexOfRegion).assignSoldiers(attackingSoldiers);
+        defendingLeader.getRegionArray().get(indexOfRegion).assignSoldiers(defendingSoldiers);
 
         if (defendingSoldiers == 0)
         {
             JOptionPane.showMessageDialog(null,"You defeated " + defendingLeader.getName(),"Victory",JOptionPane.INFORMATION_MESSAGE);
-            attackingLeader.getRegionArray().add(defendingLeader.getRegion());
+            attackingLeader.getRegionArray().add(defendingLeader.getRegionArray().get(0));
         }
         else if (attackingSoldiers == 1)
         {

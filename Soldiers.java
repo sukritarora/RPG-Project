@@ -37,6 +37,17 @@ public class Soldiers
     {
         return numberOfSoldiersToUse;
     }
+    
+    public void setNumberOfSoldiersToUse(int num)
+    {
+        numberOfSoldiersToUse -= num;
+    }
+    
+    public int getTotalNumberOfSoldiers()
+    {
+        return permanentNumberOfSoldiers + numberOfSoldiersToUse;
+    }
+    
 
     //     public void assignSoldiersToRegions(int changingSoldiers)
     //     {

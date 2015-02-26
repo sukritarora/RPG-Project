@@ -1,12 +1,14 @@
 #BlueJ class context
 comment0.params=
-comment0.target=Leaders\ chooseLeader()
-comment1.params=l
-comment1.target=Leaders\ chooseAttack(Leaders)
+comment0.target=GameLogic()
+comment1.params=
+comment1.target=Leaders\ chooseLeader()
 comment2.params=l
-comment2.target=void\ placeSoldiers(Leaders)
+comment2.target=Leaders\ chooseAttack(Leaders)
 comment3.params=l
-comment3.target=void\ displayStats(Leaders)
-comment4.params=attackingLeader\ defendingLeader
-comment4.target=void\ fightSequence(Leaders,\ Leaders)
-numComments=5
+comment3.target=void\ placeSoldiers(Leaders)
+comment4.params=l
+comment4.target=void\ displayStats(Leaders)
+comment5.params=attackingLeader\ defendingLeader
+comment5.target=void\ fightSequence(Leaders,\ Leaders)
+numComments=6
