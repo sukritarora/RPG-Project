@@ -52,6 +52,11 @@ public class Soldiers
     {
         numberOfSoldiersToUse = numberOfSoldiersToUse + num;
     }
+    
+    public void setPermanentSoldiers(int num)
+    {
+        permanentNumberOfSoldiers = num;
+    }
 
     //     public void assignSoldiersToRegions(int changingSoldiers)
     //     {
