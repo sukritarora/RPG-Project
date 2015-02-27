@@ -252,10 +252,10 @@ public class GameLogic
         while (cont == JOptionPane.YES_OPTION)
         {
             //int soldierNum = l.getSoldiers().getNumberOfSoldiers();
-            for (Regions r: l.getRegionArray())
-            {
-                if (r.getNumberOfActiveSoldiers() == 0) r.setSoldiers(1);
-            }
+//             for (Regions r: l.getRegionArray())
+//             {
+//                 if (r.getNumberOfActiveSoldiers() == 0) r.setSoldiers(1);
+//             }
             
             Object[] soldierArray =new Object[l.getRegionArray().size()];
             l.getRegionArray().toArray(soldierArray);
@@ -273,13 +273,18 @@ public class GameLogic
                 do
                 {
                     try {
-                        soldierResponse = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
+                        if (l.getSoldiers().getNumberOfSoldiersToUse() > 0)soldierResponse = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in " + response + " out of " + l.getSoldiers().getNumberOfSoldiersToUse() + " available soldiers.");
+                        else soldierResponse = "0";
                         numberOfSoldiersToMove = Integer.parseInt((String) soldierResponse);
+                        if (numberOfSoldiersToMove > 0) 
+                        {
+                            l.getSoldiers().setNumberOfSoldiersToUse(numberOfSoldiersToMove);
+                        }
                     } catch (NumberFormatException e) {
                         // Not a number, display error message...
                         JOptionPane.showMessageDialog(null,"Do it again.","Again",JOptionPane.INFORMATION_MESSAGE);
                     }
-                } while(numberOfSoldiersToMove < 0);
+                } while((numberOfSoldiersToMove < 0)||(soldierResponse==null));
 
                 if (numberOfSoldiersToMove > l.getSoldiers().getNumberOfSoldiersToUse()) JOptionPane.showMessageDialog(null,"You don't have that many soldiers.","TRY AGAIN",JOptionPane.INFORMATION_MESSAGE);
                 else valid = false;
@@ -298,7 +303,7 @@ public class GameLogic
             //int numberOfSoldiersToMove = Integer.parseInt(numMoving);
             //l.getSoldiers().assignSoldiersToRegions(numberOfSoldiersToMove);
             regionInWhichToPlaceSoldiers.assignSoldiers(numberOfSoldiersToMove);
-            l.getSoldiers().setNumberOfSoldiersToUse(numberOfSoldiersToMove);
+//             l.getSoldiers().setNumberOfSoldiersToUse(numberOfSoldiersToMove);
             JOptionPane.showMessageDialog(null,"You have just moved " + numberOfSoldiersToMove + " soldiers into " + regionInWhichToPlaceSoldiers + " and so you now have a total of " + regionInWhichToPlaceSoldiers.getNumberOfActiveSoldiers() + " soldiers.","Soldier Movement",JOptionPane.INFORMATION_MESSAGE);
             cont = JOptionPane.showOptionDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
         }
@@ -620,7 +625,7 @@ public class GameLogic
         }
 
         attackingLeader.getRegionArray().get(indexOfRegion).setSoldiers(attackingSoldiers);
-        defendingLeader.getRegionArray().get(indexOfRegion).setSoldiers(defendingSoldiers);
+        defendingLeader.getRegionArray().get(0).setSoldiers(defendingSoldiers);
 
         if (defendingSoldiers == 0)
         {
@@ -636,6 +641,11 @@ public class GameLogic
     
     public static void displayStats(Leaders l)
     {
+        for (Regions r: l.getRegionArray())
+        {
+            if (r.getNumberOfActiveSoldiers() == 0) r.setSoldiers(1);
+        }
+        
         JOptionPane.showMessageDialog(null,"You rule over all of the following territories: ","Opening",JOptionPane.INFORMATION_MESSAGE);
         
         String ownedRegions = l.getRegionArray().get(0).toString() + " with " + l.getRegionArray().get(0).getNumberOfActiveSoldiers() + " soldiers \n";
