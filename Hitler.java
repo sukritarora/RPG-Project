@@ -17,8 +17,5 @@ public class Hitler extends Leaders
     {
         // initialise instance variables
         super("Adolf Hitler",new CentralEuropeRegion());
-
     }
-
-  
 }

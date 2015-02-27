@@ -16,7 +16,5 @@ public class AlexanderTheGreat extends Leaders
     {
         // initialise instance variables
         super("Alexander the Great", new BalkanRegion());
-
-        
     }
 }

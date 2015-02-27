@@ -15,9 +15,6 @@ public class Adolphus extends Leaders
     public Adolphus()
     {
         // initialise instance variables
-
         super("Gustavus Adolphus",new ScandinavianRegion());
-
-        
     }
 }

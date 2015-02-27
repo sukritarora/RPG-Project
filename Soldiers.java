@@ -25,7 +25,6 @@ public class Soldiers
         {
             permanentNumberOfSoldiers = (int) (permanentNumberOfSoldiers * 1.5);
         }
-        //l.getRegion().assignSoldiers(numberOfSoldiers);
     }
 
     public int getPermanentNumberOfSoldiers()
@@ -43,11 +42,6 @@ public class Soldiers
         numberOfSoldiersToUse -= num;
     }
     
-//     public int getTotalNumberOfSoldiers()
-//     {
-//         return permanentNumberOfSoldiers + numberOfSoldiersToUse;
-//     }
-    
     public void addSoldiers(int num)
     {
         numberOfSoldiersToUse = numberOfSoldiersToUse + num;
@@ -58,13 +52,4 @@ public class Soldiers
         permanentNumberOfSoldiers = num;
     }
 
-    //     public void assignSoldiersToRegions(int changingSoldiers)
-    //     {
-    //         numberOfSoldiers = numberOfSoldiers - changingSoldiers;
-    //     }
-
-    //     public void setNumberOfSoldiers (int num)
-    //     {
-    //         numberOfSoldiers = num;
-    //     }
 }

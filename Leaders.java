@@ -11,9 +11,6 @@ public abstract class Leaders
 {
     final String name;
     private ArrayList<Regions> regionArray = new ArrayList<Regions>(); 
-    //private Regions r = null;
-    //private Regions r;
-
     private Soldiers s = null;
 
     /**
@@ -25,20 +22,12 @@ public abstract class Leaders
         name = n;
         regionArray.add(r);
         s = new Soldiers(this);
-        //this.r = r;
-        //         s = new Cavalry();
-        //         w = new Sword();
     }
 
     public ArrayList<Regions> getRegionArray()
     {
         return regionArray;
     }
-
-    //     public Regions getRegion()
-    //     {
-    //         return r;
-    //     }
 
     public Soldiers getSoldiers()
     {
@@ -50,13 +39,4 @@ public abstract class Leaders
         return name;
     }
 
-    //     public void addSoldiers ()
-    //     {
-    //         s.numberOfSoldiers +=3;
-    //     }
-    //     
-    //     public void subtractSoldiers ()
-    //     {
-    //         s.numberOfSoldiers-=3;
-    //     }
 }

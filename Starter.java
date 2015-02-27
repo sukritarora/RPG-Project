@@ -16,9 +16,7 @@ public class Starter
         {
             boolean win = false;
             int count = 0;
-            //GameLogic.randomiseCPUSoldiers();
             GameLogic g = new GameLogic();
-            //Leaders l = null;
             Leaders l = GameLogic.chooseLeader(); //constructing an instance of the Leaders class with the identifier l which is being assigned the value of the static chooseLeader accessor method being invoked upon the GameLogic class with no explicit parameters
             while (!win)
             {
@@ -34,10 +32,5 @@ public class Starter
             JOptionPane.showMessageDialog(null,"You have won the game. It took you a total of " + count + " turns.","Victory",JOptionPane.INFORMATION_MESSAGE);
             cont = JOptionPane.showOptionDialog(null, "Would you like to play again?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
         }
-        //         win = GameLogic.fightSequence (l, win);
-        // 
-        //         Regions r = GameLogic.chooseAttack(l);
-        //         win = GameLogic.fightSequence (l, win, r);
-
     }
 }
