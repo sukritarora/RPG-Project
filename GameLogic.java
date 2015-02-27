@@ -546,6 +546,22 @@ public class GameLogic
         }
         
     }
+    
+    public static void displayStats(Leaders l)
+    {
+        JOptionPane.showMessageDialog(null,"You rule over all of the following territories: ","Opening",JOptionPane.INFORMATION_MESSAGE);
+        
+        String ownedRegions = l.getRegionArray().get(0).toString() + " with " + l.getRegionArray().get(0).getNumberOfActiveSoldiers();
+   
+        
+        for (int i = 1; i < l.getRegionArray().size(); i++)
+        {
+            ownedRegions = ownedRegions + l.getRegionArray().get(i).toString() + " with " + l.getRegionArray().get(i).getNumberOfActiveSoldiers() + " soldiers"; 
+            
+        }
+        
+        JOptionPane.showMessageDialog(null,ownedRegions,"Territories Controlled",JOptionPane.INFORMATION_MESSAGE);
+    }
 // =======
 //             if (response == soldierArray[i]) 
 //             {
