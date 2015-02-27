@@ -276,17 +276,19 @@ public class GameLogic
                         if (l.getSoldiers().getNumberOfSoldiersToUse() > 0)soldierResponse = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in " + response + " out of " + l.getSoldiers().getNumberOfSoldiersToUse() + " available soldiers.");
                         else soldierResponse = "0";
                         numberOfSoldiersToMove = Integer.parseInt((String) soldierResponse);
-                        if (numberOfSoldiersToMove > 0) 
+                        if (numberOfSoldiersToMove <= l.getSoldiers().getNumberOfSoldiersToUse()) 
                         {
                             l.getSoldiers().setNumberOfSoldiersToUse(numberOfSoldiersToMove);
+                            valid = false;
                         }
+                        else JOptionPane.showMessageDialog(null,"You don't have that many soldiers.","TRY AGAIN",JOptionPane.INFORMATION_MESSAGE);
                     } catch (NumberFormatException e) {
                         // Not a number, display error message...
                         JOptionPane.showMessageDialog(null,"Do it again.","Again",JOptionPane.INFORMATION_MESSAGE);
                     }
-                } while((numberOfSoldiersToMove < 0)||(soldierResponse==null));
+                } while((numberOfSoldiersToMove < 0)||(valid)||(soldierResponse==null));
 
-                if (numberOfSoldiersToMove > l.getSoldiers().getNumberOfSoldiersToUse()) JOptionPane.showMessageDialog(null,"You don't have that many soldiers.","TRY AGAIN",JOptionPane.INFORMATION_MESSAGE);
+                if (numberOfSoldiersToMove > (l.getSoldiers().getNumberOfSoldiersToUse()+numberOfSoldiersToMove)) JOptionPane.showMessageDialog(null,"You don't have that many soldiers.","TRY AGAIN",JOptionPane.INFORMATION_MESSAGE);
                 else valid = false;
             }
             
@@ -305,7 +307,8 @@ public class GameLogic
             regionInWhichToPlaceSoldiers.assignSoldiers(numberOfSoldiersToMove);
 //             l.getSoldiers().setNumberOfSoldiersToUse(numberOfSoldiersToMove);
             JOptionPane.showMessageDialog(null,"You have just moved " + numberOfSoldiersToMove + " soldiers into " + regionInWhichToPlaceSoldiers + " and so you now have a total of " + regionInWhichToPlaceSoldiers.getNumberOfActiveSoldiers() + " soldiers.","Soldier Movement",JOptionPane.INFORMATION_MESSAGE);
-            cont = JOptionPane.showOptionDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
+            if (l.getSoldiers().getNumberOfSoldiersToUse() > 0) cont = JOptionPane.showOptionDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
+            else cont = JOptionPane.NO_OPTION;
         }
     }
 
