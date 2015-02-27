@@ -43,10 +43,10 @@ public class Soldiers
         numberOfSoldiersToUse -= num;
     }
     
-    public int getTotalNumberOfSoldiers()
-    {
-        return permanentNumberOfSoldiers + numberOfSoldiersToUse;
-    }
+//     public int getTotalNumberOfSoldiers()
+//     {
+//         return permanentNumberOfSoldiers + numberOfSoldiersToUse;
+//     }
     
     public void addSoldiers(int num)
     {

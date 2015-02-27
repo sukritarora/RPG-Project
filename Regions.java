@@ -42,11 +42,11 @@ public abstract class Regions
         s.setNumberOfSoldiersToUse(numberOfSoldiers);
     }
 
-    //     public void setSoldiers(int num)
-    //     {
-    //         activeSoldiers = num;
-    //     }
-    //     
+    public void setSoldiers(int num)
+    {
+        activeSoldiers = num;
+    }
+    
     public int getNumberOfActiveSoldiers()
     {
         return activeSoldiers;

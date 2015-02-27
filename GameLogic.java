@@ -23,7 +23,7 @@ public class GameLogic
     {
         winstonChurchill = new Churchill();
         napoleonBonaparte = new Napoleon();
-        Leaders adolfHitler = new Hitler();
+        adolfHitler = new Hitler();
         alexanderTheGreat = new AlexanderTheGreat();
         arnold = new Arnold();
         ottoVonBismarck = new Bismarck();
@@ -120,6 +120,7 @@ public class GameLogic
         //         return att;
 
         ArrayList <Leaders> attackableLeaderRegions = new ArrayList<Leaders>();
+        boolean added = false;
         for (Regions r: l.getRegionArray())
         {
             for (int i = 0; i < r.getAdjacentRegions().length; i++)
@@ -128,35 +129,107 @@ public class GameLogic
                 switch(adjacentLeaderRegions[i])
                 {
                     case "United Kingdom":   {
-                        attackableLeaderRegions.add(winstonChurchill);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(winstonChurchill))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(winstonChurchill)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(winstonChurchill);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Western Europe":  {
-                        attackableLeaderRegions.add(napoleonBonaparte);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(napoleonBonaparte))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(napoleonBonaparte)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(napoleonBonaparte);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Central Europe":    {
-                        attackableLeaderRegions.add(adolfHitler);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(adolfHitler))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(adolfHitler)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(adolfHitler);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Balkans": {
-                        attackableLeaderRegions.add(alexanderTheGreat);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(alexanderTheGreat))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(alexanderTheGreat)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(alexanderTheGreat);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Baltics":   {
-                        attackableLeaderRegions.add(ottoVonBismarck);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(ottoVonBismarck))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(ottoVonBismarck)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(ottoVonBismarck);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Urals":   {
-                        attackableLeaderRegions.add(josephStalin);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(josephStalin))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(josephStalin)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(josephStalin);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Scandinavia":   {
-                        attackableLeaderRegions.add(gustavusAdolphus);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(gustavusAdolphus))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(gustavusAdolphus)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(gustavusAdolphus);
+                        else if (added == true) added = false;
                         break;
                     }
                     case "Carpathians":   {
-                        attackableLeaderRegions.add(arnold);
+                        for (int j = 0; j < attackableLeaderRegions.size(); j++)
+                        {
+                            if ((attackableLeaderRegions.get(j).equals(arnold))) added = true;
+                        }
+                        for (int j = 0; j < l.getRegionArray().size(); j++)
+                        {
+                            if (l.getRegionArray().get(j).equals(arnold)) added = true;
+                        }
+                        if (added == false) attackableLeaderRegions.add(arnold);
+                        else if (added == true) added = false;
                         break;
                     }
                 }
@@ -164,10 +237,10 @@ public class GameLogic
         }
         Leaders[] realAttackableLeaderRegions = new Leaders[attackableLeaderRegions.size()];
         attackableLeaderRegions.toArray(realAttackableLeaderRegions);
-        for (Leaders leader: realAttackableLeaderRegions)
-        {
-
-        }
+//         for (Leaders leader: realAttackableLeaderRegions)
+//         {
+// 
+//         }
         Leaders response = (Leaders) JOptionPane.showInputDialog(null, "Which Leader would you like to attack", "Attacking Leaders", JOptionPane.PLAIN_MESSAGE,null, realAttackableLeaderRegions, realAttackableLeaderRegions[0]);
         return response;
     }
@@ -179,6 +252,11 @@ public class GameLogic
         while (cont == JOptionPane.YES_OPTION)
         {
             //int soldierNum = l.getSoldiers().getNumberOfSoldiers();
+            for (Regions r: l.getRegionArray())
+            {
+                if (r.getNumberOfActiveSoldiers() == 0) r.setSoldiers(1);
+            }
+            
             Object[] soldierArray =new Object[l.getRegionArray().size()];
             l.getRegionArray().toArray(soldierArray);
             boolean valid = true;
@@ -219,8 +297,9 @@ public class GameLogic
             //String numMoving = JOptionPane.showInputDialog("Please enter the number of soldiers that you would like to put in" + response);
             //int numberOfSoldiersToMove = Integer.parseInt(numMoving);
             //l.getSoldiers().assignSoldiersToRegions(numberOfSoldiersToMove);
-            regionInWhichToPlaceSoldiers.assignSoldiers(numberOfSoldiersToMove, l.getSoldiers());
-            JOptionPane.showMessageDialog(null,"You have just moved " + numberOfSoldiersToMove + " soldiers into" + regionInWhichToPlaceSoldiers,"Soldier Movement",JOptionPane.INFORMATION_MESSAGE);
+            regionInWhichToPlaceSoldiers.assignSoldiers(numberOfSoldiersToMove);
+            l.getSoldiers().setNumberOfSoldiersToUse(numberOfSoldiersToMove);
+            JOptionPane.showMessageDialog(null,"You have just moved " + numberOfSoldiersToMove + " soldiers into " + regionInWhichToPlaceSoldiers + " and so you now have a total of " + regionInWhichToPlaceSoldiers.getNumberOfActiveSoldiers() + " soldiers.","Soldier Movement",JOptionPane.INFORMATION_MESSAGE);
             cont = JOptionPane.showOptionDialog(null, "Would you like to continue placing troops?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
         }
     }
@@ -285,9 +364,19 @@ public class GameLogic
         //         {
         //             return false;
         //         }
-        Object[] regionArray =new Object[attackingLeader.getRegionArray().size()];
+        Regions[] regionArray =new Regions[attackingLeader.getRegionArray().size()];
         attackingLeader.getRegionArray().toArray(regionArray);
-        Regions response = (Regions) JOptionPane.showInputDialog(null, "You have " + attackingLeader.getRegionArray().size() + " regions. Where would you like to attack from?","Attack From Region",JOptionPane.PLAIN_MESSAGE,null,regionArray,regionArray[0]);
+        ArrayList <Regions> attackingRegionsArray = new ArrayList <Regions>();
+        for (Regions reg: regionArray)
+        {
+            for (int i = 0; i < reg.getAdjacentRegions().length; i++)
+            {
+                 if (reg.getAdjacentRegions()[i].equals(defendingLeader.getRegionArray().get(0).regionName)) attackingRegionsArray.add(reg);
+            }
+        }
+        Regions[] attackingRegionsOptions = new Regions[attackingRegionsArray.size()];
+        attackingRegionsArray.toArray(attackingRegionsOptions);
+        Regions response = (Regions) JOptionPane.showInputDialog(null, "You have " + attackingLeader.getRegionArray().size() + " regions. Where would you like to attack from?","Attack From Region",JOptionPane.PLAIN_MESSAGE,null,attackingRegionsOptions,attackingRegionsOptions[0]); //need to change this so the attacking Region must be adjacent
         int indexOfRegion = 0;
         int valid = JOptionPane.YES_OPTION;
         for (int i = 0; i < regionArray.length; i++)
@@ -299,7 +388,7 @@ public class GameLogic
         }
 
         int attackingSoldiers = attackingLeader.getRegionArray().get(indexOfRegion).getNumberOfActiveSoldiers();
-        int defendingSoldiers = defendingLeader.getSoldiers().getTotalNumberOfSoldiers();
+        int defendingSoldiers = defendingLeader.getSoldiers().getPermanentNumberOfSoldiers();
 
         while ((attackingSoldiers > 1) && (defendingSoldiers > 0) && valid == JOptionPane.YES_OPTION)
         {
@@ -526,14 +615,12 @@ public class GameLogic
 
             }
 
-            if (attackingSoldiers <= (attackingLeader.getRegionArray().get(indexOfRegion).getNumberOfActiveSoldiers()/2))
-            {
-                valid = JOptionPane.showOptionDialog(null, "You have " + attackingSoldiers + " left while your opponent has " + defendingSoldiers + " soldiers left. Would you like to keep attacking?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
-            }
+            valid = JOptionPane.showOptionDialog(null, "You have " + attackingSoldiers + " left while your opponent has " + defendingSoldiers + " soldiers left. Would you like to keep attacking?","Continue",JOptionPane.YES_NO_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);
+            
         }
 
-        attackingLeader.getRegionArray().get(indexOfRegion).assignSoldiers(attackingSoldiers);
-        defendingLeader.getRegionArray().get(indexOfRegion).assignSoldiers(defendingSoldiers);
+        attackingLeader.getRegionArray().get(indexOfRegion).setSoldiers(attackingSoldiers);
+        defendingLeader.getRegionArray().get(indexOfRegion).setSoldiers(defendingSoldiers);
 
         if (defendingSoldiers == 0)
         {
@@ -551,12 +638,12 @@ public class GameLogic
     {
         JOptionPane.showMessageDialog(null,"You rule over all of the following territories: ","Opening",JOptionPane.INFORMATION_MESSAGE);
         
-        String ownedRegions = l.getRegionArray().get(0).toString() + " with " + l.getRegionArray().get(0).getNumberOfActiveSoldiers();
+        String ownedRegions = l.getRegionArray().get(0).toString() + " with " + l.getRegionArray().get(0).getNumberOfActiveSoldiers() + " soldiers \n";
    
         
         for (int i = 1; i < l.getRegionArray().size(); i++)
         {
-            ownedRegions = ownedRegions + l.getRegionArray().get(i).toString() + " with " + l.getRegionArray().get(i).getNumberOfActiveSoldiers() + " soldiers"; 
+            ownedRegions = ownedRegions + l.getRegionArray().get(i).toString() + " with " + l.getRegionArray().get(i).getNumberOfActiveSoldiers() + " soldiers \n"; 
             
         }
         
@@ -647,7 +734,7 @@ public class GameLogic
 // }
 // 
 // int attackingSoldiers = attackingLeader.getRegionArray().get(indexOfRegion).getNumberOfActiveSoldiers();
-// int defendingSoldiers = defendingLeader.getSoldiers().getTotalNumberOfSoldiers();
+// int defendingSoldiers = defendingLeader.getSoldiers().getPermanentNumberOfSoldiers();
 // 
 // while ((attackingSoldiers > 1) && (defendingSoldiers > 0) && valid == JOptionPane.YES_OPTION)
 // {
